@@ -1,6 +1,7 @@
 export const PRODUCTS = [
   {
     id: 1,
+
     name: "Clonester",
     subname: "Hand Held Ruggedised Forensic Imaging Device",
     subdesc: "SKU: CL-1101",

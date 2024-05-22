@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
@@ -16,25 +16,24 @@ import {
 import { Link } from "react-router-dom";
 
 const Content = () => {
-  const [isPaused, setIsPaused] = useState(false);
+  // const [isPaused, setIsPaused] = useState(false);
+  const carouselRef = useRef(null);
 
-  const reduceRecipes = (acc, cur, index) => {
-    const chunkSize = 6;
-    const startIndex = index * chunkSize;
-    let endIndex = startIndex + chunkSize;
-    let items = data.slice(startIndex, endIndex);
-
-    if (items.length < chunkSize) {
-      items = [...items, ...data.slice(0, chunkSize - items.length)];
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
     }
+  };
 
-    acc.push(items);
-    return acc;
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
   };
   // const product = products.find((item) => item.id);
   return (
     <div className="Main">
-      <div className="carousel-container">
+      {/* <div className="carousel-container">
         <Carousel interval={5000} paused={isPaused}>
           <Carousel.Item>
             <div
@@ -74,6 +73,49 @@ const Content = () => {
             </div>
           </Carousel.Item>
         </Carousel>
+      </div> */}
+      <div className="carousel-container">
+        <Carousel
+          interval={null}
+          indicators={false}
+          controls={false}
+          ref={carouselRef}
+        >
+          <Carousel.Item>
+            <div className="carousel-content">
+              <div className="carousel-chunk">
+                {data.map((item, itemIndex) => (
+                  <Card key={itemIndex} className="carousel-card">
+                    <Card.Img
+                      variant="top"
+                      src={item.src}
+                      className="carousel-image"
+                    />
+                    <Card.Body className="carousel-image-info">
+                      <Card.Title className="carousel-image-name">
+                        {item.name}
+                      </Card.Title>
+                      <Card.Text className="carousel-image-alt">
+                        {item.alt}
+                      </Card.Text>
+                      <Link to={`/products/${item.id}`}>
+                        <Button variant="primary" className="read-more-button">
+                          Read More
+                        </Button>
+                      </Link>
+                    </Card.Body>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+        <Button className="carousel-control-prev" onClick={handlePrev}>
+          &lt;
+        </Button>
+        <Button className="carousel-control-next" onClick={handleNext}>
+          &gt;
+        </Button>
       </div>
 
       <div className="highlight-container">
@@ -91,7 +133,6 @@ const Content = () => {
               Tested by Experienced Users.
             </p>
           </div>
-          <div className="data-cards-stack"></div>
         </div>
         {/* cards stack */}
         <div className="high-container">

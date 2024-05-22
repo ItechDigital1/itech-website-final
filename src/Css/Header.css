@@ -1,7 +1,8 @@
+/* ==================== */
+/* Tailwind CSS */
 * {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,40 +11,46 @@
   width: 100%;
   z-index: 999;
 }
+
 #top-bar {
-  background: -webkit-linear-gradient(to right, #fd746c, #2c3e50);
   background: linear-gradient(to right, #2f121c, #010412);
   padding: 8px 0;
   font-size: 12px;
 }
+
 .container {
-  width: 1170px;
-  max-width: auto;
-  margin: 0 100px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .container i {
   color: #fff;
 }
+
 a {
   color: white;
 }
+
 .contact-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 a {
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .brand-nav .software-nav {
   color: white;
   text-decoration: none;
 }
+
 .Navigation-bar2 {
   width: 100%;
   z-index: 999;
@@ -64,7 +71,9 @@ a {
   color: #fff;
   padding: 10px;
   float: right;
+  position: relative;
 }
+
 .navbar-brand {
   font-weight: bold;
 }
@@ -123,4 +132,26 @@ a {
 
 .dropdown-menu li {
   list-style-type: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-nav.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
 }
