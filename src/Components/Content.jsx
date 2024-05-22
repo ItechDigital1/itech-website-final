@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
-
+import itech_video from "../assets/videos/itech_main_video.mp4";
 import "./../Css/Content.css";
 import {
   asso,
@@ -17,19 +17,20 @@ import { Link } from "react-router-dom";
 
 const Content = () => {
   // const [isPaused, setIsPaused] = useState(false);
-  const carouselRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.prev();
-    }
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? data.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-    if (carouselRef.current) {
-      carouselRef.current.next();
-    }
+    setActiveIndex((prevIndex) =>
+      prevIndex === data.length - 1 ? 0 : prevIndex + 1
+    );
   };
+
   // const product = products.find((item) => item.id);
   return (
     <div className="Main">
@@ -74,12 +75,25 @@ const Content = () => {
           </Carousel.Item>
         </Carousel>
       </div> */}
+      <div className="itech-video">
+        <video
+          loop
+          autoPlay
+          // controls
+          muted
+          style={{ objectFit: "fill" }}
+          src={itech_video}
+          width="100%"
+        >
+          {/* <source  type="video/mp4" /> */}
+        </video>
+      </div>
       <div className="carousel-container">
         <Carousel
           interval={null}
           indicators={false}
           controls={false}
-          ref={carouselRef}
+          // ref={carouselRef}
         >
           <Carousel.Item>
             <div className="carousel-content">

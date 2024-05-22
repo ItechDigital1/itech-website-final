@@ -47,7 +47,10 @@ const Footer = () => {
                 <h6>Business</h6>
                 <span>
                   Email:{" "}
-                  <span style={{ color: "#fff", fontSize: "14px" }}>
+                  <span
+                    style={{ color: "#fff", fontSize: 14, fontWeight: 500 }}
+                  >
+                    <br />
                     business@itech.co.in
                   </span>
                 </span>
@@ -67,6 +70,7 @@ const Footer = () => {
                 <span>
                   Email:{" "}
                   <span style={{ color: "#fff", fontSize: "14px" }}>
+                    <br />
                     support@itech.co.in
                   </span>
                 </span>

@@ -25,7 +25,7 @@ const Gallery = () => {
   return (
     <div className="gallery">
       <div className="gallery-head">
-        <h1>Itech Image Gallery</h1>
+        <h1>ITECH Image Gallery</h1>
       </div>
       <div className="gallery-body">
         {Images.map((items, id) => (
