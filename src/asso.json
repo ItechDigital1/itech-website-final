@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "image": "itech-digi-app/src/assets/images/img/logo/Dell-logo.jpg",
+    "title": "OEM Partner's"
+  },
+  {
+    "id": 2,
+    "image": "itech-digi-app/src/assets/images/img/logo/Sonicwall-logo.jpg",
+    "title": "Solution Partner's"
+  },
+  {
+    "id": 3,
+    "image": "itech-digi-app/src/assets/images/img/logo/Poly-logo.jpg",
+    "title": "VC Solution"
+  },
+  {
+    "id": 4,
+    "image": "itech-digi-app/src/assets/images/img/logo/Mumbai-police-logo.jpg",
+    "title": "Prestigeous Client"
+  }
+]

@@ -1,0 +1,20 @@
+.software-container {
+  justify-content: center;
+  margin: 3rem 5rem;
+}
+.software-body {
+  padding: 3px auto;
+}
+.software-head {
+  color: red;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.software-sub-head {
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.software-list {
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

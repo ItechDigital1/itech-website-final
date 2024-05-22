@@ -1,0 +1,49 @@
+.career-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.career-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.career-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.career-container label {
+  margin-right: 10px;
+}
+
+.career-container input[type="file"] {
+  padding: 6px;
+  border-radius: 2px;
+  width: 30rem;
+  border: 1px solid #ccc;
+}
+
+.career-container button {
+  background: #2f121c;
+  background: linear-gradient(to right, #2f121c, #010412);
+  border: none;
+  color: white;
+  padding: 7px 2rem;
+  text-align: center;
+  border-radius: 2px;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 1rem;
+  cursor: pointer;
+}
+
+.career-container button:hover {
+  background-color: #3e8e41;
+}
+
+.career-container p {
+  font-size: 14px;
+}

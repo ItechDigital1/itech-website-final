@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "cssid": "first",
+    "name": "Improved USB Transfer Speed",
+    "desc": "For Super Speed USB data transfer."
+  },
+  {
+    "id": 2,
+    "cssid": "first",
+    "name": "4TB Memory Support",
+    "desc": "Ensuring high memory scalabality.."
+  },
+  {
+    "id": 3,
+    "cssid": "first",
+    "name": "SAS Compatible Bays",
+    "desc": "High End SAS III support bays."
+  },
+  {
+    "id": 4,
+    "cssid": "first",
+    "name": "Key Lockable Dongle Bay",
+    "desc": "Secure Dongles from unauthorised access."
+  },
+  {
+    "id": 5,
+    "cssid": "first",
+    "name": "All SAS III 12Gbps",
+    "desc": "High Speed SAS III bays."
+  },
+  {
+    "id": 6,
+    "cssid": "first",
+    "name": "Key Lockable Cables Bay ",
+    "desc": "Secures Cables from getting misplaced or replaced."
+  },
+  {
+    "id": 7,
+    "cssid": "second",
+    "name": "Adjustable Camera",
+    "desc": "To record video of click photographs of forensic evidences."
+  },
+  {
+    "id": 8,
+    "cssid": "second",
+    "name": "Ticket Based Call Logging",
+    "desc": "Quick support by just logging into our portal and raise request."
+  },
+  {
+    "id": 9,
+    "cssid": "second",
+    "name": "High speed NVMe, M.2 and SSD",
+    "desc": "SSD Enables super fast booting and caching of forensic cases."
+  },
+  {
+    "id": 10,
+    "cssid": "second",
+    "name": "Upgradable models in series",
+    "desc": "Highly scalable and upgradable in almost all variants."
+  },
+  {
+    "id": 11,
+    "cssid": "second",
+    "name": "Key Lock for System Power On",
+    "desc": "Single key based Secure access to the workstation."
+  },
+  {
+    "id": 12,
+    "cssid": "second",
+    "name": "Optimize Raid Ability",
+    "desc": "Multiple RAID configuration support such as RAID 0,1,5,6,10."
+  },
+  {
+    "id": 13,
+    "cssid": "third",
+    "name": "All Machine are Extensively tested",
+    "desc": "  To run high end forensic applications at their peak performance."
+  },
+  {
+    "id": 14,
+    "cssid": "third",
+    "name": "Multi Machine Connect",
+    "desc": "To ensure enabling multiple cases through each client in a less period of time."
+  },
+  {
+    "id": 15,
+    "cssid": "third",
+    "name": "4 X 4 Multiple Drive Parallel Cloning",
+    "desc": "  High Speed Multiple Drive cloning to speed up time consuming acquisition process."
+  },
+  {
+    "id": 16,
+    "cssid": "third",
+    "name": "Server Connect",
+    "desc": "Enabling super fast processing of forensic caeses with centralised processing and storage.."
+  },
+  {
+    "id": 17,
+    "cssid": "third",
+    "name": "Designed &amp; Built by Industry experts",
+    "desc": "Tailor-made design and configuration to run forensic applications seamlessly."
+  },
+  {
+    "id": 18,
+    "cssid": "third",
+    "name": "Designed for Parallel processing",
+    "desc": "To enable forensic experts to run multiple applications simultaneosly and seamlessly."
+  }
+]
