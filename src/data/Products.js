@@ -257,60 +257,8 @@ export const PRODUCTS = [
   {
     id: 5,
     name: "Graphster",
-    description: [
-      <ul>
-        <li>
-          Labster is an Advanced Lab Workstation specialized for use in High End
-          Digital Forensics to Complex Audio and Video Forensics.
-        </li>
-
-        <li>
-          This workstation is specifically designed to run Audio and Video
-          Forensics and authentication applications like DVR analysis, VIP,
-          Kinesis, Impress Pro, and Mandate etc.
-        </li>
-
-        <li>
-          With High End Ergonomic Design, Variable Mode Height Adjustable Table
-          (motorized) along with Blue LED strips.
-        </li>
-
-        <li>
-          It is designed for Long Hours of work as Forensics Experts can conduct
-          their processes both in standing and sitting position, by just
-          adjusting the height of the table.
-        </li>
-
-        <li>
-          It is also provided with options such as Multiple Cloning and Imaging
-          i.e. 4:4 and 1:4 etc. with Interfaces with SAS, SATA, USB, IDE etc.
-        </li>
-      </ul>,
-    ],
-    content: [
-      <ul>
-        <li>
-          Labster Audio/Video Forensic Workstations are Configured based on
-          Customer Requirements and Preferences.
-        </li>
-        <li>
-          System Restore bootable DVD enables restore to factory configuration
-          of the operating system and relevant softwares.
-        </li>
-        <li>103 Key Keyboard and Mouse combo-Wired.</li>
-        <li>
-          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
-          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
-        </li>
-        <li>
-          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
-          SSD, and server class PCIe SSD).
-        </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
-        </li>
-      </ul>,
-    ],
+    description: [],
+    content: [],
   },
   {
     id: 6,
