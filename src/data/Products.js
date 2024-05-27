@@ -256,15 +256,122 @@ export const PRODUCTS = [
   },
   {
     id: 5,
-    name: "Product 4",
-    description: "Description for Product 4",
-    price: 39.99,
+    name: "Graphster",
+    description: [
+      <ul>
+        <li>
+          Labster is an Advanced Lab Workstation specialized for use in High End
+          Digital Forensics to Complex Audio and Video Forensics.
+        </li>
+
+        <li>
+          This workstation is specifically designed to run Audio and Video
+          Forensics and authentication applications like DVR analysis, VIP,
+          Kinesis, Impress Pro, and Mandate etc.
+        </li>
+
+        <li>
+          With High End Ergonomic Design, Variable Mode Height Adjustable Table
+          (motorized) along with Blue LED strips.
+        </li>
+
+        <li>
+          It is designed for Long Hours of work as Forensics Experts can conduct
+          their processes both in standing and sitting position, by just
+          adjusting the height of the table.
+        </li>
+
+        <li>
+          It is also provided with options such as Multiple Cloning and Imaging
+          i.e. 4:4 and 1:4 etc. with Interfaces with SAS, SATA, USB, IDE etc.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <li>
+          Labster Audio/Video Forensic Workstations are Configured based on
+          Customer Requirements and Preferences.
+        </li>
+        <li>
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
+        </li>
+        <li>103 Key Keyboard and Mouse combo-Wired.</li>
+        <li>
+          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
+          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
+        </li>
+        <li>
+          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
+          SSD, and server class PCIe SSD).
+        </li>
+        <li>
+          Security Screwdriver set with assorted bits for opening enclosures.
+        </li>
+      </ul>,
+    ],
   },
   {
     id: 6,
-    name: "Product 3",
-    description: "Description for Product 3",
-    price: 29.99,
+    name: "Deskster X",
+    description: [
+      <ul>
+        <li>
+          The Deskter X Series, are the World's First Frontal Design Forensic
+          Workstations with an Extended Form Factor. Pioneered, Designed and
+          Manufactured by ITECH DIGITAL FORENSICS in INDIA.
+        </li>
+        <li>
+          It is a Proprietary Product Solution under the ITECH Brand of Desktop
+          Forensic Workstations.
+        </li>
+        <li>
+          It is Custom Designed by Forensic Professionals to Focus on Ease in
+          Operations and provide an `All-In-One System` User Experience.
+        </li>
+        <li>
+          These High End Forensic Workstation are Powered by Intel Dual Xeon
+          Series Processors, High Memory and Storage Configurations, all
+          optimised by Digital Forensic Professionals to hasten Complex Forensic
+          Applications.
+        </li>
+        <li>
+          It comprises of 4 Read Only and 4 Read/Write SAS/SATA bays, which can
+          be used to perform Simultaneous Multiple Imaging, Cloning, Processing
+          and also for Erasing Disks.
+        </li>
+        <li>
+          This Workstation is Tailor made to Fulfil the needs of Forensic Labs
+          or Investigation Agencies with optimal Configuration, which is Highly
+          Scalable and enables Multitasking, for Extremely Fast and Secure
+          operations.
+        </li>
+      </ul>,
+      <ul>
+        <li>
+          Deskter X Forensic Workstations are Configured based on Customer
+          Requirements and Preferences.
+        </li>
+        <li>
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
+        </li>
+        <li>103 Key Keyboard and Mouse combo-Wired.</li>
+        <li>
+          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
+          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
+        </li>
+        <li>
+          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
+          SSD, and server class PCIe SSD).
+        </li>
+        <li>
+          Security Screwdriver set with assorted bits for opening enclosures.
+        </li>
+      </ul>,
+    ],
+    content: [],
   },
   {
     id: 11,
