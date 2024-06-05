@@ -1,9 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Exo", sans-serif;
 }
 body {
+  font-family: "Exo", sans-serif;
   overflow-x: hidden;
 }
-/* src/App.css */

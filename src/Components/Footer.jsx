@@ -10,147 +10,154 @@ import Youtube from "../assets/images/img/icon/Social-Youtube-Icon.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="container-info py-1 footer" id="below-add">
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <hr className="style-top" />
-        <section className="footers pt-1 pb-1">
-          <div className="footer-container pt-1">
-            <div className="footer-row">
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-one">
-                <div className="logo-parts">
-                  <img
-                    src={ItechFooter}
-                    className="w-50 logo-footer"
-                    width="300"
-                    height="40"
-                  />
-                  <br />
+      <center>
+        <footer className="container-info py-1 footer" id="below-add">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <hr className="style-top" />
+          <section className=" container footers pt-1 pb-1">
+            <div className="footer-container pt-1">
+              <div className="footer-row">
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-one">
+                  <div className="logo-parts">
+                    <img
+                      src={ItechFooter}
+                      className="w-50 logo-footer"
+                      width="300"
+                      height="40"
+                    />
+                    <br />
+                  </div>
+                  <div className="footers-info mt-3">
+                    <p className="footer-add">
+                      `Sadanand`, Ground Floor,
+                      <br />
+                      St. Anthony's Street,
+                      <br />
+                      Kalina,
+                      <br />
+                      Santa Cruz (East),
+                      <br />
+                      Mumbai. 400 029, INDIA
+                    </p>
+                  </div>
                 </div>
-                <div className="footers-info mt-3">
-                  <p className="footer-add">
-                    `Sadanand`, Ground Floor,
-                    <br />
-                    St. Anthony's Street,
-                    <br />
-                    Kalina,
-                    <br />
-                    Santa Cruz (East),
-                    <br />
-                    Mumbai. 400 029, INDIA
-                  </p>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-two">
-                <h6>Business</h6>
-                <span>
-                  Email:{" "}
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-two">
+                  <h6>Business</h6>
                   <span
                     style={{ color: "#fff", fontSize: 14, fontWeight: 500 }}
                   >
-                    <br />
-                    business@itech.co.in
+                    <div className="email">Email: </div>
+                    <span
+                      style={{ color: "#fff", fontSize: 14, fontWeight: 500 }}
+                    >
+                      <br />
+                      business@itech.co.in
+                    </span>
                   </span>
-                </span>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-three">
-                <h6>Sales</h6>
-                <span>
-                  Email:{" "}
-                  <span style={{ color: "#fff", fontSize: "14px" }}>
-                    <br />
-                    sales@itech.co.in
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-three">
+                  <h6>Sales</h6>
+                  <span>
+                    <div className="email">Email: </div>
+                    <span style={{ color: "#fff", fontSize: "14px" }}>
+                      <br />
+                      sales@itech.co.in
+                    </span>
                   </span>
-                </span>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-four">
-                <h6>Support</h6>
-                <span>
-                  Email:{" "}
-                  <span style={{ color: "#fff", fontSize: "14px" }}>
-                    <br />
-                    support@itech.co.in
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-four">
+                  <h6>Support</h6>
+                  <span>
+                    <div className="email">Email: </div>
+                    <span style={{ color: "#ffffff", fontSize: "14px" }}>
+                      <br />
+                      support@itech.co.in
+                    </span>
                   </span>
-                </span>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-five">
-                <h6>Press</h6>
-                <span>
-                  Email:{" "}
-                  <span style={{ color: "#fff", fontSize: "14px" }}>
-                    <br />
-                    press@itech.co.in
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-five">
+                  <h6>Press</h6>
+                  <span>
+                    <div className="email">Email: </div>
+                    <span style={{ color: "#fff", fontSize: "14px" }}>
+                      <br />
+                      press@itech.co.in
+                    </span>
                   </span>
-                </span>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-2 footers-six">
-                <h6>Follow Us</h6>
-                <a
-                  href="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/?modal=admin_todo_tour"
-                  target="#"
-                >
-                  <img
-                    src={Facebook}
-                    width="32"
-                    height="32"
-                    className="footer-social"
-                  />
-                </a>
-                <a href="https://twitter.com/ItechForensics" target="_blank">
-                  <img
-                    src={X}
-                    width="32"
-                    height="32"
-                    className="footer-social"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/itech-digital-forensics-pvt-ltd-20222a1a8/"
-                  target="#"
-                >
-                  <img
-                    src={LinkedIn}
-                    width="32"
-                    height="32"
-                    className="footer-social"
-                  />
-                </a>
-                <a href="https://www.instagram.com/itechforensics/" target="#">
-                  <img
-                    src={Instagram}
-                    width="32"
-                    height="32"
-                    className="footer-social"
-                  />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w"
-                  target="#"
-                >
-                  <img
-                    src={Youtube}
-                    width="32"
-                    height="32"
-                    className="footer-social"
-                  />
-                </a>
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-2 footers-six">
+                  <h6>Follow Us</h6>
+                  <a
+                    href="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/?modal=admin_todo_tour"
+                    target="#"
+                  >
+                    <img
+                      src={Facebook}
+                      width="32"
+                      height="32"
+                      className="footer-social"
+                    />
+                  </a>
+                  <a href="https://twitter.com/ItechForensics" target="_blank">
+                    <img
+                      src={X}
+                      width="32"
+                      height="32"
+                      className="footer-social"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/itech-digital-forensics-pvt-ltd-20222a1a8/"
+                    target="#"
+                  >
+                    <img
+                      src={LinkedIn}
+                      width="32"
+                      height="32"
+                      className="footer-social"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/itechforensics/"
+                    target="#"
+                  >
+                    <img
+                      src={Instagram}
+                      width="32"
+                      height="32"
+                      className="footer-social"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w"
+                    target="#"
+                  >
+                    <img
+                      src={Youtube}
+                      width="32"
+                      height="32"
+                      className="footer-social"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
+          </section>
+          <hr className="style-bottom" />
+          <div id="footer">
+            <div className="copyright text-center">
+              Copyright © 2019-20 ITECH DIGITAL FORENSICS. All Rights Reserved.
+              <br />
+              <span className="text-justify" style={{ fontSize: "12px" }}>
+                An ISO 9001:2015 Certified Company
+              </span>
+            </div>
           </div>
-        </section>
-        <hr className="style-bottom" />
-        <div id="footer">
-          <div className="copyright text-center">
-            Copyright © 2019-20 ITECH DIGITAL FORENSICS. All Rights Reserved.
-            <br />
-            <span className="text-justify" style={{ fontSize: "12px" }}>
-              An ISO 9001:2015 Certified Company
-            </span>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </center>
     </div>
   );
 };

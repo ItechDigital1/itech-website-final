@@ -1,8 +1,7 @@
-import React, { useState, useRef } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Carousel from "react-bootstrap/Carousel";
+import React, { useRef, useState } from "react";
+import { Carousel, Card, Button } from "react-bootstrap";
 import itech_video from "../assets/videos/itech_main_video.mp4";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./../Css/Content.css";
 import {
   asso,
@@ -16,65 +15,17 @@ import {
 import { Link } from "react-router-dom";
 
 const Content = () => {
-  // const [isPaused, setIsPaused] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
-    );
+  const [isPaused, setIsPaused] = useState(false);
+  const chunkArray = (array, size) => {
+    const result = [];
+    for (let i = 0; i < array.length; i += size) {
+      result.push(array.slice(i, i + size));
+    }
+    return result;
   };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  // const product = products.find((item) => item.id);
+  const chunkedData = chunkArray(data, 9);
   return (
     <div className="Main">
-      {/* <div className="carousel-container">
-        <Carousel interval={5000} paused={isPaused}>
-          <Carousel.Item>
-            <div
-              className="carousel-content"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              {data.reduce(reduceRecipes, []).map((chunk, chunkIndex) => (
-                <div key={chunkIndex} className="carousel-chunk">
-                  {chunk.map((item, itemIndex) => (
-                    <Card key={itemIndex}>
-                      <Card.Img
-                        variant="top"
-                        src={item.src}
-                        className="carousel-image"
-                      />
-                      <Card.Body className="carousel-image-info">
-                        <Card.Title className="carousel-image-name">
-                          {item.name}
-                        </Card.Title>
-                        <Card.Text className="carousel-image-alt">
-                          {item.alt}
-                        </Card.Text>
-                        <Link to={`/products/${item.id}`}>
-                          <Button
-                            variant="primary"
-                            className="read-more-button"
-                          >
-                            Read More
-                          </Button>
-                        </Link>
-                      </Card.Body>
-                    </Card>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </div> */}
       <div className="itech-video">
         <video
           loop
@@ -84,21 +35,55 @@ const Content = () => {
           style={{ objectFit: "fill" }}
           src={itech_video}
           width="100%"
-        >
-          {/* <source  type="video/mp4" /> */}
-        </video>
+        ></video>
+        <div className="overlay-description">
+          <span
+            class="video-title animated zoomIn"
+            style={{
+              animationDelay: "1s",
+              fontFamily: "Exo Light",
+              fontSize: "35px",
+            }}
+          >
+            We Build Robust, Expansive &amp; Ultra Fast Next-Gen Machines
+          </span>
+          <br />
+          <div
+            class="video-details animated bounceInLeft"
+            style={{ animationDelay: "4s", fontFamily: "Exo Light" }}
+          >
+            Uniquely Designed by Experienced Professionals from the World of
+            Digital Forensics.
+          </div>
+          <br />
+          <div
+            class="video-details animated bounceInLeft"
+            style={{ animationDelay: "7s", fontFamily: "Exo Light" }}
+          >
+            Built with Latest Technology, Highest, Quality Component, Backed By
+            Lifetime Support.
+          </div>
+          <br />
+          <a
+            href="https://www.youtube.com/embed/CeI4XiQdc0w?autoplay=1&wmode=opaque"
+            class="fancybox fancybox.iframe animated bounceInUp"
+            style={{ animationDelay: "9s", color: "red" }}
+            onclick="showslide();"
+          >
+            <i class="fa fa-play-circle fa-4x"></i>
+          </a>
+        </div>
       </div>
-      <div className="carousel-container">
-        <Carousel
-          interval={null}
-          indicators={false}
-          controls={false}
-          // ref={carouselRef}
-        >
-          <Carousel.Item>
-            <div className="carousel-content">
-              <div className="carousel-chunk">
-                {data.map((item, itemIndex) => (
+      {/* <div className="carousel-container">
+        <Carousel interval={5000} pause={isPaused ? "hover" : false}>
+          {chunkedData.map((chunk, chunkIndex) => (
+            <Carousel.Item key={chunkIndex}>
+              <div
+                className="carousel-content"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
+                {chunk.map((item, itemIndex) => (
                   <Card key={itemIndex} className="carousel-card">
                     <Card.Img
                       variant="top"
@@ -121,16 +106,86 @@ const Content = () => {
                   </Card>
                 ))}
               </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+        <Button
+          variant="secondary"
+          style={{ height: "4rem", width: "20px", color: "red" }}
+          className="carousel-control-prev"
+          onClick={() =>
+            document.querySelector(".carousel-control-prev").click()
+          }
+        >
+          &lt;
+        </Button>
+        <Button
+          variant="secondary"
+          style={{ height: "4rem", width: "20px", color: "red" }}
+          className="carousel-control-next"
+          onClick={() =>
+            document.querySelector(".carousel-control-next").click()
+          }
+        >
+          &gt;
+        </Button>
+      </div> */}
+      {/* style={{ height: "4rem", width: "20px",color: "red" }} */}
+      {/* <div className="carousel-container">
+        <Carousel
+          interval={null}
+          indicators={false}
+          controls={false}
+          ref={carouselRef}
+        >
+          <Carousel.Item>
+            <div className="carousel-content">
+              {data.map((item, itemIndex) => (
+                <Card key={itemIndex} className="carousel-card">
+                  <Card.Img
+                    variant="top"
+                    src={item.src}
+                    className="carousel-image"
+                  />
+                  <Card.Body className="carousel-image-info">
+                    <Card.Title className="carousel-image-name">
+                      {item.name}
+                    </Card.Title>
+                    <Card.Text className="carousel-image-alt">
+                      {item.alt}
+                    </Card.Text>
+                    <Link to={`/products/${item.id}`}>
+                      <Button
+                        variant="primary"
+                        size="sm"
+                        className="read-more-button"
+                      >
+                        Read More
+                      </Button>
+                    </Link>
+                  </Card.Body>
+                </Card>
+              ))}
             </div>
           </Carousel.Item>
         </Carousel>
-        <Button className="carousel-control-prev" onClick={handlePrev}>
+        <Button
+          variant="secondary"
+          size="sm"
+          className="carousel-control-prev"
+          onClick={handlePrev}
+        >
           &lt;
         </Button>
-        <Button className="carousel-control-next" onClick={handleNext}>
+        <Button
+          variant="secondary"
+          size="sm"
+          className="carousel-control-next"
+          onClick={handleNext}
+        >
           &gt;
         </Button>
-      </div>
+      </div> */}
 
       <div className="highlight-container">
         <div className="header">

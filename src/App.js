@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import ContentsNew from "./Components/ContentsNew";
 import NotFound from "./Components/NotFound";
-import Content from "./Components/Content";
+// import Content from "./Components/Content";
 import ProductDetail from "./Components/ProductDetail";
 import LoginPage from "./Components/LoginPage";
 import Software from "./Components/Software";
@@ -12,17 +13,19 @@ import Brochure from "./Components/Brochure";
 import Gallery from "./Components/Gallery";
 import News from "./Components/News";
 import Careers from "./Components/Careers";
+import "../src/App.css";
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Content />} />
+          {/* <Route path="/" element={<Content />} /> */}
+          <Route path="/" element={<ContentsNew />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           {/* <Route path="/signup" element={<SignUpPage />} /> */}
           <Route path="/login" element={<LoginPage />} />
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/software" element={<Software />} />
           <Route path="/brochure" element={<Brochure />} />
           <Route path="/AboutUs" element={<Aboutus />} />

@@ -2,12 +2,19 @@
   margin-top: auto;
   display: block;
 }
-
+body {
+  font-family: "Exo", sans-serif;
+}
+.email {
+  color: #444444;
+  font-size: 16px;
+  font-family: "Exo", sans-serif;
+}
 .container-info {
   background: #2f121c;
   background: -webkit-linear-gradient(to right, #fd746c, #2c3e50);
   background: linear-gradient(to right, #2f121c, #010412);
-  padding: 10px 0;
+  padding: 10px 0.5rem;
   margin-top: 7px;
 }
 .py-1 {
@@ -106,6 +113,21 @@ hr.style-bottom {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+hr.style-top:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -9px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+img {
+  padding: 2px;
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
