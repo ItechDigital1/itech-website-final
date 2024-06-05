@@ -1,0 +1,175 @@
+navbar
+
+{/* <div className="Navigation-bar2">
+        <header className="main-header">
+          <section id="main-bar">
+            <div className="container clearfix">
+              <div className="site-logo">
+                <img src={itechLogo} alt="Itech-Logo" />
+              </div>
+              <nav className="navbar">
+                <div className="hamburger lg:hidden" onClick={toggleMenu}>
+                  <i className="fa fa-bars"></i>
+                </div>
+                <ul
+                  style={{ listStyleType: "none" }}
+                  className={`navbar-nav ${menuOpen ? "open" : ""}`}
+                >
+                  <Link to="/" className="brand-nav">
+                    HOME
+                  </Link>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      aria-expanded="false"
+                      onClick={() => toggleDropdown(1)}
+                    >
+                      HARDWARE
+                    </Link>
+                    <ul
+                      className={`dropdown-menu ${
+                        dropDownOpen === 1 ? "show" : ""
+                      }`}
+                      aria-labelledby="navbarDropdown"
+                    >
+                      {products.map((product) => (
+                        <li key={product.id}>
+                          <Link
+                            className="dropdown-item"
+                            to={`/products/${product.id}`}
+                          >
+                            {product.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <Link to="/software" className="brand-nav">
+                    SOFTWARE
+                  </Link>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      aria-expanded="false"
+                      onClick={() => toggleDropdown(2)}
+                    >
+                      PROJECTS
+                    </Link>
+                    <ul
+                      className={`dropdown-menu ${
+                        dropDownOpen === 2 ? "show" : ""
+                      }`}
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          GOVERNMENT CSR PROJECTS
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      aria-expanded="false"
+                      onClick={() => toggleDropdown(3)}
+                    >
+                      COMPANY
+                    </Link>
+                    <ul
+                      className={`dropdown-menu ${
+                        dropDownOpen === 3 ? "show" : ""
+                      }`}
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <li>
+                        <Link className="dropdown-item" to="/AboutUs">
+                          ABOUT US
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          HISTORY
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          TEAM
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/News">
+                          NEWS
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/Careers">
+                          CAREERS
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          CONTACTS
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      aria-expanded="false"
+                      onClick={() => toggleDropdown(4)}
+                    >
+                      SUPPORT
+                    </Link>
+                    <ul
+                      className={`dropdown-menu ${
+                        dropDownOpen === 4 ? "show" : ""
+                      }`}
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <li>
+                        <Link to="/brochure" className="dropdown-item">
+                          Product Brochure
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/gallery" className="dropdown-item">
+                          Gallery
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          Sitemap
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          Support
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="#">
+                          FAQ
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </header>
+      </div>   */}
