@@ -118,6 +118,7 @@ const Header = () => {
                       id="site-logo"
                       src={itechLogo}
                       alt="Itech-Logo"
+                      style={{ height: "76px", width: "210px" }}
                     />
                   </Link>
                 </div>

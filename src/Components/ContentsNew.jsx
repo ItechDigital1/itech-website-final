@@ -45,7 +45,10 @@ const ContentsNew = () => {
           width="100%"
         ></video>
         <div className="overlay-description">
-          <span class="video-title animated zoomIn">
+          <span
+            class="video-title animated zoomIn"
+            style={{ fontFamily: "Exo Light" }}
+          >
             We Build Robust, Expansive &amp; Ultra Fast Next-Gen Machines
           </span>
           <br />
@@ -126,7 +129,7 @@ const ContentsNew = () => {
       {/* highlights */}
       <div className="highlight-container">
         <div className="header">
-          <h3>HIGHLIGHTS</h3>
+          <h3 style={{ color: "#2F121C" }}>HIGHLIGHTS</h3>
           <h2>-----</h2>
           <div className="header-desc">
             <p>

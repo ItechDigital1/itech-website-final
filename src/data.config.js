@@ -223,7 +223,7 @@ const data = [
     name: "Lapster",
     id: "3",
     class: "img-fluid",
-    alt: "Lapster, High End Forensic Laptop",
+    alt: "Lapster, is an High End Fast Forensic Laptop.",
   },
   {
     src: Labster,

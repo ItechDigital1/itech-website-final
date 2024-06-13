@@ -18,10 +18,6 @@
 .container {
   margin: auto 129.76px;
   max-width: 1170px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* flex-wrap: nowrap; */
 }
 .container .clearfix {
   padding: 15px;
