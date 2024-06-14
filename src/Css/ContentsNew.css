@@ -119,6 +119,9 @@
   justify-content: center;
   align-items: center;
 }
+.carousel-card {
+  width: 25%;
+}
 .carousel-content {
   display: flex;
   justify-content: center;
@@ -169,13 +172,14 @@
 }
 
 .carousel-card {
-  width: 240.93px;
+  width: 260.93px;
   height: 325px;
   /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 /* highlights */
 .high-container {
   margin: 2rem auto;

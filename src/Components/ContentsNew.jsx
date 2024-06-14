@@ -17,8 +17,8 @@ const ContentsNew = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 4,
+      items: 3,
+      slidesToSlide: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -85,7 +85,7 @@ const ContentsNew = () => {
           showDots={false}
           responsive={responsive}
           infinite={true}
-          //   autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
@@ -94,7 +94,7 @@ const ContentsNew = () => {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           //   deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          itemClass="carousel-item-padding-20-px"
         >
           {data.map((item, itemIndex) => (
             <div key={itemIndex} className="carousel-card">
