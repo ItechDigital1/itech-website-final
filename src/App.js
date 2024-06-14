@@ -13,6 +13,7 @@ import Brochure from "./Components/Brochure";
 import Gallery from "./Components/Gallery";
 import News from "./Components/News";
 import Careers from "./Components/Careers";
+ import Cart from "./Components/Cart";
 import "../src/App.css";
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/News" element={<News />} />
           <Route path="/Careers" element={<Careers />} />
           <Route path="/gallery" element={<Gallery />} />
+           <Route path="/cart" element={<Cart />}/> 
         </Routes>
         <Footer />
       </Router>

@@ -246,7 +246,7 @@ const Header = () => {
                           <Link to="#">Sitemap</Link>
                         </li>
                         <li>
-                          <Link to="#" target="_blank">
+                          <Link to="#" target="">
                             Support
                           </Link>
                         </li>
@@ -254,6 +254,9 @@ const Header = () => {
                           <Link to="#">FAQ</Link>
                         </li>
                       </ul>
+                      <Link to="/cart" >
+                    <i class="fas fa-shopping-cart" />
+                  </Link>
                     </li>
                   </ul>
                 </nav>
