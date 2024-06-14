@@ -223,7 +223,7 @@ const data = [
     name: "Lapster",
     id: "3",
     class: "img-fluid",
-    alt: "Lapster, is an High End Fast Forensic Laptop.",
+    alt: "Tough On-Field Laptops in XEON or i7/i9 CPU, Large RAM & Drive Bays.",
   },
   {
     src: Labster,
@@ -233,11 +233,11 @@ const data = [
     alt: "High End Console based Audio/Video Forensic Workstation",
   },
   {
-    src: Vaultster,
-    name: "Vaultster",
+    src: Trackster,
+    name: "Trackster",
     id: "3",
     class: "img-fluid",
-    alt: "Cubester, Forensics Micro Workstation",
+    alt: "Fully Customizable Digital Forensics Vehicle with Power and Signal Jammer.",
   },
   {
     src: DesksterX,
@@ -251,7 +251,7 @@ const data = [
     name: "Graphster",
     id: "5",
     class: "img-fluid",
-    alt: "Graphster-R Server, High End Cryptanalysis Server",
+    alt: "Multiple GPU Workstations designed for High Speed Password Cracking.",
   },
   {
     src: RacksterDC,
