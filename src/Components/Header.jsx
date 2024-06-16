@@ -188,7 +188,7 @@ const Header = () => {
                           </Link>
                           <ul className="dropdown">
                             <li>
-                              <Link to="#">Fire Brigade</Link>
+                              <Link to="/FireBrigade">Fire Brigade</Link>
                             </li>
                             <li>
                               <Link to="#">Police</Link>
@@ -221,10 +221,10 @@ const Header = () => {
                           <Link to="/News">News</Link>
                         </li>
                         <li>
-                          <Link to="/Career">Careers</Link>
+                          <Link to="/Careers">Careers</Link>
                         </li>
                         <li>
-                          <Link to="#">Contact</Link>
+                          <Link to="/Contact">Contact</Link>
                         </li>
                       </ul>
                     </li>

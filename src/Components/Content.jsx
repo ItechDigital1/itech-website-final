@@ -74,7 +74,7 @@ const Content = () => {
           </a>
         </div>
       </div>
-      {/* <div className="carousel-container">
+       <div className="carousel-container">
         <Carousel interval={5000} pause={isPaused ? "hover" : false}>
           {chunkedData.map((chunk, chunkIndex) => (
             <Carousel.Item key={chunkIndex}>
@@ -129,9 +129,9 @@ const Content = () => {
         >
           &gt;
         </Button>
-      </div> */}
-      {/* style={{ height: "4rem", width: "20px",color: "red" }} */}
-      {/* <div className="carousel-container">
+      </div> 
+       style={{ height: "4rem", width: "20px",color: "red" }} 
+       <div className="carousel-container">
         <Carousel
           interval={null}
           indicators={false}
@@ -185,7 +185,7 @@ const Content = () => {
         >
           &gt;
         </Button>
-      </div> */}
+      </div> 
 
       <div className="highlight-container">
         <div className="header">

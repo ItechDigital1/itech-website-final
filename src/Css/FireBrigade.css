@@ -1,0 +1,114 @@
+/* Ensure this CSS is part of your FireBrigade.css or a global CSS file if it's affecting a global component */
+.fire-brigade-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.roller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-sm-6 {
+    flex: 1;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-foto {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+ /* #tabs {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}  */
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-ifw {
+    font-size: 16px;
+    color: #555;
+}
+
+.tab-container {
+    margin-top: 10px;
+}
+
+/* Scoped styles for tabs within fire-brigade-section */
+.fire-brigade-section .nav-tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: none;
+}
+
+.fire-brigade-section .nav-item {
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.fire-brigade-section .nav-link {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fire-brigade-section .nav-link.active {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.fire-brigade-section .tab-content {
+    margin-top: 10px; /* Add margin to separate content from nav */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    background-color: #fff; /* Ensure content area has white background */
+    border: 1px solid #ddd; /* Add border to content area */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+}
+
+.txt-desc {
+    font-size: 14px;
+    color: #333;
+}
+
+.fire-brigade-section .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #343a40; /* Adjust background color to match your theme */
+    border-color: #343a40; /* Ensure borders match the theme */
+}
+
+/* Additional isolation to ensure global nav styles are not affected */
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+.fire-brigade-section .nav-tabs {
+    z-index: 1; /* Lower z-index to ensure it doesn't overlay the navbar */
+}
+
+.fire-brigade-section .nav-item {
+    margin-bottom: 0; /* Remove any margin that may push content into navbar */
+}

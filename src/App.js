@@ -14,6 +14,8 @@ import Gallery from "./Components/Gallery";
 import News from "./Components/News";
 import Careers from "./Components/Careers";
  import Cart from "./Components/Cart";
+ import Contact from "./Components/Contact";
+ import FireBrigade from "./Components/FireBrigade";
 import "../src/App.css";
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/Careers" element={<Careers />} />
           <Route path="/gallery" element={<Gallery />} />
            <Route path="/cart" element={<Cart />}/> 
+           <Route path="/contact" element={<Contact />}/> 
+           <Route path="/FireBrigade" element={<FireBrigade />}/> 
         </Routes>
         <Footer />
       </Router>
