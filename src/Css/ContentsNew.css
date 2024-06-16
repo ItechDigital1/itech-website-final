@@ -154,7 +154,7 @@
   color: #666;
 }
 .react-multi-carousel-item {
-  margin: 25px;
+  margin: 20px;
 }
 .read-more-button {
   background: linear-gradient(to right, #2f121c, #010412);
@@ -186,7 +186,7 @@
 .high-container {
   margin: 2rem auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   justify-content: center; /* Center content horizontally */
 }
@@ -236,6 +236,7 @@ h2 {
   padding: 10px;
   margin-bottom: 30px;
   width: 20rem;
+  height: 22rem;
   background: #fff;
   transition: 0.4s;
   border: 1px solid #dedede;
