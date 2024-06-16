@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Card, Button } from "react-bootstrap";
 import itech_video from "../assets/videos/itech_main_video.mp4";
 import "../Css/ContentsNew.css";
@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import {
   asso,
   highlights,
-  features,
   data,
   // products,
   Testimonials,
@@ -17,7 +16,7 @@ const ContentsNew = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
       slidesToSlide: 2,
     },
     tablet: {
@@ -289,7 +288,7 @@ const ContentsNew = () => {
                 height="270"
                 id="gmap_canvas"
                 frameborder="0"
-                scrolling="no"
+                scrolling="yes"
                 marginheight="0"
                 marginwidth="0"
               ></iframe>

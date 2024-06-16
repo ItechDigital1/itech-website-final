@@ -153,7 +153,9 @@
   font-size: 16px;
   color: #666;
 }
-
+.react-multi-carousel-item {
+  margin: 25px;
+}
 .read-more-button {
   background: linear-gradient(to right, #2f121c, #010412);
   border-color: #23527c;
