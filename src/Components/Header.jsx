@@ -135,7 +135,7 @@ const Header = () => {
                     id="fixed-nav"
                   >
                     <li className="nav__item" onClick={removeActive}>
-                      <NavLink to="/" className="nav-link navLink">
+                      <NavLink to="/" className="navs-link navLink">
                         Home
                       </NavLink>
                     </li>
@@ -145,7 +145,7 @@ const Header = () => {
                     >
                       <NavLink
                         to="#"
-                        className="nav-link navLink"
+                        className="navs-link navLink"
                         id="sub-drop-down"
                       >
                         Hardware
@@ -164,8 +164,14 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="nav__item" onClick={removeActive}>
-                      <Link to="/software" className="nav-link navLink">
+                      <Link to="/software" className="navs-link navLink">
                         Software
+                      </Link>
+                    </li>
+                    <li className="nav__item" onClick={removeActive}>
+                      <Link to="/faradayBag" className="navs-link navLink">
+                        Faraday's <br />
+                        bag
                       </Link>
                     </li>
                     <li
@@ -254,9 +260,9 @@ const Header = () => {
                           <Link to="#">FAQ</Link>
                         </li>
                       </ul>
-                      <Link to="/cart" >
-                    <i class="fas fa-shopping-cart" />
-                  </Link>
+                      <Link to="/cart">
+                        <i class="fas fa-shopping-cart" />
+                      </Link>
                     </li>
                   </ul>
                 </nav>

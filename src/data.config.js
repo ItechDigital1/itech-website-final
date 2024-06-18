@@ -36,6 +36,8 @@ import DigitalForensic from "./assets/images/img/testimonial/digital-forensic.jp
 import Vinay from "./assets/images/img/testimonial/Vinay.jpg";
 import Ashish from "./assets/images/img/testimonial/Ashish.jpg";
 import Girish from "./assets/images/img/testimonial/Girish.jpg";
+// Faraday's bag
+
 const asso = [
   {
     id: 1,

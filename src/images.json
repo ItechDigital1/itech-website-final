@@ -1,0 +1,51 @@
+[
+  {
+    "src": "src/assets/Images/Deskster-X.jpg",
+    "name": "Clonester",
+    "id": "Slide1",
+    "class": "img-fluid",
+    "alt": "Clonester, Hand Held Ruggedised Forensic Imaging Device"
+  },
+  {
+    "src": "src/assets/Images/Lapster.jpg",
+    "name": "Lapster",
+    "id": "Slide2",
+    "class": "img-fluid",
+    "alt": "Lapster, High End Forensic Laptop"
+  },
+  {
+    "src": "src/assets/Images/Vaultster.jpg",
+    "name": "Vaultster",
+    "id": "Slide3",
+    "class": "img-fluid",
+    "alt": "Cubester, Forensics Micro Workstation"
+  },
+  {
+    "src": "src/assets/Images/Deskster-X.jpg",
+    "name": "Deskster",
+    "id": "Slide4",
+    "class": "img-fluid",
+    "alt": "Deskster-X, High End Extended Forensic Workstation"
+  },
+  {
+    "src": "src/assets/Images/Graphster-T.jpg",
+    "name": "Graphster",
+    "id": "Slide5",
+    "class": "img-fluid",
+    "alt": "Graphster-R Server, High End Cryptanalysis Server"
+  },
+  {
+    "src": "src/assets/Images/Rackster-DC.jpg",
+    "name": "Rackster",
+    "id": "Slide6",
+    "class": "img-fluid",
+    "alt": "Labster, High End Console based Audio/Video Forensic Workstation"
+  },
+  {
+    "src": "src/assets/Images/Telster.jpg",
+    "name": "Telster",
+    "id": "Slide7",
+    "class": "img-fluid",
+    "alt": "Rackster-DC, Full Tower Rack High Performance and Storage Solution"
+  }
+]

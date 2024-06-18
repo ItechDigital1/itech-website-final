@@ -2,7 +2,8 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import itech_video from "../assets/videos/itech_main_video.mp4";
 import "../Css/ContentsNew.css";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
+import Carousel from "./Carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import {
@@ -17,7 +18,7 @@ const ContentsNew = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
-      slidesToSlide: 2,
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -77,7 +78,7 @@ const ContentsNew = () => {
         </div>
       </div>
       {/* Carousel */};
-      <div className="carousel-container">
+      {/* <div className="carousel-container">
         <Carousel
           swipeable={true}
           draggable={false}
@@ -85,6 +86,7 @@ const ContentsNew = () => {
           responsive={responsive}
           infinite={true}
           // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlay={true}
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
@@ -93,7 +95,8 @@ const ContentsNew = () => {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           //   deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-20-px"
+          // itemClass="carousel-item-padding-20-px"
+          arrows={true}
         >
           {data.map((item, itemIndex) => (
             <div key={itemIndex} className="carousel-card">
@@ -124,7 +127,8 @@ const ContentsNew = () => {
             </div>
           ))}
         </Carousel>
-      </div>
+      </div> */}
+      <Carousel />
       {/* highlights */}
       <div className="highlight-container">
         <div className="header">

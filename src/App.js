@@ -5,6 +5,8 @@ import Footer from "./Components/Footer";
 import ContentsNew from "./Components/ContentsNew";
 // import NotFound from "./Components/NotFound";
 // import Content from "./Components/Content";
+import FaradayBag from "./Components/FaradayBag";
+import Faraday from "./Components/Faraday";
 import ProductDetail from "./Components/ProductDetail";
 import LoginPage from "./Components/LoginPage";
 import Software from "./Components/Software";
@@ -28,10 +30,10 @@ function App() {
           {/* <Route path="/" element={<Content />} /> */}
           <Route path="/" element={<ContentsNew />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
-          {/* <Route path="/signup" element={<SignUpPage />} /> */}
           <Route path="/login" element={<LoginPage />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/software" element={<Software />} />
+          <Route path="/faradayBag" element={<FaradayBag />} />
+          <Route path="/faraday/:faradayId" element={<Faraday />} />
           <Route path="/brochure" element={<Brochure />} />
           <Route path="/AboutUs" element={<Aboutus />} />
           <Route path="/News" element={<News />} />

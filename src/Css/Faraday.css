@@ -1,0 +1,93 @@
+/* Container for the entire component */
+.faraday-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the product image */
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Container for the product details */
+.details-container {
+  flex: 2;
+  margin-left: 20px;
+}
+
+/* Product title styling */
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Product subtitle styling */
+.product-subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Product description styling */
+.product-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Navigation tabs styling */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #555;
+}
+
+.nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Tab content styling */
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-pane {
+  font-size: 16px;
+  color: #333;
+}
+
+#text-desc {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
