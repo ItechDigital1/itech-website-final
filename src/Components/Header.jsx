@@ -37,76 +37,78 @@ const Header = () => {
         to="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
       ></Link>
-
       {/* Top Sub-Header */}
       <center>
-        <section id="topbar" className="d-lg-block">
-          <div className="container clearfix d-flex align-items-center justify-content-between">
-            <center>
-              <div className="d-flex align-items-center contact-info float-left">
-                <i className="fa fa-envelope"></i>
-                <Link to="mailto:itech.co.in">
-                  <span>helpdesk@itech.co.in</span>
-                </Link>
-                <i className="fa fa-phone"></i>
-                <span className="phone">+91-70217 48803</span>
-              </div>
-              <span className="text-justify text-iso">
-                An ISO 9001:2015 Certified Company
-              </span>
-              <div className="d-flex align-items-center social-links float-right">
-                <Link to="/login">
-                  <i className="fa fa-sign-in" aria-hidden="true">
-                    &nbsp;
-                  </i>
-                  Login
-                </Link>
-                <Link
-                  to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/"
-                  target="_blank"
-                  className="facebook"
-                >
-                  <i className="fa fa-facebook"></i>
-                </Link>
-                <Link
-                  to="https://twitter.com/ItechForensics"
-                  target="_blank"
-                  className="twitter"
-                >
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </Link>
-                <Link
-                  to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true"
-                  target="_blank"
-                  className="linkedin"
-                >
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </Link>
-                <Link
-                  to="https://www.instagram.com/itechforensics/"
-                  target="_blank"
-                  className="instagram"
-                >
-                  <i className="fa fa-instagram" aria-hidden="true"></i>
-                </Link>
-                <Link
-                  to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber"
-                  target="_blank"
-                  className="youtube"
-                >
-                  <i className="fa fa-youtube" aria-hidden="true"></i>
-                </Link>
-              </div>
-            </center>
-          </div>
-        </section>
+        <div className="top-subheader">
+          <section id="topbar" className="d-lg-block">
+            <div className="container clearfix d-flex align-items-center justify-content-between">
+              <center>
+                <div className="d-flex align-items-center contact-info float-left">
+                  <i className="fa fa-envelope"></i>
+                  <Link to="mailto:itech.co.in">
+                    <span style={{ height: "16px", width: "114px" }}>
+                      helpdesk@itech.co.in
+                    </span>
+                  </Link>
+                  <i className="fa fa-phone"></i>
+                  <span className="phone">+91-70217 48803</span>
+                </div>
+                <span className="text-justify text-iso">
+                  An ISO 9001:2015 Certified Company
+                </span>
+                <div className="d-flex align-items-center social-links float-right">
+                  <Link to="/login">
+                    <i className="fa fa-sign-in" aria-hidden="true">
+                      &nbsp;
+                    </i>
+                    Login
+                  </Link>
+                  <Link
+                    to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="fa fa-facebook"></i>
+                  </Link>
+                  <Link
+                    to="https://twitter.com/ItechForensics"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                  </Link>
+                  <Link
+                    to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/itechforensics/"
+                    target="_blank"
+                    className="instagram"
+                  >
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                  </Link>
+                  <Link
+                    to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber"
+                    target="_blank"
+                    className="youtube"
+                  >
+                    <i className="fa fa-youtube" aria-hidden="true"></i>
+                  </Link>
+                </div>
+              </center>
+            </div>
+          </section>
+        </div>
       </center>
       {/* Main Header */}
       <section className="header sticky-top">
         <header
           className="site-navbar site-navbar-target site-header"
           role="banner"
-          style={{ height: 90, backgroundColor: "black" }}
         >
           <center>
             <div className="container-main clearfix">
@@ -168,12 +170,12 @@ const Header = () => {
                         Software
                       </Link>
                     </li>
-                    <li className="nav__item" onClick={removeActive}>
+                    {/* <li className="nav__item" onClick={removeActive}>
                       <Link to="/faradayBag" className="navs-link navLink">
                         Faraday's <br />
                         bag
                       </Link>
-                    </li>
+                    </li> */}
                     <li
                       className="has-children nav__item"
                       onClick={removeActive}
@@ -260,9 +262,9 @@ const Header = () => {
                           <Link to="#">FAQ</Link>
                         </li>
                       </ul>
-                      <Link to="/cart">
+                      {/* <Link to="/cart">
                         <i class="fas fa-shopping-cart" />
-                      </Link>
+                      </Link> */}
                     </li>
                   </ul>
                 </nav>
