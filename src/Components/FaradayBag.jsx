@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FARADAYS } from "../data/FaradayData";
 import "../Css/FaradayBag.css";
 
+// Main display Page
 const FaradayBag = () => {
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");

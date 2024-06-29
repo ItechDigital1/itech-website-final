@@ -73,6 +73,7 @@ const ProductDetail = () => {
                     </a>
                   </div>
                 </nav>
+
                 <div
                   className="tab-content py-3 px-3 px-sm-0"
                   id="nav-tabContent"
@@ -99,11 +100,6 @@ const ProductDetail = () => {
           </div>
         </div>
       </section>
-      {/* <div>
-        <h1>{product.name}</h1>
-        <p>{product.description}</p>
-        <p>Price: ${product.price}</p>
-      </div> */}
     </div>
   );
 };

@@ -391,4 +391,57 @@ export const PRODUCTS = [
       </ul>,
     ],
   },
+  {
+    id: 7,
+    name: "Vaultster Tower RAID",
+    subname: "High Capacity Direct Attached Storage RAID",
+    subdesc: "SKU: VS-1101",
+    description: [
+      <ul>
+        <li>
+          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
+          by ITECH.
+        </li>
+        <li>
+          It is a Proprietary Product Solution under ITECH Brand of Forensic
+          Storage Solution
+        </li>
+        <li>
+          It has scale up Capabilities and to meet requirements of High Speed
+          and High Volume RAID Storage Configurations upto 256TB
+        </li>
+        <li>
+          It is equipped with high speed transfer Network Interface Cards
+          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
+          ensuring seemless data transfer from storage device to
+          server/workstation.
+        </li>
+        <li>
+          Each Bay is equipped with locking mechanism just ensuring physical
+          security of each drive connected and also to avoid any further
+          complications of RAID Failures
+        </li>
+        <li>
+          This is Tailor made to fulfill the needs of Forensic Labs with a
+          configuration which has Increased High Storage Capacity, High
+          Scalability and High IOPS.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <li>
+          Vaultster are Configured based on Customer Requirements and
+          Preferences.
+        </li>
+        <li>
+          Essential Cables for external connections will be provided based on
+          requirements.
+        </li>
+        <li>
+          Security Screwdriver set with assorted bits for opening enclosures.
+        </li>
+      </ul>,
+    ],
+  },
 ];

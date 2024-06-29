@@ -422,3 +422,15 @@ a {
   color: black;
   font-size: 18px;
 } */
+
+
+// const [menuOpen, setMenuOpen] = useState(false);
+  // const [dropDownOpen, setDropDownOpen] = useState(null);
+
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
+
+  // const toggleDropdown = (index) => {
+  //   setDropDownOpen(dropDownOpen === index ? null : index);
+  // };

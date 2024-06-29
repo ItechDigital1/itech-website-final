@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { FARADAYS } from "../data/FaradayData";
 import "../Css/Faraday.css";
-
+// Product Page
 const Faraday = () => {
   const { faradayId } = useParams();
   const [faraday, setFaraday] = useState(null);
@@ -41,7 +41,7 @@ const Faraday = () => {
 
   return (
     <div className="faraday-container">
-      <div className="image-container">
+      <div className="faradayimage-container">
         <img src={faraday.image} alt={faraday.name} className="product-image" />
       </div>
       <div className="details-container">
@@ -81,7 +81,7 @@ const Faraday = () => {
             role="tabpanel"
             aria-labelledby="nav-description-tab"
           >
-            <div id="text-desc">{faraday.description}</div>
+            <div id="faradaytext-desc">{faraday.description}</div>
           </div>
           <div
             className="tab-pane fade"
@@ -89,7 +89,7 @@ const Faraday = () => {
             role="tabpanel"
             aria-labelledby="nav-content-tab"
           >
-            <div id="text-desc">{faraday.content}</div>
+            <div id="faradaytext-desc">{faraday.content}</div>
           </div>
         </div>
       </div>

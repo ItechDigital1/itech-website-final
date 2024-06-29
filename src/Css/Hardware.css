@@ -33,6 +33,9 @@ body {
 nav {
   margin-bottom: 20px;
 }
+li {
+  list-style-type: circle;
+}
 
 .nav-tabs .nav-link {
   border: none;

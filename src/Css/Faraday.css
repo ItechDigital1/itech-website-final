@@ -10,7 +10,7 @@
 }
 
 /* Container for the product image */
-.image-container {
+.faradayimage-container {
   flex: 1;
   display: flex;
   align-items: center;
@@ -18,12 +18,11 @@
 }
 
 .product-image {
-  max-width: 100%;
+  max-width: 300px;
   max-height: 300px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #ddd;
 }
-
 /* Container for the product details */
 .details-container {
   flex: 2;
@@ -70,9 +69,10 @@
 }
 
 .nav-link.active {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  color: #fff !important;
+  background: linear-gradient(to right, #2f121c, #010412) !important;
+  border-color: #dee2e6 #dee2e6 #fff !important;
+  width: 226.9px;
 }
 
 /* Tab content styling */
@@ -85,8 +85,8 @@
   color: #333;
 }
 
-#text-desc {
-  padding: 15px;
+#faradaytext-desc {
+  padding: 2rem;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

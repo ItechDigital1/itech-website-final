@@ -6,16 +6,6 @@ import { PRODUCTS } from "../data/Products";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  // const [menuOpen, setMenuOpen] = useState(false);
-  // const [dropDownOpen, setDropDownOpen] = useState(null);
-
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
-
-  // const toggleDropdown = (index) => {
-  //   setDropDownOpen(dropDownOpen === index ? null : index);
-  // };
   const [isActive, setIsActive] = useState(false);
 
   const toggleActiveClass = () => {
@@ -170,12 +160,11 @@ const Header = () => {
                         Software
                       </Link>
                     </li>
-                    {/* <li className="nav__item" onClick={removeActive}>
+                    <li className="nav__item" onClick={removeActive}>
                       <Link to="/faradayBag" className="navs-link navLink">
-                        Faraday's <br />
-                        bag
+                        Faraday bags
                       </Link>
-                    </li> */}
+                    </li>
                     <li
                       className="has-children nav__item"
                       onClick={removeActive}
