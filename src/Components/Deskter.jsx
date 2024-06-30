@@ -20,7 +20,12 @@ const DeskterPage = () => {
               alt={deskter.name}
               className="deskterproduct-image"
             />
-            <h2 className="deskterproduct-name">{deskter.name}</h2>
+            <h2
+              className="deskterproduct-name"
+              style={{ fontSize: "16px", marginBottom: "15px" }}
+            >
+              {deskter.name}
+            </h2>
           </Link>
         </div>
       ))}
