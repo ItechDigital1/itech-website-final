@@ -153,6 +153,11 @@ const Header = () => {
                             </NavLink>
                           </li>
                         ))}
+                        <li>
+                          <Link className="dropdown-item" to="/deskter">
+                            Deskter
+                          </Link>
+                        </li>
                       </ul>
                     </li>
                     <li className="nav__item" onClick={removeActive}>

@@ -8,6 +8,7 @@ import ContentsNew from "./Components/ContentsNew";
 import FaradayBag from "./Components/FaradayBag";
 import Faraday from "./Components/Faraday";
 import ProductDetail from "./Components/ProductDetail";
+import DeskterPage from "./Components/Deskter";
 import LoginPage from "./Components/LoginPage";
 import Software from "./Components/Software";
 import Aboutus from "./Components/AboutUs";
@@ -30,6 +31,7 @@ function App() {
           {/* <Route path="/" element={<Content />} /> */}
           <Route path="/" element={<ContentsNew />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
+          <Route path="/deskter" element={<DeskterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/software" element={<Software />} />
           <Route path="/faradayBag" element={<FaradayBag />} />
