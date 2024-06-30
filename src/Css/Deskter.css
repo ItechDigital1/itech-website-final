@@ -1,7 +1,7 @@
 .deskterproduct-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 25px;
   justify-content: center;
   padding: 20px;
 }
@@ -11,7 +11,7 @@
 }
 
 .deskterproduct-image {
-  width: 300px;
+  width: 250px;
   height: 250px;
   object-fit: cover;
   border: 3px double #b3b3b3;
