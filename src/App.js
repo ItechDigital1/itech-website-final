@@ -22,6 +22,7 @@ import FireBrigade from "./Components/FireBrigade";
 import History from "./Components/History";
 import Team from "./Components/Team";
 import "../src/App.css";
+import DeskterProd from "./Components/Desterprod";
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<ContentsNew />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/deskter" element={<DeskterPage />} />
+          <Route path="/deskter/:deskterId" element={<DeskterProd />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/software" element={<Software />} />
           <Route path="/faradayBag" element={<FaradayBag />} />
