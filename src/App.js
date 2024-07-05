@@ -9,6 +9,8 @@ import FaradayBag from "./Components/FaradayBag";
 import Faraday from "./Components/Faraday";
 import ProductDetail from "./Components/ProductDetail";
 import DeskterPage from "./Components/Deskter";
+import GraphsterPage from "./Components/Graphster";
+import GraphsterProd from "./Components/Graphsterprod";
 import LoginPage from "./Components/LoginPage";
 import Software from "./Components/Software";
 import Aboutus from "./Components/AboutUs";
@@ -33,6 +35,8 @@ function App() {
           <Route path="/" element={<ContentsNew />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/deskter" element={<DeskterPage />} />
+          <Route path="/graphster" element={<GraphsterPage />} />
+          <Route path="/graphster/:graphsterId" element={<GraphsterProd />} />
           <Route path="/deskter/:deskterId" element={<DeskterProd />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/software" element={<Software />} />
