@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { GRAPHSTER } from "../data/Products";
+import { GRAPHSTER } from "../data/Graphster";
 
 const GraphsterProd = () => {
-  const { graphsterId } = useState(null);
+  const { graphsterId } = useParams(null);
   const [graphster, setGraphster] = useState(null);
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");

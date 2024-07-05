@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GRAPHSTER } from "../data/Products";
+import { GRAPHSTER } from "../data/Graphster";
 
 const GraphsterPage = () => {
   const getUrlFriendlyName = (name) => {
@@ -9,18 +9,18 @@ const GraphsterPage = () => {
 
   return (
     <div className="deskterproduct-list">
-      {GRAPHSTER.map((graph) => (
-        <div key={graph.id} className="deskterproduct-item">
+      {GRAPHSTER.map((graphster) => (
+        <div key={graphster.id} className="deskterproduct-item">
           <Link
-            to={`/deskter/${getUrlFriendlyName(graph.name)}`}
+            to={`/graphster/${getUrlFriendlyName(graphster.name)}`}
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <img
-              src={graph.image}
-              alt={graph.name}
+              src={graphster.image}
+              alt={graphster.name}
               className="deskterproduct-image"
             />
-            <h2 className="deskterproduct-name">{graph.name}</h2>
+            <h2 className="deskterproduct-name">{graphster.name}</h2>
           </Link>
         </div>
       ))}
