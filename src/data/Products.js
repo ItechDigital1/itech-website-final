@@ -265,12 +265,12 @@ export const PRODUCTS = [
       </ul>,
     ],
   },
-  {
-    id: 5,
-    name: "Graphster",
-    description: [],
-    content: [],
-  },
+  // {
+  //   id: 5,
+  //   name: "Graphster",
+  //   description: [],
+  //   content: [],
+  // },
   {
     id: 6,
     name: "Trackster",
