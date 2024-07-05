@@ -144,10 +144,10 @@ const Header = () => {
                       <Link className="dropdown-item" to="/graphster">
                         Graphster
                       </Link>
-                      <Link className="dropdown-item" to="/Roadster">
+                      <Link className="dropdown-item" to="/roadster">
                         Roadster
                       </Link>
-                      <Link className="dropdown-item" to="Rackster">
+                      <Link className="dropdown-item" to="rackster">
                         Rackster
                       </Link>
                     </li>

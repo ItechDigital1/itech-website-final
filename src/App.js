@@ -11,6 +11,10 @@ import ProductDetail from "./Components/ProductDetail";
 import DeskterPage from "./Components/Deskter";
 import GraphsterPage from "./Components/Graphster";
 import GraphsterProd from "./Components/Graphsterprod";
+import RoadsterProd from "./Components/Roadsterprod";
+import RoadsterPage from "./Components/Roadster";
+import RacksterPage from "./Components/Rackster";
+import RacksterProd from "./Components/Racksterprod";
 import LoginPage from "./Components/LoginPage";
 import Software from "./Components/Software";
 import Aboutus from "./Components/AboutUs";
@@ -37,6 +41,10 @@ function App() {
           <Route path="/deskter" element={<DeskterPage />} />
           <Route path="/graphster" element={<GraphsterPage />} />
           <Route path="/graphster/:graphsterId" element={<GraphsterProd />} />
+          <Route path="/roadster" element={<RoadsterPage />} />
+          <Route path="/roadster/:roadsterId" element={<RoadsterProd />} />
+          <Route path="/rackster" element={<RacksterPage />} />
+          <Route path="/rackster/:racksterId" element={<RacksterProd />} />
           <Route path="/deskter/:deskterId" element={<DeskterProd />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/software" element={<Software />} />
