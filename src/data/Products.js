@@ -1,8 +1,16 @@
+import Clonester from "../assets/images/img/Clonester.jpg";
+import Lapster from "../assets/images/img/Lapster.jpg";
+import Vaultster from "../assets/images/img/Vaultster.jpg";
+import Cubester from "../assets/images/img/Cubester-X.jpg";
+import Labster from "../assets/images/img/Labster.jpg";
+import Trackster from "../assets/images/img/Trackster.jpg";
+
 export const PRODUCTS = [
   {
     id: 1,
 
     name: "Clonester",
+    image: Clonester,
     subname: "Hand Held Ruggedised Forensic Imaging Device",
     subdesc: "SKU: CL-1101",
     description: [
@@ -66,6 +74,7 @@ export const PRODUCTS = [
   {
     id: 2,
     name: "Cubester",
+    image: Cubester,
     subname: "Hand Held Ruggedised Forensic Imaging Device",
     subdesc: "SKU: CL-1101",
     description: [
@@ -129,6 +138,7 @@ export const PRODUCTS = [
   {
     id: 3,
     name: "Lapster",
+    image: Lapster,
     subname: "High End Forensic Laptop",
     subdesc: "SKU: LP-1101",
     description: [
@@ -197,6 +207,7 @@ export const PRODUCTS = [
   {
     id: 4,
     name: "Labster",
+    image: Labster,
     subname: "High End Console based Audio/Video Forensic Workstation",
     subdesc: "SKU: LB-1101",
     description: [
@@ -262,68 +273,8 @@ export const PRODUCTS = [
   },
   {
     id: 6,
-    name: "Deskster X",
-    description: [
-      <ul>
-        <li>
-          The Deskter X Series, are the World's First Frontal Design Forensic
-          Workstations with an Extended Form Factor. Pioneered, Designed and
-          Manufactured by ITECH DIGITAL FORENSICS in INDIA.
-        </li>
-        <li>
-          It is a Proprietary Product Solution under the ITECH Brand of Desktop
-          Forensic Workstations.
-        </li>
-        <li>
-          It is Custom Designed by Forensic Professionals to Focus on Ease in
-          Operations and provide an `All-In-One System` User Experience.
-        </li>
-        <li>
-          These High End Forensic Workstation are Powered by Intel Dual Xeon
-          Series Processors, High Memory and Storage Configurations, all
-          optimised by Digital Forensic Professionals to hasten Complex Forensic
-          Applications.
-        </li>
-        <li>
-          It comprises of 4 Read Only and 4 Read/Write SAS/SATA bays, which can
-          be used to perform Simultaneous Multiple Imaging, Cloning, Processing
-          and also for Erasing Disks.
-        </li>
-        <li>
-          This Workstation is Tailor made to Fulfil the needs of Forensic Labs
-          or Investigation Agencies with optimal Configuration, which is Highly
-          Scalable and enables Multitasking, for Extremely Fast and Secure
-          operations.
-        </li>
-      </ul>,
-      <ul>
-        <li>
-          Deskter X Forensic Workstations are Configured based on Customer
-          Requirements and Preferences.
-        </li>
-        <li>
-          System Restore bootable DVD enables restore to factory configuration
-          of the operating system and relevant softwares.
-        </li>
-        <li>103 Key Keyboard and Mouse combo-Wired.</li>
-        <li>
-          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
-          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
-        </li>
-        <li>
-          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
-          SSD, and server class PCIe SSD).
-        </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
-        </li>
-      </ul>,
-    ],
-    content: [],
-  },
-  {
-    id: 11,
     name: "Trackster",
+    image: Trackster,
     subname: "OTG Field Investigation and Surveillance Vehicle",
     subdesc: "SKU: TA-1101",
     description: [
@@ -394,6 +345,7 @@ export const PRODUCTS = [
   {
     id: 7,
     name: "Vaultster Tower RAID",
+    image: Vaultster,
     subname: "High Capacity Direct Attached Storage RAID",
     subdesc: "SKU: VS-1101",
     description: [
