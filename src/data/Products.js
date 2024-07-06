@@ -4,12 +4,12 @@ import Vaultster from "../assets/images/img/Vaultster.jpg";
 import Cubester from "../assets/images/img/Cubester-X.jpg";
 import Labster from "../assets/images/img/Labster.jpg";
 import Trackster from "../assets/images/img/Trackster.jpg";
-import GraphsterR from "../assets/images/img/Graphster-R-Server.jpg";
-import GraphsterT from "../assets/images/img/Graphster-T.jpg";
+
 import RacksterDC from "../assets/images/img/Rackster-DC.jpg";
 import RacksterMC from "../assets/images/img/Rackster-MC.jpg";
 import Roadster from "../assets/images/img/Roadster.jpg";
 import RoadsterX from "../assets/images/img/Roadster-X.jpg";
+import Telster from "../assets/images/img/Telster.jpg";
 export const PRODUCTS = [
   {
     id: 1,
@@ -391,6 +391,35 @@ export const PRODUCTS = [
         </li>
         <li>
           Security Screwdriver set with assorted bits for opening enclosures.
+        </li>
+      </ul>,
+    ],
+  },
+  {
+    id: 7,
+    name: "Telster",
+    image: Telster,
+    subname: "High Performance Cluster",
+    subdesc: "SKU: TL-1101",
+    description: [
+      <ul>
+        <li>
+          Telster is a 10U rack based server that can be used with maximum
+          acceleration and cost efficiency for AI, ML, Deep Learning, Password
+          cracking and High Performance Cluster (HPC) Applications.
+        </li>
+        <li>
+          It is powered by Intel Dual Xeon Platinum Processors and 16 Nvidia
+          Tesla 32GB V100 GPUs. It consists of highly optimized GPU-to-GPU
+          Interconnect Architectures.
+        </li>
+        <li>
+          It can also run Nvidia vGPU software specifically high graphics
+          demanding VDI environment to run complex applications.
+        </li>
+        <li>
+          This advanced GPU system is able to compute 2 PetaFLOPS of complex AI
+          and Deep Learning models.
         </li>
       </ul>,
     ],
