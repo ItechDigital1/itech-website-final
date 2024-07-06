@@ -127,17 +127,19 @@ const ProductDetail = () => {
             >
               Description
             </a>
-            <a
-              className="nav-item nav-link"
-              id="nav-content-tab"
-              data-toggle="tab"
-              href="#nav-content"
-              role="tab"
-              aria-controls="nav-content"
-              aria-selected="false"
-            >
-              Content
-            </a>
+            {product.content && (
+              <a
+                className="nav-item nav-link"
+                id="nav-content-tab"
+                data-toggle="tab"
+                href="#nav-content"
+                role="tab"
+                aria-controls="nav-content"
+                aria-selected="false"
+              >
+                Content
+              </a>
+            )}
           </div>
         </nav>
         <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -149,14 +151,16 @@ const ProductDetail = () => {
           >
             <div id="desktertext-desc">{product.description}</div>
           </div>
-          <div
-            className="tab-pane fade"
-            id="nav-content"
-            role="tabpanel"
-            aria-labelledby="nav-content-tab"
-          >
-            <div id="desktertext-desc">{product.content}</div>
-          </div>
+          {product.content && (
+            <div
+              className="tab-pane fade"
+              id="nav-content"
+              role="tabpanel"
+              aria-labelledby="nav-content-tab"
+            >
+              <div id="desktertext-desc">{product.content}</div>
+            </div>
+          )}
         </div>
       </div>
     </div>

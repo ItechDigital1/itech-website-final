@@ -3,11 +3,13 @@ import { useParams } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
 
 const RacksterProd = () => {
-  const { racksterId } = useParams(null);
+  const { racksterId } = useParams();
   const [rackster, setRackster] = useState(null);
+
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
   };
+
   useEffect(() => {
     const urlFriendlyToName = (urlName) => {
       return urlName.replace(/-/g, " ");
@@ -64,17 +66,19 @@ const RacksterProd = () => {
             >
               Description
             </a>
-            <a
-              className="nav-item nav-link"
-              id="nav-content-tab"
-              data-toggle="tab"
-              href="#nav-content"
-              role="tab"
-              aria-controls="nav-content"
-              aria-selected="false"
-            >
-              Content
-            </a>
+            {rackster.content && (
+              <a
+                className="nav-item nav-link"
+                id="nav-content-tab"
+                data-toggle="tab"
+                href="#nav-content"
+                role="tab"
+                aria-controls="nav-content"
+                aria-selected="false"
+              >
+                Content
+              </a>
+            )}
           </div>
         </nav>
         <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -86,14 +90,16 @@ const RacksterProd = () => {
           >
             <div id="desktertext-desc">{rackster.description}</div>
           </div>
-          <div
-            className="tab-pane fade"
-            id="nav-content"
-            role="tabpanel"
-            aria-labelledby="nav-content-tab"
-          >
-            <div id="desktertext-desc">{rackster.content}</div>
-          </div>
+          {rackster.content && (
+            <div
+              className="tab-pane fade"
+              id="nav-content"
+              role="tabpanel"
+              aria-labelledby="nav-content-tab"
+            >
+              <div id="desktertext-desc">{rackster.content}</div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -6,6 +6,10 @@ import Labster from "../assets/images/img/Labster.jpg";
 import Trackster from "../assets/images/img/Trackster.jpg";
 import GraphsterR from "../assets/images/img/Graphster-R-Server.jpg";
 import GraphsterT from "../assets/images/img/Graphster-T.jpg";
+import RacksterDC from "../assets/images/img/Rackster-DC.jpg";
+import RacksterMC from "../assets/images/img/Rackster-MC.jpg";
+import Roadster from "../assets/images/img/Roadster.jpg";
+import RoadsterX from "../assets/images/img/Roadster-X.jpg";
 export const PRODUCTS = [
   {
     id: 1,
@@ -396,108 +400,78 @@ export const PRODUCTS = [
 export const RACKSTER = [
   {
     id: 1,
-    name: "Graphster-T",
-    image: GraphsterT,
-    subname: "High End Cryptanalysis Workstation",
-    subdesc: "SKU: CY-1101",
+    name: "Rackster-DC",
+    image: RacksterDC,
+    subname: "High Performance Data Center",
+    subdesc: "SKU: RC-1101",
     description: [
       <ul>
         <li>
-          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
-          by ITECH.
+          Rackster DC is a 42U rack Tower which is our Flagship Solution
+          Specifically Built and Designed based on Client Server Architecture
+          Operations taking into Consideration Centralised Storage and
+          Processing along with Handling Forensic Application Licenses in a Very
+          Efficient Way.
         </li>
         <li>
-          It is a Proprietary Product Solution under ITECH Brand of Forensic
-          Storage Solution
+          It Comprises of a Deskter-S which is a Rack Based Server along with
+          Multiple Storage Options Ranging from 300TB as a Standard Solution and
+          Scaling from 1.6PB (1600 Terabytes) to 6.4PB (6400 Terabytes) for
+          Advanced Solutions.
         </li>
         <li>
-          It has scale up Capabilities and to meet requirements of High Speed
-          and High Volume RAID Storage Configurations upto 256TB
+          A Role Based Case Management Software for Server as well as Clients
+          will be Installed to Monitor and get updates on Case Status.
         </li>
         <li>
-          It is equipped with high speed transfer Network Interface Cards
-          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
-          ensuring seemless data transfer from storage device to
-          server/workstation.
+          The entire solution is build to manage multiple forensic client
+          workstation requests as it has a high throughput capacity.
         </li>
         <li>
-          Each Bay is equipped with locking mechanism just ensuring physical
-          security of each drive connected and also to avoid any further
-          complications of RAID Failures
-        </li>
-        <li>
-          This is Tailor made to fulfill the needs of Forensic Labs with a
-          configuration which has Increased High Storage Capacity, High
-          Scalability and High IOPS.
-        </li>
-      </ul>,
-    ],
-    content: [
-      <ul>
-        <li>
-          Vaultster are Configured based on Customer Requirements and
-          Preferences.
-        </li>
-        <li>
-          Essential Cables for external connections will be provided based on
-          requirements.
-        </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
+          The primary reason behind this configuration is to cater to forensic
+          investigations in which require extremely high storage and computation
+          power.
         </li>
       </ul>,
     ],
   },
   {
     id: 2,
-    name: "Graphster-T",
-    image: GraphsterT,
-    subname: "High End Cryptanalysis Workstation",
-    subdesc: "SKU: CY-1101",
+    name: "Rackster-MC",
+    image: RacksterMC,
+    subname: "High Performance Mini Data Center",
+    subdesc: "SKU: RC-2101",
     description: [
       <ul>
         <li>
-          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
-          by ITECH.
+          Rackster MC is a 21U Rack Tower which is Mini Version of Rackster DC
+          also a part of a Flagship Solution Specifically Built and Designed
+          based on Client Server Architecture Operations, taking into
+          consideration Centralised Storage and Processing along with Handling
+          Forensic Application Licenses in a very efficient way.
         </li>
         <li>
-          It is a Proprietary Product Solution under ITECH Brand of Forensic
-          Storage Solution
+          This Model specifically Caters to Providing the Required Essentials of
+          a Specific Configuration to Smaller User Setups, still Maintaining
+          Full Functionality in terms of Compute Power and Performance.
         </li>
         <li>
-          It has scale up Capabilities and to meet requirements of High Speed
-          and High Volume RAID Storage Configurations upto 256TB
+          It comprises of a Deskter-S which is a Rack Based Server along with
+          Multiple Storage Options ranging from 160TB upto 320TB.
         </li>
         <li>
-          It is equipped with high speed transfer Network Interface Cards
-          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
-          ensuring seemless data transfer from storage device to
-          server/workstation.
+          A Role Based Case Management Software for Server as well as Clients
+          will be Installed to Monitor and get Updates on Case Status.
         </li>
         <li>
-          Each Bay is equipped with locking mechanism just ensuring physical
-          security of each drive connected and also to avoid any further
-          complications of RAID Failures
+          The Entire Solution is Build to Manage Multiple Forensic Client
+          Workstation requests, as it Capable of Handling Very High Throughput
+          and Capacity.
         </li>
         <li>
-          This is Tailor made to fulfill the needs of Forensic Labs with a
-          configuration which has Increased High Storage Capacity, High
-          Scalability and High IOPS.
-        </li>
-      </ul>,
-    ],
-    content: [
-      <ul>
-        <li>
-          Vaultster are Configured based on Customer Requirements and
-          Preferences.
-        </li>
-        <li>
-          Essential Cables for external connections will be provided based on
-          requirements.
-        </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
+          The Primary reason behind this Configuration is to Cater to Forensic
+          Investigations which require Extremely High Storage and Computation
+          Power.
         </li>
       </ul>,
     ],
@@ -507,62 +481,68 @@ export const RACKSTER = [
 export const ROADSTER = [
   {
     id: 1,
-    name: "Graphster-T",
-    image: GraphsterT,
-    subname: "High End Cryptanalysis Workstation",
-    subdesc: "SKU: CY-1101",
+    name: "Roadster",
+    image: Roadster,
+    subname: "High End Mobile Forensics Workstation",
+    subdesc: "SKU: RD-1101",
     description: [
       <ul>
         <li>
-          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
-          by ITECH.
+          Roadster is a High End Ruggedized Digital Forensics Portable
+          Workstation Designed and Configured specifically for On-Field
+          Forensics in any Terrain and Environment.
         </li>
         <li>
-          It is a Proprietary Product Solution under ITECH Brand of Forensic
-          Storage Solution
+          It is powered with i7/i9 or Dual Xeon Processors with High Memory
+          (RAM) and Multiple Storage options which enable to run Complex
+          Forensics Applications with Optimum Performance.
         </li>
         <li>
-          It has scale up Capabilities and to meet requirements of High Speed
-          and High Volume RAID Storage Configurations upto 256TB
+          Custom Designed by Forensic Professionals to Focus on Ease In
+          Operation, Gain Flexibility, Mobilise Forensic Investigations on
+          desired On-Field Locations.
         </li>
         <li>
-          It is equipped with high speed transfer Network Interface Cards
-          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
-          ensuring seemless data transfer from storage device to
-          server/workstation.
+          It is Precisely Designed to meet the entire requirement in terms of
+          Forensic Acquisition similar to a Lab in a Bag or Mobile Lab kit.
         </li>
         <li>
-          Each Bay is equipped with locking mechanism just ensuring physical
-          security of each drive connected and also to avoid any further
-          complications of RAID Failures
-        </li>
-        <li>
-          This is Tailor made to fulfill the needs of Forensic Labs with a
-          configuration which has Increased High Storage Capacity, High
-          Scalability and High IOPS.
+          It is a Highly Durable, Robust and Reliable Portable Workstation
+          designed to withstand all on-field complexities.
         </li>
       </ul>,
     ],
     content: [
       <ul>
         <li>
-          Vaultster are Configured based on Customer Requirements and
-          Preferences.
+          Roadster variants of Portable Forensic Workstations are configured
+          based on customer requirements and preferences.
         </li>
         <li>
-          Essential Cables for external connections will be provided based on
-          requirements.
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
         </li>
         <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
+          <b>Accessories kit:</b>
+          <br></br>
+          Along with Power and Ancillary Cables
+        </li>
+        <li>
+          <b>Forensic kit with Adapters and Cables:</b>
+          <br></br>
+          PCIe Card SSD<br></br>
+          PCIe M.2 SSD<br></br>
+          PCIe Apple SSD<br></br>
+          IDE Adapter<br></br>
+          Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.
         </li>
       </ul>,
     ],
   },
   {
     id: 2,
-    name: "Graphster-T",
-    image: GraphsterT,
+    name: "Roadster-X",
+    image: RoadsterX,
     subname: "High End Cryptanalysis Workstation",
     subdesc: "SKU: CY-1101",
     description: [
