@@ -11,40 +11,6 @@ const ProductDetail = () => {
   const navTabs = document.querySelectorAll("#nav-tab .nav-link");
   const tabPanes = document.querySelectorAll(".tab-pane");
 
-  const options = [
-    {
-      label: "Chipset Motherboard",
-      values: ["Intel H310 Chipset Motherboard", "Other Chipset"],
-    },
-    {
-      label: "OS",
-      values: ["Windows 10 64-bit", "Windows 11 64-bit"],
-    },
-    {
-      label: "CPU",
-      values: ["i7-8700 6 Core 3.5 GHz (4.0 Turbo), 8.25MB Cache", "Other CPU"],
-    },
-    {
-      label: "RAM",
-      values: ["16 GB PC4-19200 DDR4 2400", "32 GB PC4-19200 DDR4 2400"],
-    },
-    {
-      label: "Video Card",
-      values: ["OnBoard", "Dedicated Video Card"],
-    },
-    {
-      label: "OS Drive",
-      values: [
-        "512 GB M.2 NVMe PCIe Solid State Drive - PRO!",
-        "1 TB M.2 NVMe PCIe Solid State Drive",
-      ],
-    },
-    {
-      label: "Training",
-      values: ["Free Training with Purchase", "Paid Training"],
-    },
-  ];
-
   navTabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
       navTabs.forEach((tab) => tab.classList.remove("active"));
@@ -127,9 +93,11 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <div className="options-center">
-        <ProductOptions options={options} />
-      </div>
+      {product.options && (
+        <div className="options-center">
+          <ProductOptions options={product.options} />
+        </div>
+      )}
     </div>
   );
 };

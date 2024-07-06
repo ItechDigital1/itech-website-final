@@ -75,6 +75,36 @@ export const PRODUCTS = [
         <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
       </ul>,
     ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel H310 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Windows 10 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: ["i7-8700 6 Core 3.5 GHz (4.0 Turbo), 8.25MB Cache"],
+      },
+      {
+        label: "RAM",
+        values: ["16 GB PC4-19200 DDR4 2400", "32 GB PC4-19200 DDR4 2400"],
+      },
+      {
+        label: "Video Card",
+        values: ["OnBoard"],
+      },
+      {
+        label: "OS Drive",
+        values: ["512 GB M.2 NVMe PCIe Solid State Drive - PRO!"],
+      },
+      {
+        label: "Training",
+        values: ["Free Training with Purchase"],
+      },
+    ],
   },
   {
     id: 2,
@@ -138,6 +168,44 @@ export const PRODUCTS = [
         <li>IDE Adapter</li>
         <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
       </ul>,
+    ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel Z390 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Windows 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: ["i7-9700, 8 Core 3.6 GHz (4.9 Turbo) 12 MB "],
+      },
+      {
+        label: "RAM",
+        values: ["16GB PC 4-21300 DDR4 2666 MHz"],
+      },
+      {
+        label: "OS Drive",
+        values: ["512 GB M.2 NVMe PCIe Solid State Drive - PRO"],
+      },
+      {
+        label: "Drive 2",
+        values: ["Not Selected"],
+      },
+      {
+        label: "Drive 3",
+        values: ["512 GB SATA Solid State Drive Pro Series"],
+      },
+      {
+        label: "Drive 4",
+        values: ["2 Tb SAS"],
+      },
+      {
+        label: "Training",
+        values: ["select Training"],
+      },
     ],
   },
   {
@@ -207,6 +275,64 @@ export const PRODUCTS = [
         <li>IDE Adapter</li>
         <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
       </ul>,
+    ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["AMD B450 Chipset"],
+      },
+      {
+        label: "OS",
+        values: ["Window 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: ["AMD Ryzen 7.8 Core 3.6 GHz ( 4.4 Max ) 32 MB "],
+      },
+      {
+        label: "RAM",
+        values: ["64 GB PC 4 -19200 DDR4 2400 "],
+      },
+      {
+        label: "Video Card",
+        values: ["Nvidia GeForce RTX 2070 BGB GDDRG"],
+      },
+      {
+        label: "OS Drive",
+        values: ["512 GB M. 2. NVMe PCIe Solid State Drive - PRO Ser"],
+      },
+      {
+        label: "Drive 2",
+        values: ["Not Selected"],
+      },
+      {
+        label: "Drive 3",
+        values: ["Not Selected"],
+      },
+      {
+        label: "USB BR-RE /CDRW/DVDWR",
+        values: ["Not Selected"],
+      },
+      {
+        label: "Write Blocking Kit",
+        values: ["Not Selected"],
+      },
+      {
+        label: "Firewire / Write Blocker",
+        values: ["Not Selected"],
+      },
+      {
+        label: "SAS UltraBlock Write Blocker",
+        values: ["Not Selected"],
+      },
+      {
+        label: "IDE Adaptor Set",
+        values: ["Not Selected"],
+      },
+      {
+        label: "Battery",
+        values: ["Not Selected"],
+      },
     ],
   },
   {
