@@ -1,0 +1,26 @@
+import React from "react";
+
+const ProductOptions = ({ options }) => {
+  return (
+    <div className="option-container">
+      <h3>Options</h3>
+      <div className="option-details">
+        {options.map((option, index) => (
+          <div className="option-item" key={index}>
+            <label htmlFor={`option-${index}`}>{option.label}:</label>
+            <select id={`option-${index}`} className="option-select">
+              {option.values.map((value, valueIndex) => (
+                <option key={valueIndex} value={value}>
+                  {value}
+                </option>
+              ))}
+            </select>
+          </div>
+        ))}
+      </div>
+      <button className="get-quote-button">Get Quote</button>
+    </div>
+  );
+};
+
+export default ProductOptions;

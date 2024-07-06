@@ -3,13 +3,47 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { PRODUCTS } from "../data/Products";
 import "../Css/Hardware.css";
-
+import ProductOptions from "./ProductOptions";
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
 
   const navTabs = document.querySelectorAll("#nav-tab .nav-link");
   const tabPanes = document.querySelectorAll(".tab-pane");
+
+  const options = [
+    {
+      label: "Chipset Motherboard",
+      values: ["Intel H310 Chipset Motherboard", "Other Chipset"],
+    },
+    {
+      label: "OS",
+      values: ["Windows 10 64-bit", "Windows 11 64-bit"],
+    },
+    {
+      label: "CPU",
+      values: ["i7-8700 6 Core 3.5 GHz (4.0 Turbo), 8.25MB Cache", "Other CPU"],
+    },
+    {
+      label: "RAM",
+      values: ["16 GB PC4-19200 DDR4 2400", "32 GB PC4-19200 DDR4 2400"],
+    },
+    {
+      label: "Video Card",
+      values: ["OnBoard", "Dedicated Video Card"],
+    },
+    {
+      label: "OS Drive",
+      values: [
+        "512 GB M.2 NVMe PCIe Solid State Drive - PRO!",
+        "1 TB M.2 NVMe PCIe Solid State Drive",
+      ],
+    },
+    {
+      label: "Training",
+      values: ["Free Training with Purchase", "Paid Training"],
+    },
+  ];
 
   navTabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
@@ -29,139 +63,72 @@ const ProductDetail = () => {
   }
 
   return (
-    // <div>
-    //   <section>
-    //     <div className="col-sm-6" id="right">
-    //       <div className="hardware-container">
-    //         <div id="product-description" data-hook="product_description">
-    //           <h3 className="product-title">{product.name}</h3>
-    //           <h6 className="product-ifw">{product.subname}</h6>
-    //           <h6 class="product-ifw">
-    //             {product.subdesc}
-    //             <br />
-    //           </h6>
-    //         </div>
-    //         <div className="row">
-    //           <div className="col-xs-12">
-    //             <nav>
-    //               <div
-    //                 class="nav nav-tabs nav-fill"
-    //                 id="nav-tab"
-    //                 role="tablist"
-    //               >
-    //                 <a
-    //                   class="nav-item nav-link active"
-    //                   id="nav-description-tab"
-    //                   data-toggle="tab"
-    //                   href="#nav-description"
-    //                   role="tab"
-    //                   aria-controls="nav-description"
-    //                   aria-selected="true"
-    //                 >
-    //                   Description
-    //                 </a>
-    //                 <a
-    //                   class="nav-item nav-link"
-    //                   id="nav-content-tab"
-    //                   data-toggle="tab"
-    //                   href="#nav-content"
-    //                   role="tab"
-    //                   aria-controls="nav-content"
-    //                   aria-selected="false"
-    //                 >
-    //                   Content
-    //                 </a>
-    //               </div>
-    //             </nav>
-
-    //             <div
-    //               className="tab-content py-3 px-3 px-sm-0"
-    //               id="nav-tabContent"
-    //             >
-    //               <div
-    //                 class="tab-pane fade show active"
-    //                 id="nav-description"
-    //                 role="tabpanel"
-    //                 aria-labelledby="nav-description-tab"
-    //               >
-    //                 <ul id="text-desc">{product.description}</ul>
-    //               </div>
-    //               <div
-    //                 className="tab-pane fade"
-    //                 id="nav-content"
-    //                 role="tabpanel"
-    //                 aria-labelledby="nav-content-tab"
-    //               >
-    //                 <ul id="text-desc">{product.content}</ul>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </section>
-    // </div>
-    <div className="deskter-container">
-      <div className="deskterimage-container">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="deskterimage"
-          style={{ height: "350px", width: "350px" }}
-        />
-      </div>
-      <div className="deskterdetails-container">
-        <h3 className="deskterproduct-title">{product.name}</h3>
-        <h6 className="deskterproduct-subtitle">{product.subname}</h6>
-        <p className="deskterproduct-description">{product.subdesc}</p>
-        <nav>
-          <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-            <a
-              className="nav-item nav-link active"
-              id="nav-description-tab"
-              data-toggle="tab"
-              href="#nav-description"
-              role="tab"
-              aria-controls="nav-description"
-              aria-selected="true"
-            >
-              Description
-            </a>
-            {product.content && (
+    <div className="main-container">
+      <div className="prod-container">
+        <div className="prodimage-container">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="prodimage"
+            style={{ height: "350px", width: "350px" }}
+          />
+        </div>
+        <div className="proddetails-container">
+          <h3 className="prodproduct-title">{product.name}</h3>
+          <h6 className="prodproduct-subtitle">{product.subname}</h6>
+          <p className="prodproduct-description">{product.subdesc}</p>
+          <nav>
+            <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
               <a
-                className="nav-item nav-link"
-                id="nav-content-tab"
+                className="nav-item nav-link active"
+                id="nav-description-tab"
                 data-toggle="tab"
-                href="#nav-content"
+                href="#nav-description"
                 role="tab"
-                aria-controls="nav-content"
-                aria-selected="false"
+                aria-controls="nav-description"
+                aria-selected="true"
               >
-                Content
+                Description
               </a>
+              {product.content && (
+                <a
+                  className="nav-item nav-link"
+                  id="nav-content-tab"
+                  data-toggle="tab"
+                  href="#nav-content"
+                  role="tab"
+                  aria-controls="nav-content"
+                  aria-selected="false"
+                >
+                  Content
+                </a>
+              )}
+            </div>
+          </nav>
+          <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div
+              className="tab-pane fade show active"
+              id="nav-description"
+              role="tabpanel"
+              aria-labelledby="nav-description-tab"
+            >
+              <div id="prodtext-desc">{product.description}</div>
+            </div>
+            {product.content && (
+              <div
+                className="tab-pane fade"
+                id="nav-content"
+                role="tabpanel"
+                aria-labelledby="nav-content-tab"
+              >
+                <div id="prodtext-desc">{product.content}</div>
+              </div>
             )}
           </div>
-        </nav>
-        <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-          <div
-            className="tab-pane fade show active"
-            id="nav-description"
-            role="tabpanel"
-            aria-labelledby="nav-description-tab"
-          >
-            <div id="desktertext-desc">{product.description}</div>
-          </div>
-          {product.content && (
-            <div
-              className="tab-pane fade"
-              id="nav-content"
-              role="tabpanel"
-              aria-labelledby="nav-content-tab"
-            >
-              <div id="desktertext-desc">{product.content}</div>
-            </div>
-          )}
         </div>
+      </div>
+      <div className="options-center">
+        <ProductOptions options={options} />
       </div>
     </div>
   );
