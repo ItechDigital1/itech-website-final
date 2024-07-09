@@ -33,7 +33,7 @@ const Contact = () => {
               <br />
               Phone: +91 70217 48803/09
               <br />
-              Email: info@itech.co.in
+              Email: support@itech.co.in
             </address>
           </div>
         </div>
