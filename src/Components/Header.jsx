@@ -33,7 +33,7 @@ const Header = () => {
         <div className="top-bar">
           <div className="contact-info">
             <FaEnvelope className="contact-icon" /> helpdesk@itech.co.in
-            <FaPhoneAlt className="contact-icon" /> +91-70217 48803
+            <FaPhoneAlt className="contact-icon" /> +91-70217 48803 \ 09
           </div>
           <div className="iso-certification">
             An ISO 9001:2015 Certified Company

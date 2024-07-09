@@ -74,7 +74,7 @@ const Content = () => {
           </a>
         </div>
       </div>
-       <div className="carousel-container">
+      <div className="carousel-container">
         <Carousel interval={5000} pause={isPaused ? "hover" : false}>
           {chunkedData.map((chunk, chunkIndex) => (
             <Carousel.Item key={chunkIndex}>
@@ -129,9 +129,9 @@ const Content = () => {
         >
           &gt;
         </Button>
-      </div> 
-       style={{ height: "4rem", width: "20px",color: "red" }} 
-       <div className="carousel-container">
+      </div>
+      style={{ height: "4rem", width: "20px", color: "red" }}
+      <div className="carousel-container">
         <Carousel
           interval={null}
           indicators={false}
@@ -185,8 +185,7 @@ const Content = () => {
         >
           &gt;
         </Button>
-      </div> 
-
+      </div>
       <div className="highlight-container">
         <div className="header">
           <h3>HIGHLIGHTS</h3>
@@ -363,7 +362,7 @@ const Content = () => {
               <a href="vv">View larger map</a>
             </p>
             <h4>Phone Number</h4>
-            <p>+91 70217 48802/03/04</p>
+            <p>+91 70217 48803 / 09</p>
             <h4>Email</h4>
             <p>info@itech.co.in</p>
           </div>
