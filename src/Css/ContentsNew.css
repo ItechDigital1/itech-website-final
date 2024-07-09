@@ -43,6 +43,70 @@
   color: #ff0000;
 }
 
+.feat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  gap: 20px; /* Adjust spacing between sections */
+  padding: 20px; /* Adjust padding around the container */
+}
+
+.feature b {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.5em;
+}
+.feature-desc {
+  margin-bottom: 40px;
+}
+
+.feature-desc p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.2rem;
+}
+.feature h3 {
+  font-size: 24px;
+  /* margin-bottom: 5px; */
+  color: linear-gradient(to right, #2f121c, #23527c);
+}
+.features-container {
+  /* width: 100%;
+  padding: 40px 20px;
+  background-color: #f4f4f4; Light background for the entire section */
+  text-align: center;
+}
+.video-section {
+  flex: 1 1 calc(25% - 20px); /* Adjust the width and spacing between items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual separation */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  overflow: hidden; /* Ensure content does not overflow the border radius */
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc; /* Optional: Add a bottom border to separate the video from the rest of the section */
+}
+
+/* Optional: Add styling for other elements within the video section */
+.video-section h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.video-section p {
+  margin: 0 10px 10px;
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+}
+
 /* Responsive styles */
 @media (max-width: 1200px) {
   .video-title {
@@ -50,7 +114,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
+  .video-section {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row */
+  }
   .video-details {
     font-size: 14px;
     width: 700px;
@@ -62,6 +128,9 @@
     font-size: 25px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .video-section {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
   }
 
   .video-details {
@@ -91,7 +160,9 @@
   .itech-video {
     height: 250px;
   }
-
+  .video-section {
+    flex: 1 1 100%; /* One item per row */
+  }
   .video-title {
     margin-top: 3rem;
     font-size: 18px;
@@ -301,7 +372,7 @@ h2 {
 }
 
 /* Feature Bar */
-.feature h3,
+/* .feature h3,
 h2 {
   text-align: center;
   color: linear-gradient(to right, #2f121c, #23527c);
@@ -309,7 +380,7 @@ h2 {
 
 .feature-desc {
   text-align: center;
-}
+} */
 /* Message Bar*/
 .message h3,
 h2 {
@@ -325,6 +396,54 @@ h2 {
   background: linear-gradient(to right, #2f121c, #010412);
   color: white;
 }
+.message-container {
+  text-align: center;
+}
+
+.message h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: linear-gradient(to right, #2f121c, #23527c);
+}
+
+.message b {
+  display: block;
+  margin-bottom: 5px;
+  color: linear-gradient(to right, #2f121c, #23527c);
+  font-size: 1.5rem;
+}
+
+.message-desc {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #ddd;
+  line-height: 1.5em;
+}
+
+.text {
+  display: block;
+  margin-top: 20px;
+  color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .message h3 {
+    font-size: 1.5em;
+  }
+
+  .card-text {
+    font-size: 0.9em;
+  }
+
+  .text {
+    font-size: 0.9em;
+  }
+}
+
 /* Testimonials */
 /* src/TestimonialCard.css */
 

@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import itech_video from "../assets/videos/itech_main_video.mp4";
 import "../Css/ContentsNew.css";
 // import Carousel from "react-multi-carousel";
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import {
@@ -11,6 +11,7 @@ import {
   highlights,
   data,
   // products,
+  features,
   Testimonials,
 } from "../data.config";
 const ContentsNew = () => {
@@ -128,7 +129,7 @@ const ContentsNew = () => {
           ))}
         </Carousel>
       </div> */}
-      <Carousel />
+      {/* <Carousel /> */}
       {/* highlights */}
       <div className="highlight-container">
         <div className="header">
@@ -175,11 +176,39 @@ const ContentsNew = () => {
           })}
         </div>
       </div>
+      {/*Features*/}
+      <div className="features-container">
+        <div className="feature">
+          <h3>FEATURE</h3>
+          <b>-----</b>
+          <div className="feature-desc">
+            <p>
+              Standard Proprietary Features Introduced in all Our Deskster
+              Series of Workstations, and can be Customized as per Clients
+              Requirements, along with
+              <br />
+              User’s Company Name and Logos on the System.
+            </p>
+          </div>
+          <div className="feat-container">
+            {features.map((ele, id) => {
+              return (
+                <section key={id} className="video-section">
+                  <video controls className="video-player">
+                    <source src={ele.video_src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </section>
+              );
+            })}
+          </div>
+        </div>
+      </div>
       {/* Message */}
       <div className="message-container">
         <div className="message">
           <h3>MESSAGE</h3>
-          <h2>-----</h2>
+          <b>-----</b>
           <div className="message-desc">
             <span className="card-text" style={{ fontSize: 15 }}>
               "Pioneering Change is always the Toughest Challenge, as it
