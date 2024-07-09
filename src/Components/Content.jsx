@@ -364,7 +364,7 @@ const Content = () => {
             <h4>Phone Number</h4>
             <p>+91 70217 48803 / 09</p>
             <h4>Email</h4>
-            <p>info@itech.co.in</p>
+            <p>support@itech.co.in</p>
           </div>
           <div className="map-container">
             <img

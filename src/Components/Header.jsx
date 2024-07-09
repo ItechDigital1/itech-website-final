@@ -32,7 +32,7 @@ const Header = () => {
       <center>
         <div className="top-bar">
           <div className="contact-info">
-            <FaEnvelope className="contact-icon" /> helpdesk@itech.co.in
+            <FaEnvelope className="contact-icon" /> support@itech.co.in
             <FaPhoneAlt className="contact-icon" /> +91-70217 48803 \ 09
           </div>
           <div className="iso-certification">

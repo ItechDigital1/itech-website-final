@@ -280,9 +280,9 @@ const ContentsNew = () => {
               <a href="vv">View larger map</a>
             </p>
             <h4>Phone Number</h4>
-            <p>+91 70217 48802/03/04</p>
+            <p>+91 70217 48803 / 09</p>
             <h4>Email</h4>
-            <p>info@itech.co.in</p>
+            <p>support@itech.co.in</p>
           </div>
           <div className="map-container">
             <div class="container-fluid p-0 pb-3 float-right">
