@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { PRODUCTS } from "../data/Products";
 import "../Css/Hardware.css";
 import ProductOptions from "./ProductOptions";
