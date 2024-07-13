@@ -1,7 +1,8 @@
 import Clonester from "../assets/images/img/Clonester.jpg";
 import Lapster from "../assets/images/img/Lapster.jpg";
 import Vaultster from "../assets/images/img/Vaultster.jpg";
-import Cubester from "../assets/images/img/Cubester-X.jpg";
+import Cubester from "../assets/images/img/Cubester.jpg";
+import CubesterX from "../assets/images/img/Cubester-X.jpg";
 import Labster from "../assets/images/img/Labster.jpg";
 import Trackster from "../assets/images/img/Trackster.jpg";
 
@@ -108,132 +109,6 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: "Cubester",
-    image: Cubester,
-    subname: "Hand Held Ruggedised Forensic Imaging Device",
-    subdesc: "SKU: CL-1101",
-    description: [
-      <ul>
-        <li>
-          The Clonester Forensic Field Unit with an 8" Capacitive Touch Screen
-          color LCD Display is a compact, easy to carry, versatile and extremely
-          fast Forensic Imaging unit that can serve as a complete Field Computer
-          Forensic Investigation platform.
-        </li>
-
-        <li>
-          Clonester is hand held portable device that can be used for imaging,
-          cloning storage devices.
-        </li>
-
-        <li>
-          The user can run multiple parallel simultaneous forensic imaging from
-          many devices, with HASH values imaging from many devices, with HASH
-          values.
-        </li>
-
-        <li>
-          It supports interfaces with such as SATA, SAS, IDE, USB, Firewire and
-          PCIe ports supporting read only and read/write options.
-        </li>
-
-        <li>
-          It features a beautiful and intuitive user interface on a tablet-sized
-          touch-screen, providing a delightful user experience.
-        </li>
-
-        <li>
-          Custom engineered and built keeping in mind on-field conditions thus
-          providing high durability metal, toughened glass and shock resistant.
-        </li>
-
-        <li>
-          Its primary purpose is to execute multiple imaging, cloning and wiping
-          processes on the go by using just handheld device.
-        </li>
-      </ul>,
-    ],
-    content: [
-      <ul>
-        <li>
-          <b>Accessories kit:</b>
-        </li>
-        <li>Power Adapter along with power cables</li>
-        <li>
-          <b>Forensic kit with Adapters and Cables:</b>
-        </li>
-        <li>PCIe Card SSD</li>
-        <li>PCIe M.2 SSD</li>
-        <li>PCIe Apple SSD</li>
-        <li>IDE Adapter</li>
-        <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
-      </ul>,
-    ],
-    options: [
-      {
-        label: "Chipset Motherboard",
-        values: ["Intel Z390 Chipset Motherboard"],
-      },
-      {
-        label: "OS",
-        values: ["Windows 10 Pro 64-bit"],
-      },
-      {
-        label: "CPU",
-        values: ["i7-9700, 8 Core 3.6 GHz (4.9 Turbo) 12 MB "],
-      },
-      {
-        label: "RAM",
-        values: ["16GB PC 4-21300 DDR4 2666 MHz"],
-      },
-      {
-        label: "OS Drive",
-        values: [
-          "512 GB M.2 NVMe PCIe Solid State Drive - PRO",
-          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
-        ],
-      },
-      {
-        label: "Drive 2",
-        values: [
-          "Not Selected",
-          "512 GB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
-        ],
-      },
-      {
-        label: "Drive 3",
-        values: [
-          "512 GB SATA Solid State Drive Pro Series",
-          "2 TBSAS",
-          "4 TBSAS",
-          "1 TB SATA Solid State Drive PRO Series",
-          "2 TB SATA Solid State Drive PRO Series",
-          "3 TB SATA Solid State Drive PRO Series",
-        ],
-      },
-      {
-        label: "Drive 4",
-        values: [
-          "512 GB SATA Solid State Drive Pro Series",
-          "2 TBSAS",
-          "4 TBSAS",
-          "2 TBSAS",
-          "1 TB SATA Solid State Drive PRO Series",
-          "2 TB SATA Solid State Drive PRO Series",
-          "4 TB SATA Solid State Drive PRO Series",
-        ],
-      },
-      {
-        label: "Training",
-        values: ["select Training", "Free training with purchase."],
-      },
-    ],
-  },
-  {
-    id: 3,
     name: "Lapster",
     image: Lapster,
     subname: "High End Forensic Laptop",
@@ -323,35 +198,70 @@ export const PRODUCTS = [
       },
       {
         label: "OS Drive",
-        values: ["512 GB M. 2. NVMe PCIe Solid State Drive - PRO Ser"],
+        values: [
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Ser",
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
       },
       {
         label: "Drive 2",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "513 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "514 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+        ],
       },
       {
         label: "Drive 3",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "1 TB 7200 rpm SATA Hard Drive",
+          "2 TB 7200 rpm SATA Hard Drive",
+          "3 TB 7200 rpm SATA Hard Drive",
+          "4 TB 7200 rpm SATA Hard Drive",
+          "5 TB 7200 rpm SATA Hard Drive",
+          "6 TB 7200 rpm SATA Hard Drive",
+        ],
       },
       {
         label: "USB BR-RE /CDRW/DVDWR",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "USB BR-RE /CDRW/DVDWR",
+          "USB BR-RE /CDRW/DVDWR",
+        ],
       },
       {
         label: "Write Blocking Kit",
-        values: ["Ultrakit V5"],
+        values: [
+          "Ultrakit V5",
+          "Ultrakit V5 ",
+          "Ultrakit V5 + TD2u for ITECH - L",
+          "Ultrakit V5 + TX1 for ITECH - L",
+        ],
       },
       {
         label: "Firewire / Write Blocker",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "FireWire UltraBlock Option - W2805,C1000,C2500 Write Blocker Adapters and Cables",
+        ],
       },
       {
         label: "SAS UltraBlock Write Blocker",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "SAS UltraBlock Option - W2915, C5450 Write Block and Cable",
+        ],
       },
       {
         label: "IDE Adaptor Set",
-        values: ["Not Selected"],
+        values: [
+          "Not Selected",
+          "IDE Adaptoer Set - A4100, A4200, A300, C5159, C9001 Adapters and Cable",
+        ],
       },
       {
         label: "Battery",
@@ -360,7 +270,7 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     name: "Labster",
     image: Labster,
     subname: "High End Console based Audio/Video Forensic Workstation",
@@ -424,10 +334,7 @@ export const PRODUCTS = [
         label: "Chipset Motherboard",
         values: ["Intel C621Chipset Motherboard"],
       },
-      {
-        label: "OS",
-        values: ["Window 10 Pro 64-bit"],
-      },
+      { label: "OS", values: ["Window 10 Pro 64-bit"] },
       {
         label: "CPU",
         values: [
@@ -441,15 +348,15 @@ export const PRODUCTS = [
           "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
           "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
           "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
-          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
           "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
         ],
       },
       {
         label: "RAM",
         values: [
           "32 GB  ECC PC 4 -21300 DDR4 2666 MHz (2 x 16GB)",
-          "64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
+          "     64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
           "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
           "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
           "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
@@ -468,37 +375,61 @@ export const PRODUCTS = [
       {
         label: "OS Drive",
         values: [
-          "Select OS Drive",
+          "Select OS drive",
           "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
-          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
         ],
       },
       {
         label: "Drive 2",
         values: [
+          "Select Drive 2",
           "Not Selected",
-          "512 GB SATA Solid State Drive Pro Series",
           "2 TBSAS",
           "4 TBSAS",
           "10 TBSAS",
+          "512 GB SATA Solid State Drive Pro Series",
           "1 TB SATA Solid State Drive PRO Series",
           "2 TB SATA Solid State Drive PRO Series",
-          "3 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
         ],
       },
       {
-        label: "Raid Drive Set",
-        values: ["Select Raid Drive Set 1", "Select Raid Drive Set 2"],
+        label: "Raid Drive set 1",
+        values: [
+          "Select Raid Drive Set 1",
+          "Not Selected",
+          "2 TBSAS",
+          "10 TBSAS",
+          "512 GB SATA Solid State Drive Pro Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Select Raid Drive Set 2",
+        values: [
+          "Select Raid Drive Set 2",
+          "No Raid",
+          "4x2 TBSAS",
+          "4x4 TBSAS",
+          "4x10 TB 7200 rpm SATA Hard Drive-Capacity - 40 Tb Configured as RAIDS",
+          "512 GB SATA Solid State Drive Pro Series",
+          "4x1 TB SATA Solid State Drive PRO Series",
+          "4x2 TB SATA Solid State Drive PRO Series",
+          "4x4 TB SATA Solid State Drive PRO Series",
+        ],
       },
       {
         label: "Training",
-        values: "Select Training",
+        values: ["Select Training", "Free Training with Purchase", "Get Quote"],
       },
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "Trackster",
     image: Trackster,
     subname: "OTG Field Investigation and Surveillance Vehicle",
@@ -569,7 +500,7 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Vaultster Tower RAID",
     image: Vaultster,
     subname: "High Capacity Direct Attached Storage RAID",
@@ -623,15 +554,72 @@ export const PRODUCTS = [
     ],
     options: [
       { label: "OS", values: ["512GB SATA SSD Pro Series"] },
-      { label: "Raid Drive Set 1", values: ["4 X 4TB SAS"] },
-      { label: "Raid Drive Set 2", values: ["4 X 4TB SAS"] },
-      { label: "Raid Drive Set 3", values: ["4 X 4TB SAS"] },
-      { label: "Raid Drive Set 4", values: ["4 X 4TB SAS"] },
-      { label: "NIC", values: ["10 Gigabite Network Card - 2 ports"] },
+      {
+        label: "Raid Drive Set 1",
+        values: [
+          "4 X 4TB SAS",
+          "4 x 8TB SAS",
+          "4x10 TB SAS",
+          "4x12TB  SAS",
+          "4x14TB  SAS",
+          "4x16TB  SAS",
+          "4x4TB Solid State SATA  SSD - PRO Series",
+          "4x8TB Solid State SATA  SSD - PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 2",
+        values: [
+          "4 X 4TB SAS",
+          "4 x 8TB SAS",
+          "4x10 TB SAS",
+          "4x12TB  SAS",
+          "4x14TB  SAS",
+          "4x16TB  SAS",
+          "4x4TB Solid State SATA  SSD - PRO Series",
+          "4x8TB Solid State SATA  SSD - PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 3",
+        values: [
+          "4 X 4TB SAS",
+          "4 x 8TB SAS",
+          "4x10 TB SAS",
+          "4x12TB  SAS",
+          "4x14TB  SAS",
+          "4x16TB  SAS",
+          "4x4TB Solid State SATA  SSD - PRO Series",
+          "4x8TB Solid State SATA  SSD - PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 4",
+        values: [
+          "4 X 4TB SAS",
+          "4 x 8TB SAS",
+          "4x10 TB SAS",
+          "4x12TB  SAS",
+          "4x14TB  SAS",
+          "4x16TB  SAS",
+          "4x4TB Solid State SATA  SSD - PRO Series",
+          "4x8TB Solid State SATA  SSD - PRO Series",
+        ],
+      },
+      {
+        label: "NIC",
+        values: [
+          "10 Gigabite Network Card - 2 ports",
+          "25 Gigabite Network Card - 2 ports",
+          "40 Gigabite Network Card - 2 ports",
+          "50 Gigabite Network Card - 2 ports",
+          "100 Gigabite Network Card - 2 ports",
+        ],
+      },
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "Telster",
     image: Telster,
     subname: "High Performance Cluster",
@@ -661,6 +649,245 @@ export const PRODUCTS = [
   },
 ];
 
+export const CUBESTER = [
+  {
+    id: 1,
+    name: "Cubester",
+    image: Cubester,
+    subname: "Forensics Micro Workstation",
+    subdesc: "SKU: CB-1101",
+    description: [
+      <ul>
+        <li>
+          The Cubester System is a Forensic Micro Workstation specifically
+          designed to carry out Imaging, Cloning and also run Forensic Software
+          applications during On-Field or In-Lab environment.
+        </li>
+        <li>
+          It handles Forensic Acquisitions and Case Processing at excellent
+          speeds.
+        </li>
+        <li>
+          Powered by Intel 8 core i7 or Xeon Series Processor and provides
+          Multiple Storage Options besides OS Drive, Temp Drive and Data Drive.
+        </li>
+        <li>
+          Cubester also includes a Write Blocker for imaging SATA, SAS, IDE,
+          USB, FireWire, and PCIe storage devices..
+        </li>
+        <li>
+          Ideal Workstation for those who don't feel the need of a mid tower or
+          a full tower Forensic Workstation.
+        </li>
+        <li>
+          Cubester can be used In-Lab or even On-Field due to its size as it`s
+          easy to carry and also compact, sturdy and scalable.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <li>
+          Cubester variants of Micro Forensic Workstations can be configured
+          based on customer requirements and preferences
+        </li>
+        <li>
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
+        </li>
+        <li>
+          <b>Accessories kit:</b>
+          <li>Power Supply / Adapter along with power cables.</li>
+        </li>
+        <li>
+          <b>Forensic kit with Adapters and Cables:</b>
+        </li>
+        <li>PCIe Card SSD</li>
+        <li>PCIe M.2 SSD</li>
+        <li>PCIe Apple SSD</li>
+        <li>IDE Adapter</li>
+        <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
+      </ul>,
+    ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Z390 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Windows 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: ["i7-9700, 8 Core 3.6 GHz (4.9 Turbo) 12 MB "],
+      },
+      {
+        label: "RAM",
+        values: [
+          "16GB PC 4-21300 DDR4 2666 MHz",
+          "32GB PC 4-21300 DDR4 2666 MHz",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "512 GB M.2 NVMe PCIe Solid State Drive - PRO",
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Not Selected",
+          "512 GB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "512 GB SATA Solid State Drive Pro Series",
+          "2 TBSAS",
+          "4 TBSAS",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "3 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 4",
+        values: [
+          "512 GB SATA Solid State Drive Pro Series",
+          "2 TBSAS",
+          "4 TBSAS",
+          "2 TBSAS",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["select Training", "Free training with purchase."],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Cubester-X",
+    image: CubesterX,
+    subname: "Forensic Dual Micro Workstation",
+    subdesc: "SKU: CB-2101",
+    description: [
+      <ul>
+        <li>
+          Cubester X system is an Extended Form Factor Forensic Micro
+          Workstation specifically designed with capabilities of 4 x 4 Drives
+          Simultaneous Cloning and Imaging in an On-field or In-lab Forensics
+          Environment.
+        </li>
+        <li>
+          It processes forensic acquisitions and case processing at excellent
+          speeds. It's powered by an 8-core i7 & Xeon series processor and
+          provides multiple storage options besides OS drive, Temp drive and
+          data drive.
+        </li>
+        <li>
+          It includes a storage of 4 x 2.5" HDD SATA RAID which can store
+          Multiple Images when in an On-field Forensic environment.
+        </li>
+        <li>
+          Cubester X also includes an additional write blocker for imaging SATA,
+          SAS, IDE, USB, FireWire, and PCIe storage devices alongside a Drive
+          Cooling Tray. It also has an all in one Multi-Media Card Forensic
+          Write Blocker.
+        </li>
+        <li>
+          Includes a retractable bay with cooling fan along with an LED and auto
+          On / Off mechanism to hold suspect drive.
+        </li>
+        <li>
+          Ideal Workstation for those who don't feel the need of a mid tower or
+          a full tower Forensic Workstation.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <li>
+          Cubester variants of forensic workstations are configured based on
+          customer requirements and preferences.
+        </li>
+        <li>
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
+        </li>
+        <li>Power / signal cables (SAS, SATA, IDE, USB, FireWire, PCIe)</li>
+        <li>
+          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
+          SSD, and server class PCIe SSD)
+        </li>
+        <li>
+          <b>Accessories kit:</b>
+          <li>Power Adapter along with power cables</li>
+        </li>
+        <li>
+          <b>Forensic kit with Adapters and Cables:</b>
+          <li>PCIe Card SSD</li>
+          <li>PCIe M.2 SSD</li>
+          <li>PCIe Apple SSD</li>
+          <li>IDE Adapter</li>
+          <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
+        </li>
+      </ul>,
+    ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel X299 Cuipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Windows 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: ["i7-9700, 8 Core 3.6 GHz (4.9 Turbo) 12 MB "],
+      },
+      {
+        label: "RAM",
+        values: [
+          "16GB PC 4-21300 DDR4 2666 MHz",
+          "32GB PC 4-21300 DDR4 2666 MHz",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "512 GB M.2 NVMe PCIe Solid State Drive - PRO",
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "SATA RAID",
+        values: [
+          "Select SATA RAID",
+          "Not Selected",
+          "4x2 TB SAS",
+          "4X4 TB SAS",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["Select Training", "Free Training with Purchase"],
+      },
+    ],
+  },
+];
 export const RACKSTER = [
   {
     id: 1,
@@ -858,3 +1085,82 @@ export const ROADSTER = [
     ],
   },
 ];
+
+// Labster
+// options: [
+//   {
+//     label: "Chipset Motherboard",
+//     values: ["Intel C621Chipset Motherboard"],
+//   },
+//   {
+//     label: "OS",
+//     values: ["Window 10 Pro 64-bit"],
+//   },
+//   {
+//     label: "CPU",
+//     values: [
+//       "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
+//       "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
+//       "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+//       "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+//       "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+//       "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+//       "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+//       "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+//       "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+//       "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+//       "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+//       "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+//     ],
+//   },
+//   {
+//     label: "RAM",
+//     values: [
+//       "32 GB  ECC PC 4 -21300 DDR4 2666 MHz (2 x 16GB)",
+//       "64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
+//       "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+//       "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+//       "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+//       "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+//     ],
+//   },
+//   {
+//     label: "Video Card",
+//     values: [
+//       "Select Video Card",
+//       "Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+//       "Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+//       "Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+//     ],
+//   },
+//   {
+//     label: "OS Drive",
+//     values: [
+//       "Select OS Drive",
+//       "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+//       "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+//       "2 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+//     ],
+//   },
+//   {
+//     label: "Drive 2",
+//     values: [
+//       "Not Selected",
+//       "512 GB SATA Solid State Drive Pro Series",
+//       "2 TBSAS",
+//       "4 TBSAS",
+//       "10 TBSAS",
+//       "1 TB SATA Solid State Drive PRO Series",
+//       "2 TB SATA Solid State Drive PRO Series",
+//       "3 TB SATA Solid State Drive PRO Series",
+//     ],
+//   },
+//   {
+//     label: "Raid Drive Set",
+//     values: ["Select Raid Drive Set 1", "Select Raid Drive Set 2"],
+//   },
+//   {
+//     label: "Training",
+//     values: "Select Training",
+//   },
+// ],

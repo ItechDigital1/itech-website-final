@@ -29,11 +29,15 @@ import History from "./Components/History";
 import Team from "./Components/Team";
 import "../src/App.css";
 import DeskterProd from "./Components/Desterprod";
+// import HeaderNew from "./Components/Headernew";
+import CubesterPage from "./Components/Cubester";
+import CubesterProd from "./Components/CubesterProd";
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
+        {/* <HeaderNew /> */}
         <Routes>
           {/* <Route path="/" element={<Content />} /> */}
           <Route path="/" element={<ContentsNew />} />
@@ -45,6 +49,8 @@ function App() {
           <Route path="/roadster/:roadsterId" element={<RoadsterProd />} />
           <Route path="/rackster" element={<RacksterPage />} />
           <Route path="/rackster/:racksterId" element={<RacksterProd />} />
+          <Route path="/cubester" element={<CubesterPage />} />
+          <Route path="/cubester/:cubesterId" element={<CubesterProd />} />
           <Route path="/deskter/:deskterId" element={<DeskterProd />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/software" element={<Software />} />

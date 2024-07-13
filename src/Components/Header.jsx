@@ -3,7 +3,7 @@ import "../Css/Header.css";
 import { Link, NavLink } from "react-router-dom";
 import itechLogo from "../assets/images/img/icon/itech_logo_header.png";
 import { PRODUCTS } from "../data/Products";
-import { GRAPHSTER, ROADSTER, RACKSTER } from "../data/Products";
+import { GRAPHSTER, ROADSTER, RACKSTER, CUBESTER } from "../data/Products";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -141,6 +141,9 @@ const Header = () => {
                         Deskter
                       </Link>
                       {/* ggdfgdfg */}
+                      <Link className="dropdown-item" to="/cubester">
+                        Cubester
+                      </Link>
                       <Link className="dropdown-item" to="/graphster">
                         Graphster
                       </Link>
