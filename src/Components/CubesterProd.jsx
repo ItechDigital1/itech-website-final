@@ -41,82 +41,76 @@ const CubesterProd = () => {
   }
 
   return (
-    <div className="deskter-container">
-      <div className="deskterimage-container">
-        <img
-          src={cubester.image}
-          alt={cubester.name}
-          className="deskterimage"
-        />
-      </div>
-      <div className="deskterdetails-container">
-        <h3 className="deskterproduct-title">{cubester.name}</h3>
-        <h6 className="deskterproduct-subtitle">{cubester.subname}</h6>
-        <p className="deskterproduct-description">{cubester.subdesc}</p>
-        <nav>
-          <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-            <a
-              className="nav-item nav-link active"
-              id="nav-description-tab"
-              data-toggle="tab"
-              href="#nav-description"
-              role="tab"
-              aria-controls="nav-description"
-              aria-selected="true"
-            >
-              Description
-            </a>
-            {cubester.content && (
+    <div className="main-container">
+      <div className="deskter-container">
+        <div className="deskterimage-container">
+          <img
+            src={cubester.image}
+            alt={cubester.name}
+            className="deskterimage"
+          />
+        </div>
+        <div className="deskterdetails-container">
+          <h3 className="deskterproduct-title">{cubester.name}</h3>
+          <h6 className="deskterproduct-subtitle">{cubester.subname}</h6>
+          <p className="deskterproduct-description">{cubester.subdesc}</p>
+          <nav>
+            <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
               <a
-                className="nav-item nav-link"
-                id="nav-content-tab"
+                className="nav-item nav-link active"
+                id="nav-description-tab"
                 data-toggle="tab"
-                href="#nav-content"
+                href="#nav-description"
                 role="tab"
-                aria-controls="nav-content"
-                aria-selected="false"
+                aria-controls="nav-description"
+                aria-selected="true"
               >
-                Content
+                Description
               </a>
+              {cubester.content && (
+                <a
+                  className="nav-item nav-link"
+                  id="nav-content-tab"
+                  data-toggle="tab"
+                  href="#nav-content"
+                  role="tab"
+                  aria-controls="nav-content"
+                  aria-selected="false"
+                >
+                  Content
+                </a>
+              )}
+            </div>
+          </nav>
+          <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div
+              className="tab-pane fade show active"
+              id="nav-description"
+              role="tabpanel"
+              aria-labelledby="nav-description-tab"
+            >
+              <div id="desktertext-desc">{cubester.description}</div>
+            </div>
+            {cubester.content && (
+              <div
+                className="tab-pane fade"
+                id="nav-content"
+                role="tabpanel"
+                aria-labelledby="nav-content-tab"
+              >
+                <div id="desktertext-desc">{cubester.content}</div>
+              </div>
             )}
           </div>
-        </nav>
-        <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-          <div
-            className="tab-pane fade show active"
-            id="nav-description"
-            role="tabpanel"
-            aria-labelledby="nav-description-tab"
-          >
-            <div id="desktertext-desc">{cubester.description}</div>
+        </div>
+        {cubester.options && (
+          <div className="options-center">
+            <ProductOptions options={cubester.options} />
           </div>
-          {cubester.content && (
-            <div
-              className="tab-pane fade"
-              id="nav-content"
-              role="tabpanel"
-              aria-labelledby="nav-content-tab"
-            >
-              <div id="desktertext-desc">{cubester.content}</div>
-            </div>
-          )}
-        </div>
+        )}
       </div>
-      {cubester.options && (
-        <div className="options-center">
-          <ProductOptions options={cubester.options} />
-        </div>
-      )}
     </div>
   );
 };
 
 export default CubesterProd;
-
-{
-  /* {cubester.options && (
-        <div className="options-center">
-          <ProductOptions options={cubester.options} />
-        </div>
-      )} */
-}

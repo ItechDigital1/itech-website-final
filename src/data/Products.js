@@ -925,6 +925,97 @@ export const RACKSTER = [
         </li>
       </ul>,
     ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel C621 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Window 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: [
+          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+          "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+        ],
+      },
+      {
+        label: "Video Card",
+        values: [
+          "Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Not Selected",
+          "2 TBSAS",
+          "4 TBSAS",
+          "10 TBSAS",
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "Not Selected",
+          "2 TBSAS",
+          "4 TBSAS",
+          "10 TBSAS",
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 1",
+        values: ["No Raid", "4x10 TB SAS", "4x14 TB SAS"],
+      },
+      {
+        label: "Raid Drive Set 2",
+        values: ["No Raid", "4x10 TB SAS", "4x14 TB SAS"],
+      },
+      {
+        label: "Tape Drive",
+        values: ["LTO Ultrium 7 (6TB Native / 15 TB Comp)"],
+      },
+      {
+        label: "NIC",
+        values: [" 40 Gigabit Network Card", "40 Gigabit Network Card"],
+      },
+    ],
   },
   {
     id: 2,
