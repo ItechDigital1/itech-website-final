@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ROADSTER } from "../data/Products";
-
+import ProductOptions from "./ProductOptions";
 const RoadsterProd = () => {
   const { roadsterId } = useParams(null);
   const [roadster, setRoadster] = useState(null);
@@ -95,6 +95,11 @@ const RoadsterProd = () => {
             <div id="desktertext-desc">{roadster.content}</div>
           </div>
         </div>
+        {roadster.options && (
+          <div className="options-center">
+            <ProductOptions options={roadster.options} />
+          </div>
+        )}
       </div>
     </div>
   );

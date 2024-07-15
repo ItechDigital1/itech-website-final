@@ -54,6 +54,137 @@ export const GRAPHSTER = [
         </li>
       </ul>,
     ],
+    options: [
+      { label: "CPU Xeon", values: ["CPU Core i7/i9"] },
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel C621Chipset Motherboard"],
+      },
+      { label: "OS", values: ["Window 10 Pro 64-bit"] },
+      {
+        label: "CPU",
+        values: [
+          "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
+          "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
+          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+          "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+        ],
+      },
+      {
+        label: "Graphic Set 1",
+        values: [
+          "4 x Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "4 x Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "4 x Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "Graphic Set 2",
+        values: [
+          "4 x Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "4 x Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "4 x Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "Select OS drive",
+          "1TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Select Drive 2",
+          "Not Selected",
+          "2 TB SATA Hard Drive",
+          "4 TB SATA Hard Drive",
+          "512 GB SATA Solid State Drive Pro Series",
+          "10 TB SATA Hard Drive",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "Select Drive 3",
+          "Not Selected",
+          "2 TB SATA Hard Drive",
+          "4 TB SATA Hard Drive",
+          "512 GB SATA Solid State Drive Pro Series",
+          "10 TB SATA Hard Drive",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive set 1",
+        values: [
+          "NO RAID",
+          "5x2 TB 7200 rpm SATA Hard Drive - Capacity 8 TB configured as RAID5",
+          "5x4 TB 7200 rpm SATA Hard Drive - Capacity 16 TB configured as RAID5",
+          "5x512 GB SATA Solid State Drive Pro Series Capacity - 2 TB configured as RAID5",
+          "5x10 TB 7200 rpm SATA Hard Drive - Capacity 40 TB configured as RAID5",
+          "5x1 TB SATA Solid State Drive -Pro Series - Capacity-4 TB configures as RAIDS",
+          "5x2 TB SATA Solid State Drive -Pro Series - Capacity-8 TB configures as RAIDS",
+          "5x4 TB SATA Solid State Drive -Pro Series - Capacity-16 TB configures as RAIDS",
+        ],
+      },
+      {
+        label: "Raid Drive set 1",
+        values: [
+          "NO RAID",
+          "5x2 TB 7200 rpm SATA Hard Drive - Capacity 8 TB configured as RAID5",
+          "5x4 TB 7200 rpm SATA Hard Drive - Capacity 16 TB configured as RAID5",
+          "5x512 GB SATA Solid State Drive Pro Series Capacity - 2 TB configured as RAID5",
+          "5x10 TB 7200 rpm SATA Hard Drive - Capacity 40 TB configured as RAID5",
+          "5x1 TB SATA Solid State Drive -Pro Series - Capacity-4 TB configures as RAIDS",
+          "5x2 TB SATA Solid State Drive -Pro Series - Capacity-8 TB configures as RAIDS",
+          "5x4 TB SATA Solid State Drive -Pro Series - Capacity-16 TB configures as RAIDS",
+        ],
+      },
+      {
+        label: "Tape Drive",
+        values: [
+          "Select Tape Drive",
+          "LTO Ultirium 7 (6 TB native / 15 TB Comp)",
+        ],
+      },
+      {
+        label: "NIC",
+        values: [
+          "Select NIC ( Network Interface Card)",
+          "10 Gigabite Network Card 1 port CATGA Copper",
+          "10 Gigabite Network Card 2 port CATGA Copper",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["Select Training", "Free Training with purchase"],
+      },
+    ],
   },
   {
     id: 2,
@@ -114,6 +245,97 @@ export const GRAPHSTER = [
           Security screwdriver set with assorted bits for Opening Enclosures.
         </li>
       </ul>,
+    ],
+    options: [
+      { label: "CPU Xeon", values: ["CPU Core i7/i9"] },
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel X299 Chipset Motherboard"],
+      },
+      { label: "OS", values: ["Window 10 Pro 64-bit"] },
+      {
+        label: "CPU",
+        values: [
+          "i7-7800 x 6 Core 3.5 GHz (4.0 Turbo) 8.25 MB Cache",
+          "i9-7900 x 10 Core 3.3 GHz (4.3 Turbo) 13.75 MB Cache",
+          "i9-7920x12 Core 2.9 GHz (4.3 Turbo) 16.5 MB Cache",
+          "i9-7940x14 Core 3.1 GHz (4.3 Turbo) 19.25 MB Cache",
+          "i9-7960x16 Core 2.8 GHz (4.2 Turbo) 22MB Cache",
+          "i9-7980x18 Core 2.5 GHz (4.2 Turbo) 24.75MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "32GB PC Memory  PC4 21300 DDR4 - 2666 MHz ",
+          "64 GB PC Memory  PC4 21300 DDR4 - 2666 MHz",
+          "128 GB PC Memory  PC4 21300 DDR4 - 2666 MHz",
+        ],
+      },
+      {
+        label: "Graphic Set 1",
+        values: [
+          "4 x Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "4 x Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "4 x Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "Select OS drive",
+          "512 GB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Select Drive 2",
+          "Not Selected",
+          "512 GB SATA Solid State Drive Pro Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "Select Drive 3",
+          "Not Selected",
+          "512 GB SATA Solid State Drive Pro Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive set 1",
+        values: [
+          "NO RAID",
+          "5x2 TB SAS",
+          "5X4 TB SAS",
+          "5X512 GB SATA Solid State Drive - Pro Series",
+          "5X10 TB SAS",
+          "5X1 TB SATA Solid State Drive PRO Series",
+          "5X2 TB SATA Solid State Drive PRO Series",
+          "5X4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "NIC",
+        values: [
+          "Select NIC ( Network Interface Card)",
+          "10 Gigabite Network Card 1 port CATGA Copper",
+          "10 Gigabite Network Card 2 port CATGA Copper",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["Select Training", "Free Training with purchase"],
+      },
     ],
   },
 ];

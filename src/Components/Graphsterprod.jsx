@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { GRAPHSTER } from "../data/Graphster";
-
+import ProductOptions from "./ProductOptions";
 const GraphsterProd = () => {
   const { graphsterId } = useParams(null);
   const [graphster, setGraphster] = useState(null);
@@ -95,6 +95,11 @@ const GraphsterProd = () => {
             <div id="desktertext-desc">{graphster.content}</div>
           </div>
         </div>
+        {graphster.options && (
+          <div className="options-center">
+            <ProductOptions options={graphster.options} />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1057,6 +1057,114 @@ export const RACKSTER = [
         </li>
       </ul>,
     ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel C621 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Window 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: [
+          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "128 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz",
+          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+          "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+        ],
+      },
+      {
+        label: "Video Card",
+        values: [
+          "Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "Nvidia RTX 2080 8GB 256 bit  GDDR6 2944 CUDA Cores",
+          "Nvidia RTX 2080Ti 11GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "1 TB M.2 NVMe PCIe Solid State Drive - EVO Seriess",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Not Selected",
+          "1 TB 7200 rpm SATA Hard Drive",
+          "2 TB 7200 rpm SATA Hard Drive",
+          "10 TB 7200 rpm SATA Hard Drive",
+          "512 GB SATA Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "Not Selected",
+          "1 TB 7200 rpm SATA Hard Drive",
+          "2 TB 7200 rpm SATA Hard Drive",
+          "10 TB 7200 rpm SATA Hard Drive",
+          "512 GB SATA Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 1",
+        values: ["No Raid", "4x10 TB SAS Hard Drive", "4x14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Raid Drive Set 2",
+        values: ["No Raid", "4x10 TB SAS Hard Drive", "4x14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Tape Drive",
+        values: ["LTO Ultrium 7 (6TB Native / 15 TB Cramp)"],
+      },
+      {
+        label: "NIC",
+        values: [" 40 Gigabit Network Card", "40 Gigabit Network Card"],
+      },
+      {
+        label: "Storage RAID Node 1",
+        values: [
+          "Deskster RAID Storage Node",
+          "16 x 10 TB SAS Hard Drive",
+          "16 x 14 TB SAS Hard Drive",
+        ],
+      },
+      {
+        label: "Storage RAID Node 1",
+        values: [
+          "Deskster RAID Storage Node",
+          "16 x 10 TB SAS Hard Drive",
+          "16 x 14 TB SAS Hard Drive",
+        ],
+      },
+    ],
   },
 ];
 
@@ -1120,6 +1228,88 @@ export const ROADSTER = [
         </li>
       </ul>,
     ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel X 299 Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Window 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: [
+          "i7-9800 X 8 Core 3.8 GHz (4.4 Turbo) 16.5 MB Cache",
+          "i9-9820x 10 core 3.3 GHz (4.1 Turbo) 16.5 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "32 GB   PC 4 -21300 DDR4 2666 MHz",
+          "64 GB   PC 4 -21300 DDR4 2666 MHz",
+          "128 GB  PC 4 -21300 DDR4 2666 MHz",
+        ],
+      },
+      {
+        label: "Video Card",
+        values: ["Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores"],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Not Selected",
+          "512 GB SATA Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 3",
+        values: [
+          "Not Selected",
+          "512 GB SATA Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Drive 4",
+        values: [
+          "Not Selected",
+          "2 TBSAS",
+          "4 TBSAS",
+          "10 TBSAS",
+          "512 GB SATA Solid State Drive - PRO Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Hard Sided Travel Case",
+        values: [
+          "Not Selected",
+          "Standard soft Case - Wheeled",
+          "Hard Sided Travel Case with",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["Free Training with Purchase", "Select Training"],
+      },
+    ],
   },
   {
     id: 2,
@@ -1174,6 +1364,96 @@ export const ROADSTER = [
         </li>
       </ul>,
     ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel C621Chipset Motherboard"],
+      },
+      {
+        label: "OS",
+        values: ["Window 10 Pro 64-bit"],
+      },
+      {
+        label: "CPU",
+        values: [
+          "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
+          "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
+          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          " 32 GB  ECC PC 4 -21300 DDR4 2666 MHz (2 x 16GB)",
+          "64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
+          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+          " 768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+        ],
+      },
+      {
+        label: "Video Card",
+        values: [
+          "Select Video Card",
+          " Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Not Selected",
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Raid Drive Set 1",
+        values: [
+          "Select Raid Drive Set 1",
+          "NO RAID",
+          "5x2 TB SAS",
+          "5x4 TB SAS",
+          "5x512 GB SATA Solid State Drive ",
+          "5x1 TB SATA Solid State Drive ",
+          "5x2 TB SATA Solid State Drive ",
+          "5x4 TB SATA Solid State Drive",
+        ],
+      },
+      {
+        label: "Raid Drive Set 2",
+        values: [
+          "Select Raid Drive Set 2",
+          "NO RAID",
+          "5x2 TB SAS",
+          "5x4 TB SAS",
+          "5x512 GB SATA Solid State Drive ",
+          "5x1 TB SATA Solid State Drive ",
+          "5x2 TB SATA Solid State Drive ",
+          "5x4 TB SATA Solid State Drive",
+        ],
+      },
+    ],
   },
 ];
 
@@ -1190,18 +1470,7 @@ export const ROADSTER = [
 //   {
 //     label: "CPU",
 //     values: [
-//       "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
-//       "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
-//       "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
-//       "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
-//       "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
-//       "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
-//       "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
-//       "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
-//       "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
-//       "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
-//       "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
-//       "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+//
 //     ],
 //   },
 //   {
