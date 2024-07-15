@@ -970,7 +970,7 @@ export const RACKSTER = [
         label: "OS Drive",
         values: [
           "1 TB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "1 TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+          "1 TB M.2 NVMe PCIe Solid State Drive - EVO Seriess",
         ],
       },
       {
