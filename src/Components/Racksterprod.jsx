@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
-
+import ProductOptions from "./ProductOptions";
 const RacksterProd = () => {
   const { racksterId } = useParams();
   const [rackster, setRackster] = useState(null);
@@ -101,6 +101,11 @@ const RacksterProd = () => {
             </div>
           )}
         </div>
+        {RACKSTER.options && (
+          <div className="options-center">
+            <ProductOptions options={rackster.options} />
+          </div>
+        )}
       </div>
     </div>
   );
