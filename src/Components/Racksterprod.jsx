@@ -101,7 +101,7 @@ const RacksterProd = () => {
             </div>
           )}
         </div>
-        {RACKSTER.options && (
+        {rackster.options && (
           <div className="options-center">
             <ProductOptions options={rackster.options} />
           </div>
