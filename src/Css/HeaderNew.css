@@ -68,9 +68,6 @@ body {
     height: 50px;
     width: 150px;
   }
-  .hamburger {
-    display: block; /* Show hamburger icon on mobile */
-  }
   .close-icon {
     display: block;
   }

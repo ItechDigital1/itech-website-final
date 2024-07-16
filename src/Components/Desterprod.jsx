@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Deskter } from "../data/Deskter";
 import "../Css/Deskterprod.css";
-
+import ProductOptions from "./ProductOptions";
 const DeskterProd = () => {
   const { deskterId } = useParams();
   const [deskter, setDeskter] = useState(null);
@@ -91,6 +91,11 @@ const DeskterProd = () => {
             <div id="desktertext-desc">{deskter.content}</div>
           </div>
         </div>
+        {deskter.options && (
+          <div className="options-center">
+            <ProductOptions options={deskter.options} />
+          </div>
+        )}
       </div>
     </div>
   );

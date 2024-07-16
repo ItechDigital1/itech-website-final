@@ -75,6 +75,32 @@ li {
   flex-wrap: wrap;
 }
 
+/* new */
+.navbar .dropdown {
+  display: none;
+  position: absolute;
+  /* background-color:; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.navbar .dropdown.open {
+  display: block;
+}
+.navbar .has-children {
+  position: relative;
+}
+
+.navbar .dropdown-item {
+  padding: 10px;
+  white-space: nowrap;
+}
+.navbar .has-children > .navs-link::after {
+  content: " ▼";
+}
+
+.navbar .nav__item {
+  margin: 5px 0;
+}
+/* new */
 .nav__item {
   margin: 0 20px;
   color: white;

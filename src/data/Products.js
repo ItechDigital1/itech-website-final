@@ -109,6 +109,165 @@ export const PRODUCTS = [
   },
   {
     id: 2,
+    name: "Labster",
+    image: Labster,
+    subname: "High End Console based Audio/Video Forensic Workstation",
+    subdesc: "SKU: LB-1101",
+    description: [
+      <ul>
+        <li>
+          Labster is an Advanced Lab Workstation specialized for use in High End
+          Digital Forensics to Complex Audio and Video Forensics.
+        </li>
+
+        <li>
+          This workstation is specifically designed to run Audio and Video
+          Forensics and authentication applications like DVR analysis, VIP,
+          Kinesis, Impress Pro, and Mandate etc.
+        </li>
+
+        <li>
+          With High End Ergonomic Design, Variable Mode Height Adjustable Table
+          (motorized) along with Blue LED strips.
+        </li>
+
+        <li>
+          It is designed for Long Hours of work as Forensics Experts can conduct
+          their processes both in standing and sitting position, by just
+          adjusting the height of the table.
+        </li>
+
+        <li>
+          It is also provided with options such as Multiple Cloning and Imaging
+          i.e. 4:4 and 1:4 etc. with Interfaces with SAS, SATA, USB, IDE etc.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <li>
+          Labster Audio/Video Forensic Workstations are Configured based on
+          Customer Requirements and Preferences.
+        </li>
+        <li>
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
+        </li>
+        <li>103 Key Keyboard and Mouse combo-Wired.</li>
+        <li>
+          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
+          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
+        </li>
+        <li>
+          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
+          SSD, and server class PCIe SSD).
+        </li>
+        <li>
+          Security Screwdriver set with assorted bits for opening enclosures.
+        </li>
+      </ul>,
+    ],
+    options: [
+      {
+        label: "Chipset Motherboard",
+        values: ["Intel C621Chipset Motherboard"],
+      },
+      { label: "OS", values: ["Window 10 Pro 64-bit"] },
+      {
+        label: "CPU",
+        values: [
+          "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
+          "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
+          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
+          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
+          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
+          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
+          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
+          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
+          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
+          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
+          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
+          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
+        ],
+      },
+      {
+        label: "RAM",
+        values: [
+          "32 GB  ECC PC 4 -21300 DDR4 2666 MHz (2 x 16GB)",
+          "     64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
+          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
+          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
+          "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
+        ],
+      },
+      {
+        label: "Video Card",
+        values: [
+          "Select Video Card",
+          "Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
+          "Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
+          "Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
+        ],
+      },
+      {
+        label: "OS Drive",
+        values: [
+          "Select OS drive",
+          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
+          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
+          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
+        ],
+      },
+      {
+        label: "Drive 2",
+        values: [
+          "Select Drive 2",
+          "Not Selected",
+          "2 TBSAS",
+          "4 TBSAS",
+          "10 TBSAS",
+          "512 GB SATA Solid State Drive Pro Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Raid Drive set 1",
+        values: [
+          "Select Raid Drive Set 1",
+          "Not Selected",
+          "2 TBSAS",
+          "10 TBSAS",
+          "512 GB SATA Solid State Drive Pro Series",
+          "1 TB SATA Solid State Drive PRO Series",
+          "2 TB SATA Solid State Drive PRO Series",
+          "4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Select Raid Drive Set 2",
+        values: [
+          "Select Raid Drive Set 2",
+          "No Raid",
+          "4x2 TBSAS",
+          "4x4 TBSAS",
+          "4x10 TB 7200 rpm SATA Hard Drive-Capacity - 40 Tb Configured as RAIDS",
+          "512 GB SATA Solid State Drive Pro Series",
+          "4x1 TB SATA Solid State Drive PRO Series",
+          "4x2 TB SATA Solid State Drive PRO Series",
+          "4x4 TB SATA Solid State Drive PRO Series",
+        ],
+      },
+      {
+        label: "Training",
+        values: ["Select Training", "Free Training with Purchase", "Get Quote"],
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Lapster",
     image: Lapster,
     subname: "High End Forensic Laptop",
@@ -270,166 +429,36 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: 3,
-    name: "Labster",
-    image: Labster,
-    subname: "High End Console based Audio/Video Forensic Workstation",
-    subdesc: "SKU: LB-1101",
+    id: 4,
+    name: "Telster",
+    image: Telster,
+    subname: "High Performance Cluster",
+    subdesc: "SKU: TL-1101",
     description: [
       <ul>
         <li>
-          Labster is an Advanced Lab Workstation specialized for use in High End
-          Digital Forensics to Complex Audio and Video Forensics.
+          Telster is a 10U rack based server that can be used with maximum
+          acceleration and cost efficiency for AI, ML, Deep Learning, Password
+          cracking and High Performance Cluster (HPC) Applications.
         </li>
-
         <li>
-          This workstation is specifically designed to run Audio and Video
-          Forensics and authentication applications like DVR analysis, VIP,
-          Kinesis, Impress Pro, and Mandate etc.
+          It is powered by Intel Dual Xeon Platinum Processors and 16 Nvidia
+          Tesla 32GB V100 GPUs. It consists of highly optimized GPU-to-GPU
+          Interconnect Architectures.
         </li>
-
         <li>
-          With High End Ergonomic Design, Variable Mode Height Adjustable Table
-          (motorized) along with Blue LED strips.
+          It can also run Nvidia vGPU software specifically high graphics
+          demanding VDI environment to run complex applications.
         </li>
-
         <li>
-          It is designed for Long Hours of work as Forensics Experts can conduct
-          their processes both in standing and sitting position, by just
-          adjusting the height of the table.
-        </li>
-
-        <li>
-          It is also provided with options such as Multiple Cloning and Imaging
-          i.e. 4:4 and 1:4 etc. with Interfaces with SAS, SATA, USB, IDE etc.
+          This advanced GPU system is able to compute 2 PetaFLOPS of complex AI
+          and Deep Learning models.
         </li>
       </ul>,
-    ],
-    content: [
-      <ul>
-        <li>
-          Labster Audio/Video Forensic Workstations are Configured based on
-          Customer Requirements and Preferences.
-        </li>
-        <li>
-          System Restore bootable DVD enables restore to factory configuration
-          of the operating system and relevant softwares.
-        </li>
-        <li>103 Key Keyboard and Mouse combo-Wired.</li>
-        <li>
-          Forensic Toolbox containing Drive Adapters and Power / Signal Cables
-          (SAS, SATA, IDE, microSATA, SATA LIF, MacBook Air, Blade SSD).
-        </li>
-        <li>
-          PCIe SSD drive adapters (PCIe SSD m.2 NVMe, 2013 or newer MacBook Pro
-          SSD, and server class PCIe SSD).
-        </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
-        </li>
-      </ul>,
-    ],
-    options: [
-      {
-        label: "Chipset Motherboard",
-        values: ["Intel C621Chipset Motherboard"],
-      },
-      { label: "OS", values: ["Window 10 Pro 64-bit"] },
-      {
-        label: "CPU",
-        values: [
-          "Silver 4110, CPU 8 Core, 2.1  GHz, 11 MB Cache",
-          "Silver 4112, CPU 4 Core, 2.6  GHz, 8.25 MB Cache",
-          "Silver 4114, CPU 10 Core, 2.2  GHz, 13.75 MB Cache",
-          "Silver 4116, CPU 12 Core, 2.1  GHz, 16.5 MB Cache",
-          "Gold 5122 CPU 4 Core, 3.6 GHz, 16.5 MB Cache",
-          "Gold 5120 CPU 14 Core, 2.2 GHz, 19.25 MB Cache",
-          "Gold 6130 CPU 16 Core, 2.1 GHz, 22 MB Cache",
-          "Gold 6134 CPU 8 Core, 3.2 GHz, 24.75 MB Cache",
-          "Gold 6140 CPU 18 Core, 2.3 GHz, 24.75 MB Cache",
-          "Gold 6148 CPU 20 Core, 2.4 GHz, 27.5 MB Cache",
-          "Platinum 8160 CPU 24 Core, 2.1 GHz, 33 MB Cache",
-          "Platinum 8180 CPU 28 Core, 2.5 GHz, 38.5 MB Cache",
-        ],
-      },
-      {
-        label: "RAM",
-        values: [
-          "32 GB  ECC PC 4 -21300 DDR4 2666 MHz (2 x 16GB)",
-          "     64 GB  ECC PC 4 -21300 DDR4 2666 MHz (4x 16 GB)",
-          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
-          "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
-          "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
-          "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",
-        ],
-      },
-      {
-        label: "Video Card",
-        values: [
-          "Select Video Card",
-          "Nvidia GTX 1050Ti, 4GB,12B bit GDDR5 768 CUDA Cores",
-          "Nvidia RTX 2080 8 GB 256 bit  GDDR6 2944 CUDA Cores",
-          "Nvidia RTX 2080Ti 11 GB 256 bit  GDDR6 4352 CUDA Cores",
-        ],
-      },
-      {
-        label: "OS Drive",
-        values: [
-          "Select OS drive",
-          "512 GB M. 2. NVMe PCIe Solid State Drive - PRO Series",
-          "1. TB M.2 NVMe PCIe Solid State Drive - PRO Series",
-          "2. TB M.2 NVMe PCIe Solid State Drive - EVO Series",
-        ],
-      },
-      {
-        label: "Drive 2",
-        values: [
-          "Select Drive 2",
-          "Not Selected",
-          "2 TBSAS",
-          "4 TBSAS",
-          "10 TBSAS",
-          "512 GB SATA Solid State Drive Pro Series",
-          "1 TB SATA Solid State Drive PRO Series",
-          "2 TB SATA Solid State Drive PRO Series",
-          "4 TB SATA Solid State Drive PRO Series",
-        ],
-      },
-      {
-        label: "Raid Drive set 1",
-        values: [
-          "Select Raid Drive Set 1",
-          "Not Selected",
-          "2 TBSAS",
-          "10 TBSAS",
-          "512 GB SATA Solid State Drive Pro Series",
-          "1 TB SATA Solid State Drive PRO Series",
-          "2 TB SATA Solid State Drive PRO Series",
-          "4 TB SATA Solid State Drive PRO Series",
-        ],
-      },
-      {
-        label: "Select Raid Drive Set 2",
-        values: [
-          "Select Raid Drive Set 2",
-          "No Raid",
-          "4x2 TBSAS",
-          "4x4 TBSAS",
-          "4x10 TB 7200 rpm SATA Hard Drive-Capacity - 40 Tb Configured as RAIDS",
-          "512 GB SATA Solid State Drive Pro Series",
-          "4x1 TB SATA Solid State Drive PRO Series",
-          "4x2 TB SATA Solid State Drive PRO Series",
-          "4x4 TB SATA Solid State Drive PRO Series",
-        ],
-      },
-      {
-        label: "Training",
-        values: ["Select Training", "Free Training with Purchase", "Get Quote"],
-      },
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Trackster",
     image: Trackster,
     subname: "OTG Field Investigation and Surveillance Vehicle",
@@ -500,7 +529,7 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Vaultster Tower RAID",
     image: Vaultster,
     subname: "High Capacity Direct Attached Storage RAID",
@@ -616,35 +645,6 @@ export const PRODUCTS = [
           "100 Gigabite Network Card - 2 ports",
         ],
       },
-    ],
-  },
-  {
-    id: 6,
-    name: "Telster",
-    image: Telster,
-    subname: "High Performance Cluster",
-    subdesc: "SKU: TL-1101",
-    description: [
-      <ul>
-        <li>
-          Telster is a 10U rack based server that can be used with maximum
-          acceleration and cost efficiency for AI, ML, Deep Learning, Password
-          cracking and High Performance Cluster (HPC) Applications.
-        </li>
-        <li>
-          It is powered by Intel Dual Xeon Platinum Processors and 16 Nvidia
-          Tesla 32GB V100 GPUs. It consists of highly optimized GPU-to-GPU
-          Interconnect Architectures.
-        </li>
-        <li>
-          It can also run Nvidia vGPU software specifically high graphics
-          demanding VDI environment to run complex applications.
-        </li>
-        <li>
-          This advanced GPU system is able to compute 2 PetaFLOPS of complex AI
-          and Deep Learning models.
-        </li>
-      </ul>,
     ],
   },
 ];
