@@ -32,12 +32,14 @@ import DeskterProd from "./Components/Desterprod";
 // import HeaderNew from "./Components/Headernew";
 import CubesterPage from "./Components/Cubester";
 import CubesterProd from "./Components/CubesterProd";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
         {/* <HeaderNew /> */}
+
         <Routes>
           {/* <Route path="/" element={<Content />} /> */}
           <Route path="/" element={<ContentsNew />} />

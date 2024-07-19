@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Css/Header.css";
+
 import { Link, NavLink } from "react-router-dom";
 import itechLogo from "../assets/images/img/icon/itech_logo_header.png";
 import { PRODUCTS } from "../data/Products";
@@ -26,7 +27,6 @@ const Header = () => {
   const removeActive = () => {
     setIsOpen(false);
   };
-
   return (
     <div className="navbar">
       <center>
@@ -117,64 +117,119 @@ const Header = () => {
                     Home
                   </NavLink>
                 </li>
-                {/* <li className="has-children nav__item" onClick={removeActive}>
-                  <NavLink
-                    to="#"
-                    className="navs-link navLink"
-                    id="sub-drop-down"
-                  >
-                    Products
-                  </NavLink>
-                </li> */}
                 <li className="has-children nav__item" onClick={removeActive}>
-                  <NavLink
-                    to="#"
-                    className="navs-link navLink"
-                    id="sub-drop-down"
-                  >
-                    Hardware
-                  </NavLink>
-                  <ul className="dropdown arrow-top">
-                    <Link className="dropdown-item" to="/deskter">
-                      Deskter
-                    </Link>
-                    {PRODUCTS.map((product) => (
-                      <li key={product.id}>
-                        <Link
+                  <NavLink to="#" className="navLink" id="sub-drop-down">
+                    Products
+                    <ul className="dropdown" id="drop-down">
+                      <li className="has-children" id="sub-drop-down">
+                        <NavLink to="#">Hardware</NavLink>
+                        <ul className="dropdown">
+                          <li>
+                            <Link to="/deskter">Deskter</Link>
+                          </li>
+                          {PRODUCTS.map((product) => (
+                            <li key={product.id}>
+                              <Link to={`/products/${product.id}`}>
+                                {product.name}
+                              </Link>
+                            </li>
+                          ))}
+                          <li>
+                            <Link to="/cubester">Cubester</Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/graphster">
+                              Graphster
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/roadster">
+                              Roadster
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="rackster">
+                              Rackster
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        className="has-children nav__item"
+                        onClick={removeActive}
+                      >
+                        <NavLink
+                          to="#"
                           className="dropdown-item"
-                          to={`/products/${product.id}`}
+                          id="sub-drop-down"
                         >
-                          {product.name}
+                          Lab Equipments
+                        </NavLink>
+                        <ul className="dropdown arrow-top">
+                          <li className="nav__item" onClick={removeActive}>
+                            <Link to="/faradayBag" className="dropdown-item">
+                              Faraday bags
+                            </Link>
+                          </li>
+                          <li className="dropdown-item">
+                            <Link className="dropdown-item">Blockster</Link>
+                          </li>
+                          <li className="dropdown-item">
+                            <Link className="dropdown-item">Chargester</Link>
+                          </li>
+                          <li className="dropdown-item">
+                            <Link className="dropdown-item">Lockster</Link>
+                          </li>
+                          <li className="dropdown-item">
+                            <Link className="dropdown-item">
+                              R,F Shield Locker
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        className="has-children nav__item"
+                        onClick={removeActive}
+                      >
+                        <NavLink
+                          to="#"
+                          className="dropdown-item"
+                          id="sub-drop-down"
+                        >
+                          DIY
+                        </NavLink>
+                        <ul className="dropdown arrow-top">
+                          <li>
+                            <Link className="dropdown-item" to="#">
+                              Cabinets
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="#">
+                              Tableau
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="nav__item" onClick={removeActive}>
+                        <Link to="/software" className="navs-link navLink">
+                          Software
                         </Link>
                       </li>
-                    ))}
-                    <li>
-                      {/* ggdfgdfg */}
-                      <Link className="dropdown-item" to="/cubester">
-                        Cubester
-                      </Link>
-                      <Link className="dropdown-item" to="/graphster">
-                        Graphster
-                      </Link>
-                      <Link className="dropdown-item" to="/roadster">
-                        Roadster
-                      </Link>
-                      <Link className="dropdown-item" to="rackster">
-                        Rackster
-                      </Link>
-                    </li>
-                  </ul>
+                    </ul>
+                  </NavLink>
                 </li>
-                <li className="nav__item" onClick={removeActive}>
+
+                {/* <li className="nav__item" onClick={removeActive}>
                   <Link to="/software" className="navs-link navLink">
                     Software
                   </Link>
-                </li>
-                <li className="nav__item" onClick={removeActive}>
+                </li> */}
+                {/* <li className="nav__item" onClick={removeActive}>
                   <Link to="/faradayBag" className="navs-link navLink">
                     Faraday bags
                   </Link>
-                </li>
+                </li> */}
                 <li className="has-children nav__item" onClick={removeActive}>
                   <Link className="navLink" to="/Projects" id="sub-drop-down">
                     Projects

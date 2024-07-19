@@ -1,0 +1,192 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+.site-navbar {
+  text-align: center;
+  background-color: #000;
+}
+
+.site-navbar .main-navbar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navbar .site-logo {
+  margin-right: 20px;
+}
+
+.site-navbar .hamburger {
+  display: none;
+}
+
+.site-navbar .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navbar .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navbar .navMenu li {
+  position: relative;
+}
+
+.site-navbar .navMenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+}
+
+.site-navbar .navMenu li a:hover {
+  background-color: #f0f0f0;
+  color: #23527c;
+}
+
+.site-navbar .navMenu li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  z-index: 1000;
+}
+
+.site-navbar .navMenu li:hover > ul {
+  display: block;
+}
+
+.site-navbar .navMenu li ul li {
+  width: 200px;
+}
+
+.site-navbar .navMenu li ul li a {
+  padding: 10px;
+  color: #333;
+}
+
+.site-navbar .navMenu li ul li a:hover {
+  background-color: #ddd;
+  color: #23527c;
+}
+
+.site-navbar .navMenu .has-children > a::after {
+  content: "\25BC";
+  margin-left: 5px;
+}
+
+.site-navbar .navMenu .has-children:hover > a::after {
+  transform: rotate(180deg);
+}
+
+.site-navbar .open {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .site-navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .site-navbar .site-navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-navbar .site-navigation.open {
+    display: flex;
+  }
+
+  .site-navbar .navMenu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-navbar .navMenu li {
+    width: 100%;
+  }
+
+  .site-navbar .navMenu li ul {
+    position: static;
+  }
+
+  .site-navbar .navMenu li ul li {
+    width: 100%;
+  }
+}
+
+
+<li className="has-children nav__item" onClick={removeActive}>
+                  <NavLink
+                    to="#"
+                    className="navs-link navLink"
+                    id="sub-drop-down"
+                  >
+                    Hardware
+                  </NavLink>
+                  <ul className="dropdown arrow-top">
+                    <Link className="dropdown-item" to="/deskter">
+                      Deskter
+                    </Link>
+                    {PRODUCTS.map((product) => (
+                      <li key={product.id}>
+                        <Link
+                          className="dropdown-item"
+                          to={`/products/${product.id}`}
+                        >
+                          {product.name}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link className="dropdown-item" to="/cubester">
+                        Cubester
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/graphster">
+                        Graphster
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/roadster">
+                        Roadster
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="rackster">
+                        Rackster
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
