@@ -10,52 +10,51 @@ export const GRAPHSTER = [
     description: [
       <ul>
         <li>
-          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
-          by ITECH.
+          Graphster-R is an extremely high GPU Forensic Rack Server designed by
+          Forensic Professionals Specifically Designed to cater to
+          Cryptanalysis, Password Recovery and Digital Forensics..
         </li>
         <li>
-          It is a Proprietary Product Solution under ITECH Brand of Forensic
-          Storage Solution
+          It is a high end forensic GPU server powered by with 8 high end GPU's
+          along with Intel Dual Xeon series Processors Designed with high
+          Configuration by Digital Forensic professionals to meet almost all the
+          features for running High End Applications which demand Complex
+          calculations.
         </li>
         <li>
-          It has scale up Capabilities and to meet requirements of High Speed
-          and High Volume RAID Storage Configurations upto 256TB
+          To provide High Storage Scalability it is provided with a Dual RAID
+          System Capable to handling 10 Drives with storage upto 100TB.
         </li>
         <li>
-          It is equipped with high speed transfer Network Interface Cards
-          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
-          ensuring seemless data transfer from storage device to
-          server/workstation.
+          With 8 GPU capacities this server is placed above the Graphster
+          workstation as it will handle multiple clients to execute multiple
+          processes.
         </li>
         <li>
-          Each Bay is equipped with locking mechanism just ensuring physical
-          security of each drive connected and also to avoid any further
-          complications of RAID Failures
+          It is tailor made to fulfill the needs of forensic labs or agencies
+          with the best available configuration to overcome challenges
+          specifically with password cracking and decryption.
         </li>
-        <li>
-          This is Tailor made to fulfill the needs of Forensic Labs with a
-          configuration which has Increased High Storage Capacity, High
-          Scalability and High IOPS.
-        </li>
+        <li>It is highly scalable, multitasking, extremely fast and secure.</li>
       </ul>,
     ],
     content: [
       <ul>
         <li>
-          Vaultster are Configured based on Customer Requirements and
-          Preferences.
+          Graphster-R Forensic Rack Mounted Server are Configured based on
+          Customer Requirements and Preferences.
         </li>
         <li>
-          Essential Cables for external connections will be provided based on
-          requirements.
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
         </li>
+        <li>103 Key Keyboard and Mouse combo-Wired.</li>
         <li>
           Security Screwdriver set with assorted bits for opening enclosures.
         </li>
       </ul>,
     ],
     options: [
-      { label: "CPU Xeon", values: ["CPU Core i7/i9"] },
       {
         label: "Chipset Motherboard",
         values: ["Intel C621Chipset Motherboard"],
@@ -81,7 +80,7 @@ export const GRAPHSTER = [
       {
         label: "RAM",
         values: [
-          "12 B GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
+          "128 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (4x32GB)",
           "256 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x32GB)",
           "512 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (8x64GB)",
           "768 GB ECC Memory  PC4  21300 DDR4 - 2666 MHz (12x64GB)",

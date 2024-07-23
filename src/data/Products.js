@@ -1015,6 +1015,36 @@ export const RACKSTER = [
         label: "NIC",
         values: [" 40 Gigabit Network Card", "40 Gigabit Network Card"],
       },
+      { label: "Node", values: ["Deskter RAID Storage Node"] },
+      {
+        label: "Storage RAID Node 1",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 2",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 3",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 4",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 5",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 6",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      {
+        label: "Storage RAID Node 7",
+        values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
+      },
+      { label: "Switch", values: ["Network Managed Ports"] },
     ],
   },
   {

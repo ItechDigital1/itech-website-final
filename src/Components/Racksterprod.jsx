@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
+import NodeOptions from "./ProductOptions";
 const RacksterProd = () => {
   const { racksterId } = useParams();
   const [rackster, setRackster] = useState(null);

@@ -5,6 +5,7 @@ import DeskterClassic from "../assets/images/img/Deskster-Classic.png";
 import DeskterServer from "../assets/images/img/Deskster-Server.jpg";
 import DeskterDual from "../assets/images/img/Deskster-Dual.jpg";
 import DeskterXADR from "../assets/images/img/Deskster-X-ADR.png";
+import DeskterRaid0 from "../assets/images/img/Deskster-Classic.png";
 export const Deskter = [
   {
     id: 1,
@@ -608,7 +609,7 @@ export const Deskter = [
   },
   {
     id: 4,
-    image: DeskterClassic,
+    image: DeskterRaid0,
     name: "Deskster Classic(i7/i9) with RAID 0",
     subname: "High End Forensic Workstation",
     subId: "SKU: DS-1201",
@@ -798,7 +799,7 @@ export const Deskter = [
   },
   {
     id: 5,
-    image: DeskterClassic,
+    image: DeskterRaid0,
     name: "Deskster Classic(i7/i9) with RAID 1",
     subname: "High End Extended Forensic Workstation",
     subId: "SKU: DS-2101",
@@ -988,7 +989,7 @@ export const Deskter = [
   },
   {
     id: 6,
-    image: DeskterClassic,
+    image: DeskterRaid0,
     name: "Deskster Classic(i7/i9) with RAID 2",
     subname: "High End Extended Forensic Workstation",
     subId: "SKU: DS-2101",
@@ -2207,7 +2208,7 @@ export const Deskter = [
     options: [
       {
         label: "Chipset Motherboard",
-        values: ["Intel C621Chipset Motherboard"],
+        values: ["Intel X299 Chipset Motherboard"],
       },
       {
         label: "OS",
