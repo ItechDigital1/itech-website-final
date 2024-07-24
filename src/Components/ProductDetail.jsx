@@ -3,25 +3,29 @@ import { useParams } from "react-router-dom";
 import { PRODUCTS } from "../data/Products";
 import "../Css/Hardware.css";
 import ProductOptions from "./ProductOptions";
+
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
 
-  const navTabs = document.querySelectorAll("#nav-tab .nav-link");
-  const tabPanes = document.querySelectorAll(".tab-pane");
-
-  navTabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      navTabs.forEach((tab) => tab.classList.remove("active"));
-      tab.classList.add("active");
-
-      tabPanes.forEach((pane) => pane.classList.remove("show", "active"));
-      tabPanes[index].classList.add("show", "active");
-    });
-  });
   useEffect(() => {
     setProduct(PRODUCTS.find(({ id }) => id === Number(productId)));
   }, [productId]);
+
+  useEffect(() => {
+    const navTabs = document.querySelectorAll("#nav-tab .nav-link");
+    const tabPanes = document.querySelectorAll(".tab-pane");
+
+    navTabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        navTabs.forEach((tab) => tab.classList.remove("active"));
+        tabPanes.forEach((pane) => pane.classList.remove("show", "active"));
+
+        tab.classList.add("active");
+        tabPanes[index].classList.add("show", "active");
+      });
+    });
+  }, [product]);
 
   if (!product) {
     return <div>Loading...</div>;

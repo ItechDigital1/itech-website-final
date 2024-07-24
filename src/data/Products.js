@@ -1045,6 +1045,22 @@ export const RACKSTER = [
         values: ["16 x 10 TB SAS Hard Drive", "16 x 14 TB SAS Hard Drive"],
       },
       { label: "Switch", values: ["Network Managed Ports"] },
+      {
+        label: "No of Ports",
+        values: ["Select Port", "48-port 10 Gbe + 4 port 40 Gbe"],
+      },
+      {
+        label: "Tape Archive Module",
+        values: [
+          "Archive Module",
+          "Select Archive Module",
+          "LTO -8-Ultrium Drive, 24 slot library, SAS Interface",
+        ],
+      },
+      {
+        label: "Tape Drive",
+        values: ["Select Tape Drive", "LTO Ultrium 7 (6TB Native / 15TB Cramp"],
+      },
     ],
   },
   {
@@ -1193,6 +1209,23 @@ export const RACKSTER = [
           "16 x 10 TB SAS Hard Drive",
           "16 x 14 TB SAS Hard Drive",
         ],
+      },
+      { label: "Switch", values: ["Network Managed Ports"] },
+      {
+        label: "No of Ports",
+        values: ["Select Port", "48-port 10 Gbe + 4 port 40 Gbe"],
+      },
+      {
+        label: "Tape Archive Module",
+        values: [
+          "Archive Module",
+          "Select Archive Module",
+          "LTO -8-Ultrium Drive, 24 slot library, SAS Interface",
+        ],
+      },
+      {
+        label: "Tape Drive",
+        values: ["Select Tape Drive", "LTO Ultrium 7 (6TB Native / 15TB Cramp"],
       },
     ],
   },
@@ -1350,48 +1383,47 @@ export const ROADSTER = [
     description: [
       <ul>
         <li>
-          Vaultster is a 12-bay high speed Direct Attached Storage RAID designed
-          by ITECH.
+          Roadster X is an Extended Ruggedized Digital Forensics High End
+          Portable Workstation Designed and Configured Specifically for On-Field
+          Forensics in any Terrain Environment.
         </li>
         <li>
-          It is a Proprietary Product Solution under ITECH Brand of Forensic
-          Storage Solution
+          It is Designed to meet the entire requirement in terms of Forensic
+          Acquisition similar to a Lab in a Bag or a Mobile Lab kit.
         </li>
         <li>
-          It has scale up Capabilities and to meet requirements of High Speed
-          and High Volume RAID Storage Configurations upto 256TB
+          Besides its predecessor, the Roadster X has capabilities in Scaling up
+          its Storage Capacity upto 32TB which can cater to On-Field Forensics
+          of the next level with this Magnitude of Storage capability.
         </li>
         <li>
-          It is equipped with high speed transfer Network Interface Cards
-          (NIC's) with options of 10Gbps/25Gbps/40Gbps/50Gbps/100Gbps thus
-          ensuring seemless data transfer from storage device to
-          server/workstation.
+          It is Powered Dual Xeon Processors with High Memory RAM and Multiple
+          Storage Options.
         </li>
         <li>
-          Each Bay is equipped with locking mechanism just ensuring physical
-          security of each drive connected and also to avoid any further
-          complications of RAID Failures
-        </li>
-        <li>
-          This is Tailor made to fulfill the needs of Forensic Labs with a
-          configuration which has Increased High Storage Capacity, High
-          Scalability and High IOPS.
+          It is a Highly Durable, Robust and Reliable Portable Workstation
+          designed to withstand all On-Field complexities.
         </li>
       </ul>,
     ],
     content: [
       <ul>
         <li>
-          Vaultster are Configured based on Customer Requirements and
-          Preferences.
+          Roadster variants of Forensic Workstations are configured based on
+          Customer Requirements and Preferences.
         </li>
         <li>
-          Essential Cables for external connections will be provided based on
-          requirements.
+          System Restore bootable DVD enables restore to factory configuration
+          of the operating system and relevant softwares.
         </li>
-        <li>
-          Security Screwdriver set with assorted bits for opening enclosures.
-        </li>
+        <b>Accessories kit:</b>
+        <li>Along with Power and Ancillary Cables.</li>
+        <b>Forensic kit with Adapters and Cables:</b>
+        <li>PCIe Card SSD</li>
+        <li>PCIe M.2 SSD</li>
+        <li>PCIe Apple SSD</li>
+        <li>IDE Adapter</li>
+        <li>Interface cables like SAS, SATA, IDE, USB, FireWire, PCIe.</li>
       </ul>,
     ],
     options: [

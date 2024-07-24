@@ -40,9 +40,16 @@ const DeskterProd = () => {
 
   return (
     <div className="deskter-container">
-      <div className="deskterimage-container">
-        <img src={deskter.image} alt={deskter.name} className="deskterimage" />
+      <div className="deskterprod-container">
+        <div className="deskterimage-container">
+          <img
+            src={deskter.image}
+            alt={deskter.name}
+            className="deskterimage"
+          />
+        </div>
       </div>
+
       <div className="deskterdetails-container">
         <h3 className="deskterproduct-title">{deskter.name}</h3>
         <h6 className="deskterproduct-subtitle">{deskter.subname}</h6>
@@ -91,6 +98,7 @@ const DeskterProd = () => {
             <div id="desktertext-desc">{deskter.content}</div>
           </div>
         </div>
+
         {deskter.options && (
           <div className="options-center">
             <ProductOptions options={deskter.options} />

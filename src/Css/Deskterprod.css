@@ -1,4 +1,3 @@
-/* Container for the entire component */
 .deskter-container {
   display: flex;
   flex-direction: row;
@@ -9,7 +8,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Container for the product image */
 .deskterimage-container {
   flex: 1;
   display: flex;
@@ -23,13 +21,12 @@
   border-radius: 5px;
   border: 1px solid #ddd;
 }
-/* Container for the product details */
+
 .details-container {
   flex: 2;
   margin-left: 20px;
 }
 
-/* Product title styling */
 .deskterproduct-title {
   font-size: 24px;
   font-weight: bold;
@@ -37,7 +34,6 @@
   margin-bottom: 10px;
 }
 
-/* Product subtitle styling */
 .deskterproduct-subtitle {
   font-size: 18px;
   font-weight: normal;
@@ -45,14 +41,12 @@
   margin-bottom: 15px;
 }
 
-/* Product description styling */
 .deskterproduct-description {
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
 }
 
-/* Navigation tabs styling */
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
@@ -75,7 +69,6 @@
   width: 226.9px;
 }
 
-/* Tab content styling */
 .tab-content {
   margin-top: 20px;
 }
@@ -90,4 +83,47 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .deskter-container {
+    flex-direction: row;
+  }
+
+  .deskterimage-container {
+    max-width: 350px;
+    margin-right: 20px;
+  }
+
+  .deskterdetails-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .deskter-container {
+    padding: 10px;
+  }
+
+  .deskterimage {
+    width: 100%;
+    height: auto;
+  }
+
+  .deskterdetails-container {
+    padding: 10px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 5px 10px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .options-center {
+    padding: 10px;
+  }
 }
