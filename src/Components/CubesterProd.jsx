@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CUBESTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
+import "../Css/Deskterprod.css";
+
 const CubesterProd = () => {
   const { cubesterId } = useParams();
   const [cubester, setcubester] = useState(null);
@@ -41,13 +43,14 @@ const CubesterProd = () => {
   }
 
   return (
-    <div className="main-container">
-      <div className="deskter-container">
+    <div className="desktermain-container">
+      <div className="deskterprod-container">
         <div className="deskterimage-container">
           <img
             src={cubester.image}
             alt={cubester.name}
             className="deskterimage"
+            style={{ height: "195.2px", width: "292.8px" }}
           />
         </div>
         <div className="deskterdetails-container">
@@ -57,10 +60,10 @@ const CubesterProd = () => {
           <nav>
             <div className="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
               <a
+                href="#nav-description"
                 className="nav-item nav-link active"
                 id="nav-description-tab"
                 data-toggle="tab"
-                href="#nav-description"
                 role="tab"
                 aria-controls="nav-description"
                 aria-selected="true"
@@ -103,12 +106,12 @@ const CubesterProd = () => {
             )}
           </div>
         </div>
-        {cubester.options && (
-          <div className="options-center">
-            <ProductOptions options={cubester.options} />
-          </div>
-        )}
       </div>
+      {cubester.options && (
+        <div className="deskteroptions-center">
+          <ProductOptions options={cubester.options} />
+        </div>
+      )}
     </div>
   );
 };

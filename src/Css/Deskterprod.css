@@ -1,91 +1,100 @@
-.deskter-container {
+body {
+  background: #efefef;
+}
+.desktermain-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.deskterprod-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  /* background-color: #ffffff; */
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .deskterimage-container {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
-
-.deskterproduct-image {
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+.deskterimage {
+  max-width: 100%;
+  height: auto;
 }
-
-.details-container {
+.deskterdetails-container {
   flex: 2;
-  margin-left: 20px;
+  padding: 20px;
 }
 
 .deskterproduct-title {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
   margin-bottom: 10px;
 }
-
 .deskterproduct-subtitle {
   font-size: 18px;
-  font-weight: normal;
-  color: #666;
-  margin-bottom: 15px;
+  color: #555;
+  margin-bottom: 10px;
 }
-
 .deskterproduct-description {
   font-size: 16px;
-  color: #555;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
-
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%; /* Full width for nav-tabs */
 }
 
-.nav-item {
-  margin-bottom: -1px;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #495057;
+  /* background-color: #fff; */
+  border: none; /* Removed border */
 }
-
-.nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  color: #555;
+.nav-tabs .nav-link {
+  border: none; /* Removed border */
+  padding: 10px 15px;
+  margin-right: 5px;
+  color: #007bff;
+  cursor: pointer;
+  width: 50%; /* Each tab takes half the width */
+  text-align: center; /* Center the text */
 }
-
-.nav-link.active {
-  color: #fff !important;
-  background: linear-gradient(to right, #2f121c, #010412) !important;
-  border-color: #dee2e6 #dee2e6 #fff !important;
-  width: 226.9px;
+.nav-tabs .nav-link:hover {
+  border: none; /* Removed border */
 }
 
 .tab-content {
-  margin-top: 20px;
+  padding: 20px;
+  /* background-color: #fff; */
 }
 
 .tab-pane {
-  font-size: 16px;
-  color: #333;
+  display: none; /* Hide all tabs by default */
 }
 
-#desktertext-desc {
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.tab-pane.show {
+  display: block; /* Show active tab */
 }
+
+.deskteroptions-center {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  /* background-color: #fff; */
+}
+
 @media (min-width: 769px) {
-  .deskter-container {
+  .deskterprod-container {
     flex-direction: row;
   }
 
@@ -102,7 +111,7 @@
 }
 
 @media (max-width: 768px) {
-  .deskter-container {
+  .deskterprod-container {
     padding: 10px;
   }
 
@@ -123,7 +132,7 @@
     padding: 10px;
   }
 
-  .options-center {
+  .deskteroptions-center {
     padding: 10px;
   }
 }

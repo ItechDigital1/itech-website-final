@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ROADSTER } from "../data/Products";
-
+import "../Css/TwoProducts.css";
 const RoadsterPage = () => {
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
   };
 
   return (
-    <div className="deskterproduct-list">
+    <div className="commonproduct-list">
       {ROADSTER.map((roadster) => (
-        <div key={roadster.id} className="deskterproduct-item">
+        <div key={roadster.id} className="commonproduct-item">
           <Link
             to={`/roadster/${getUrlFriendlyName(roadster.name)}`}
             style={{ textDecoration: "none", color: "inherit" }}
@@ -18,9 +18,9 @@ const RoadsterPage = () => {
             <img
               src={roadster.image}
               alt={roadster.name}
-              className="deskterproduct-image"
+              className="commonproduct-image"
             />
-            <h2 className="deskterproduct-name">{roadster.name}</h2>
+            <h2 className="commonproduct-name">{roadster.name}</h2>
           </Link>
         </div>
       ))}

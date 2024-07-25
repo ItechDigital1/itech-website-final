@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
-
+import "../Css/TwoProducts.css";
 const RacksterPage = () => {
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
   };
 
   return (
-    <div className="deskterproduct-list">
+    <div className="commonproduct-list">
       {RACKSTER.map((rackster) => (
-        <div key={rackster.id} className="deskterproduct-item">
+        <div key={rackster.id} className="commonproduct-item">
           <Link
             to={`/rackster/${getUrlFriendlyName(rackster.name)}`}
             style={{ textDecoration: "none", color: "inherit" }}
@@ -18,9 +18,9 @@ const RacksterPage = () => {
             <img
               src={rackster.image}
               alt={rackster.name}
-              className="deskterproduct-image"
+              className="commonproduct-image"
             />
-            <h2 className="deskterproduct-name">{rackster.name}</h2>
+            <h2 className="commonproduct-name">{rackster.name}</h2>
           </Link>
         </div>
       ))}
