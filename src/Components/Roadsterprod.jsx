@@ -46,7 +46,7 @@ const RoadsterProd = () => {
             src={roadster.image}
             alt={roadster.name}
             className="deskterimage"
-            style={{ height: "195.2px", width: "292.8px" }}
+            style={{ height: "335.99px", width: "503.99px" }}
           />
         </div>
         <div className="deskterdetails-container">
