@@ -234,7 +234,7 @@ const Content = () => {
       {/* Features */}
       <div className="feature-container">
         <div className="feature">
-          <h3>FEATURE</h3>
+          <h3>FEATURES</h3>
           <h2>-----</h2>
           <div className="feature-desc">
             <p>

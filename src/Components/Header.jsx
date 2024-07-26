@@ -27,62 +27,61 @@ const Header = () => {
   const removeActive = () => {
     setIsOpen(false);
   };
+
   return (
-    <div className="navbar">
-      <center>
-        <div className="top-bar">
-          <div className="contact-info">
-            <FaEnvelope className="contact-icon" /> support@itech.co.in
-            <FaPhoneAlt className="contact-icon" /> +91-70217 48803 \ 09
-          </div>
-          <div className="iso-certification">
-            An ISO 9001:2015 Certified Company
-          </div>
-          <div className="social-icons">
-            <Link to="/login">
-              <i className="fa fa-sign-in" aria-hidden="true">
-                &nbsp;
-              </i>
-              Login
-            </Link>
-            <Link
-              to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/"
-              target="_blank"
-              className="facebook"
-            >
-              <FaFacebookF className="icon" />
-            </Link>
-            <Link
-              to="https://twitter.com/ItechForensics"
-              target="_blank"
-              className="twitter"
-            >
-              <FaTwitter className="icon" />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true"
-              target="_blank"
-              className="linkedin"
-            >
-              <FaLinkedinIn className="icon" />
-            </Link>
-            <Link
-              to="https://www.instagram.com/itechforensics/"
-              target="_blank"
-              className="instagram"
-            >
-              <FaInstagram className="icon" />
-            </Link>
-            <Link
-              to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber"
-              target="_blank"
-              className="youtube"
-            >
-              <FaYoutube className="icon" />
-            </Link>
-          </div>
+    <div className="header-navbar">
+      <div className="header-topbar">
+        <div className="header-contact-info">
+          <FaEnvelope className="email" /> support@itech.co.in
+          <FaPhoneAlt className="phone" /> +91-70217 48803 \ 09
         </div>
-      </center>
+        <div className="header-iso-certification">
+          An ISO 9001:2015 Certified Company
+        </div>
+        <div className="header-social-icons">
+          <Link to="/login" className="login">
+            <i className="fa fa-sign-in" aria-hidden="true">
+              &nbsp;
+            </i>
+            Login
+          </Link>
+          <Link
+            to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/"
+            target="_blank"
+            className="facebook"
+          >
+            <FaFacebookF className="icon" />
+          </Link>
+          <Link
+            to="https://twitter.com/ItechForensics"
+            target="_blank"
+            className="twitter"
+          >
+            <FaTwitter className="icon" />
+          </Link>
+          <Link
+            to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true"
+            target="_blank"
+            className="linkedin"
+          >
+            <FaLinkedinIn className="icon" />
+          </Link>
+          <Link
+            to="https://www.instagram.com/itechforensics/"
+            target="_blank"
+            className="instagram"
+          >
+            <FaInstagram className="icon" />
+          </Link>
+          <Link
+            to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber"
+            target="_blank"
+            className="youtube"
+          >
+            <FaYoutube className="icon" />
+          </Link>
+        </div>
+      </div>
 
       {/* Main Navbar */}
       <center>
@@ -221,15 +220,15 @@ const Header = () => {
                 </li>
 
                 {/* <li className="nav__item" onClick={removeActive}>
-                  <Link to="/software" className="navs-link navLink">
-                    Software
-                  </Link>
-                </li> */}
+                <Link to="/software" className="navs-link navLink">
+                  Software
+                </Link>
+              </li> */}
                 {/* <li className="nav__item" onClick={removeActive}>
-                  <Link to="/faradayBag" className="navs-link navLink">
-                    Faraday bags
-                  </Link>
-                </li> */}
+                <Link to="/faradayBag" className="navs-link navLink">
+                  Faraday bags
+                </Link>
+              </li> */}
                 <li className="has-children nav__item" onClick={removeActive}>
                   <Link className="navLink" to="/Projects" id="sub-drop-down">
                     Projects

@@ -50,7 +50,7 @@
 //             <FaFacebookF className="icon" />
 //           </Link>
 //           <Link
-//             to="https://twitter.com/ItechForensics"
+//           to="https://twitter.com/ItechForensics"
 //             target="_blank"
 //             className="twitter"
 //           >

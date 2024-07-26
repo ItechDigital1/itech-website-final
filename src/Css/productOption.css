@@ -1,11 +1,9 @@
 /* Container styling */
 .option-container {
-  max-width: 600px;
-  margin: 0 auto;
+  /* max-width: 600px; */
+  width: 50%;
   padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 10px; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  float: right;
   background-color: #efefef;
 }
 
@@ -71,6 +69,9 @@
   }
 
   .option-select {
+    width: 100%;
+  }
+  .option-container {
     width: 100%;
   }
 }
