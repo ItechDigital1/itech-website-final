@@ -4,6 +4,7 @@ import "../Css/Header.css";
 import { Link, NavLink } from "react-router-dom";
 import itechLogo from "../assets/images/img/icon/itech_logo_header.png";
 import { PRODUCTS } from "../data/Products";
+import { LABEQUIPMENTS } from "../LabEquipments/LabEquipments.config";
 // import { GRAPHSTER, ROADSTER, RACKSTER, CUBESTER } from "../data/Products";
 import {
   FaPhoneAlt,
@@ -170,7 +171,14 @@ const Header = () => {
                               Faraday bags
                             </Link>
                           </li>
-                          <li className="dropdown-item">
+                          {LABEQUIPMENTS.map((lab) => (
+                            <li key={lab.id}>
+                              <Link to={`/labEquipments/${lab.id}`}>
+                                {lab.name}
+                              </Link>
+                            </li>
+                          ))}
+                          {/* <li className="dropdown-item">
                             <Link className="dropdown-item">Blockster</Link>
                           </li>
                           <li className="dropdown-item">
@@ -183,7 +191,7 @@ const Header = () => {
                             <Link className="dropdown-item">
                               R,F Shield Locker
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li

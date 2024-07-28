@@ -32,17 +32,17 @@ import DeskterProd from "./Components/Desterprod";
 // import HeaderNew from "./Components/Headernew";
 import CubesterPage from "./Components/Cubester";
 import CubesterProd from "./Components/CubesterProd";
+import LabEquipments from "./LabEquipments/LabEquipments";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        {/* <HeaderNew /> */}
-
         <Routes>
           {/* <Route path="/" element={<Content />} /> */}
           <Route path="/" element={<ContentsNew />} />
+          <Route path="/labEquipments/:labId" element={<LabEquipments />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/deskter" element={<DeskterPage />} />
           <Route path="/graphster" element={<GraphsterPage />} />
