@@ -32,6 +32,7 @@ export const FARADAYS = [
           <br />
           Long lasting fabric with signal blocking capabilities.
         </li>
+        <br />
         <li>
           <b>BALLISTIC NYLON:</b>
           <br />
@@ -53,11 +54,13 @@ export const FARADAYS = [
           radio frequencies from low MHz to 40GHz.
         </li>
         <li>⚙️ It also shields against EMI, EMR, and EMF radiation.</li>
+        <br />
         <li>
           ⚙️ Size: <br />
           External:19.5cm - length & 13.5cm - width <br />
           Internal: 10.5cm -length & 10.5cm - width
         </li>
+        <br />
         <ul>
           <b>Suitable for storing: </b>
           <br />
@@ -89,6 +92,7 @@ export const FARADAYS = [
           manufacture a Faraday bags
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
+        <br />
         <li>
           <b>Diamond Form Faraday Fabric:</b>
           <br />
@@ -96,6 +100,7 @@ export const FARADAYS = [
           <br />
           Long lasting fabric with signal blocking capabilities.
         </li>
+        <br />
         <li>
           <b>BALLISTIC NYLON:</b>
           <br />
@@ -118,6 +123,7 @@ export const FARADAYS = [
           frequencies from low MHz to 40GHz.
         </li>
         <li>It also shields against EMI, EMR, and EMF radiation</li>
+        <br />
         <li>
           <b>
             Size: <br />
@@ -125,6 +131,7 @@ export const FARADAYS = [
           External: 29 cm - length & 15.5 cm - width <br /> Internal: 19cm
           -length & 13cm - width
         </li>
+        <br />
         <ul>
           <b>Suitable for storing </b>
           <li>cell phones</li>
