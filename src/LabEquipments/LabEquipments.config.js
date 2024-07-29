@@ -19,9 +19,10 @@ export const LABEQUIPMENTS = [
           Oxygen, and more, the cabinet provides the ideal pre-analysis
           environment for passcode unlocking and data extraction.
         </li>
+        <br />
         <b>FEATURES</b>
         <li>
-          he user can plainly examine device screens and contents within the
+          The user can plainly examine device screens and contents within the
           cabinet thanks to its sturdy frame and transparent acrylic shelves and
           walls.{" "}
         </li>
@@ -184,6 +185,7 @@ export const LABEQUIPMENTS = [
           analysis and easy device movement in and out of the protected
           chamber's faraday bags for operators.
         </li>
+        <br />
         <b>FEATURES</b>
         <li>
           Blockster is made of a sturdy aluminium frame with RF-absorbing foam

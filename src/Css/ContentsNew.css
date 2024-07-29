@@ -268,15 +268,27 @@ h2 {
 }
 .header-desc {
   text-align: center;
+  font-size: 15px;
+  line-height: normal;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0 -15px;
+}
 .col-lg-2 {
   padding: 8px !important;
   margin-top: -24px;
   flex: 0 0 100%;
   max-width: 100%;
 }
-
+/* #highlightContain {
+  background-color: #efefef;
+  visibility: visible;
+  animation-delay: 0.2s;
+  animation-name: fadeInRight;
+} */
 @media (min-width: 768px) {
   .col-lg-2 {
     flex: 0 0 50%;
@@ -299,13 +311,16 @@ h2 {
 }
 
 #services {
-  padding: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
 }
+
 #services .box {
   padding: 10px;
   margin-bottom: 30px;
   width: 20rem;
-  height: 15rem;
+  height: 20rem;
   background: #fff;
   transition: 0.4s;
   border: 1px solid #dedede;
@@ -462,7 +477,7 @@ h2 {
 
 .testimonial-card {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding: 10px 0;
@@ -615,7 +630,7 @@ body {
 .contact-info {
   display: block;
   margin: 0;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .contact-info * {
@@ -623,12 +638,13 @@ body {
 }
 
 .contact-info h3 {
-  font-size: 1.1rem;
+  /* font-size: ; */
   margin-bottom: 5px;
 }
 
 .contact-info p {
   margin: 10px 0;
+  font-size: 15px;
 }
 
 .contact-info h2 {
@@ -638,17 +654,45 @@ body {
 }
 
 /* Styles for map container */
-.map-container {
+/* .map-container {
   flex: 1;
   min-width: 300px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .map-container img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
+}
+.invite-msg {
+  line-height: 35px;
+}
+
+.invite-msg::before {
+  content: " Dealers from all States in India. Contact with Company details on ";
+  animation: changeContent 5s infinite;
+  color: red;
+  white-space: pre-line;
+}
+
+@keyframes changeContent {
+  50% {
+    content: " Distributors for Individual Middle-East Countries. Contact with Company details on ";
+  }
+}
+
+.invite,
+.invite-id {
+  color: red;
+}
+#invite {
+  width: 99% !important;
+  background-color: #000;
+  padding: 0 1.25rem;
+  text-align: center;
+  color: #ccc;
 }

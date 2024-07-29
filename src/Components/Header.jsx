@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Css/Header.css";
-
 import { Link, NavLink } from "react-router-dom";
 import itechLogo from "../assets/images/img/icon/itech_logo_header.png";
 import { PRODUCTS } from "../data/Products";
@@ -33,7 +32,7 @@ const Header = () => {
     <div className="header-navbar">
       <div className="header-topbar">
         <div className="header-contact-info">
-          <FaEnvelope className="email" /> support@itech.co.in
+          <FaEnvelope className="email" color="red" /> support@itech.co.in
           <FaPhoneAlt className="phone" /> +91-70217 48803 \ 09
         </div>
         <div className="header-iso-certification">
