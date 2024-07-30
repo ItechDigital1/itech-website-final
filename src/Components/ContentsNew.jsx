@@ -151,27 +151,6 @@ const ContentsNew = () => {
         <div className="high-container">
           {highlights.map((ele, id) => {
             return (
-              // <section id="services">
-              //   <div className="row" id="boxrow">
-              //     <div className="col-lg-2">
-              //       <div
-              //         className="box wow fadeInLeft"
-              //         data-wow-delay="0.2s"
-              //         style={{ backgroundColor: "white" }}
-              //         id=""
-              //       >
-              //         <Card style={{ width: "18rem" }}>
-              //           <Card.Body>
-              //             <Card.Title className="icon">{ele.sym}</Card.Title>
-              //             <h4 className="title">{ele.name}</h4>
-
-              //             <p className="description">{ele.desc}</p>
-              //           </Card.Body>
-              //         </Card>
-              //       </div>
-              //     </div>
-              //   </div>
-              // </section>
               <section id="services">
                 <div className="highlight-container">
                   <div className="row" id="boxrow">

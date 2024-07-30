@@ -319,8 +319,8 @@ h2 {
 #services .box {
   padding: 10px;
   margin-bottom: 30px;
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 15rem;
   background: #fff;
   transition: 0.4s;
   border: 1px solid #dedede;
@@ -340,7 +340,7 @@ h2 {
 
 #services .box .icon i {
   color: #444;
-  font-size: 44px;
+  font-size: 33px;
   transition: 0.5s;
 }
 
@@ -355,12 +355,13 @@ h2 {
 #services .box h4 {
   font-weight: 500;
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   margin: 12px 0;
   font-style: normal;
   text-shadow: 1px 1px #000000;
   font-family: "Montserrat", sans-serif;
+  text-wrap: wrap;
 }
 
 #services .box h4 a {
@@ -372,7 +373,8 @@ h2 {
   line-height: 24px;
   text-align: center;
   margin: 0;
-  padding-top: 15px;
+  text-wrap: balance;
+  padding: 15px;
 }
 
 @media (max-width: 768px) {
