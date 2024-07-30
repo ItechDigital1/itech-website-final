@@ -22,7 +22,12 @@ const FaradayBag = () => {
               alt={faraday.name}
               className="product-image"
             />
-            <h2 className="product-name">{faraday.name}</h2>
+            <h2
+              className="product-name"
+              style={{ fontSize: "24px", color: "#2c0026" }}
+            >
+              {faraday.name}
+            </h2>
           </Link>
         </div>
       ))}

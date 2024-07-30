@@ -21,6 +21,30 @@ body {
   box-shadow: none;
 }
 
+/* Image zooming */
+.deskterimage-container {
+  position: relative;
+  width: 540px; /* Adjust the width as needed */
+  height: 336px; /* Adjust the height as needed */
+}
+
+.zoom-image {
+  width: 100%;
+  height: auto;
+}
+
+.magnifier {
+  position: absolute;
+  border: 3px solid #000;
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  overflow: hidden;
+  display: none; /* Hide by default */
+  background-repeat: no-repeat;
+  background-size: 1080px 672px; /* This should be twice the size of the main image */
+}
+/***********************/
+
 .deskterimage-container {
   flex: 1;
   text-align: center;

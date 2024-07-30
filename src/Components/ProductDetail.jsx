@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { PRODUCTS } from "../data/Products";
 import "../Css/Hardware.css";
@@ -8,9 +8,21 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
 
+  const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
+  const magnifierRef = useRef(null);
+  const mainImageRef = useRef(null);
+
   useEffect(() => {
-    setProduct(PRODUCTS.find(({ id }) => id === Number(productId)));
+    const foundProduct = PRODUCTS.find(({ id }) => id === Number(productId));
+    setProduct(foundProduct);
   }, [productId]);
+
+  useEffect(() => {
+    if (product) {
+      console.log("Setting background image:", product.image);
+      magnifierRef.current.style.backgroundImage = `url(${product.image})`;
+    }
+  }, [product]);
 
   useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
@@ -27,6 +39,28 @@ const ProductDetail = () => {
     });
   }, [product]);
 
+  const handleMouseMove = (e) => {
+    const rect = mainImageRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const magnifierWidth = magnifierRef.current.offsetWidth;
+    const magnifierHeight = magnifierRef.current.offsetHeight;
+
+    setMagnifierStyle({
+      display: "block",
+      left: `${x - magnifierWidth / 2}px`,
+      top: `${y - magnifierHeight / 2}px`,
+      backgroundPosition: `-${x * 2 - magnifierWidth / 2}px -${
+        y * 2 - magnifierHeight / 2
+      }px`,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setMagnifierStyle({ display: "none" });
+  };
+
   if (!product) {
     return <div>Loading...</div>;
   }
@@ -38,9 +72,19 @@ const ProductDetail = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="prodimage"
-            style={{ height: "335.99px", width: "503.99px" }}
+            className="prodimage zoom-image"
+            id="main-zoom"
+            // style={{ height: "336px", width: "540px" }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            ref={mainImageRef}
           />
+          <div
+            className="magnifier"
+            id="magnifier"
+            ref={magnifierRef}
+            style={magnifierStyle}
+          ></div>
         </div>
         <div className="proddetails-container">
           <h3 className="prodproduct-title">{product.name}</h3>

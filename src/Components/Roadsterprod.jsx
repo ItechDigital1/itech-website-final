@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { ROADSTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
@@ -6,6 +6,11 @@ import "../Css/Deskterprod.css";
 const RoadsterProd = () => {
   const { roadsterId } = useParams(null);
   const [roadster, setRoadster] = useState(null);
+
+  const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
+  const magnifierRef = useRef(null);
+  const mainImageRef = useRef(null);
+
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
   };
@@ -19,6 +24,13 @@ const RoadsterProd = () => {
       ROADSTER.find((f) => getUrlFriendlyName(f.name) === roadsterId)
     );
   }, [roadsterId]);
+
+  useEffect(() => {
+    if (roadster) {
+      console.log("Setting background image:", roadster.image);
+      magnifierRef.current.style.backgroundImage = `url(${roadster.image})`;
+    }
+  }, [roadster]);
 
   useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
@@ -35,6 +47,28 @@ const RoadsterProd = () => {
     });
   }, [roadster]);
 
+  const handleMouseMove = (e) => {
+    const rect = mainImageRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const magnifierWidth = magnifierRef.current.offsetWidth;
+    const magnifierHeight = magnifierRef.current.offsetHeight;
+
+    setMagnifierStyle({
+      display: "block",
+      left: `${x - magnifierWidth / 2}px`,
+      top: `${y - magnifierHeight / 2}px`,
+      backgroundPosition: `-${x * 2 - magnifierWidth / 2}px -${
+        y * 2 - magnifierHeight / 2
+      }px`,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setMagnifierStyle({ display: "none" });
+  };
+
   if (!roadster) {
     return <h1>Loading...</h1>;
   }
@@ -45,9 +79,19 @@ const RoadsterProd = () => {
           <img
             src={roadster.image}
             alt={roadster.name}
-            className="deskterimage"
+            className="deskterimage zoom-image"
+            id="main-zoom"
             style={{ height: "335.99px", width: "503.99px" }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            ref={mainImageRef}
           />
+          <div
+            className="magnifier"
+            id="magnifier"
+            ref={magnifierRef}
+            style={magnifierStyle}
+          ></div>
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{roadster.name}</h3>

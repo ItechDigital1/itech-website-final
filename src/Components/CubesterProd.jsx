@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { CUBESTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
@@ -7,6 +7,10 @@ import "../Css/Deskterprod.css";
 const CubesterProd = () => {
   const { cubesterId } = useParams();
   const [cubester, setcubester] = useState(null);
+
+  const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
+  const magnifierRef = useRef(null);
+  const mainImageRef = useRef(null);
 
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
@@ -22,6 +26,13 @@ const CubesterProd = () => {
       CUBESTER.find((f) => getUrlFriendlyName(f.name) === cubesterId)
     );
   }, [cubesterId]);
+
+  useEffect(() => {
+    if (cubester) {
+      console.log("Setting background image:", cubester.image);
+      magnifierRef.current.style.backgroundImage = `url(${cubester.image})`;
+    }
+  }, [cubester]);
 
   useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
@@ -42,6 +53,27 @@ const CubesterProd = () => {
     return <h1>Loading...</h1>;
   }
 
+  const handleMouseMove = (e) => {
+    const rect = mainImageRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const magnifierWidth = magnifierRef.current.offsetWidth;
+    const magnifierHeight = magnifierRef.current.offsetHeight;
+
+    setMagnifierStyle({
+      display: "block",
+      left: `${x - magnifierWidth / 2}px`,
+      top: `${y - magnifierHeight / 2}px`,
+      backgroundPosition: `-${x * 2 - magnifierWidth / 2}px -${
+        y * 2 - magnifierHeight / 2
+      }px`,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setMagnifierStyle({ display: "none" });
+  };
   return (
     <div className="desktermain-container">
       <div className="deskterprod-container">
@@ -49,9 +81,19 @@ const CubesterProd = () => {
           <img
             src={cubester.image}
             alt={cubester.name}
-            className="deskterimage"
+            className="deskterimage zoom-image"
+            id="main-zoom"
             style={{ height: "335.99px", width: "503.99px" }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            ref={mainImageRef}
           />
+          <div
+            className="magnifier"
+            id="magnifier"
+            ref={magnifierRef}
+            style={magnifierStyle}
+          ></div>
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{cubester.name}</h3>

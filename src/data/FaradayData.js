@@ -15,16 +15,17 @@ export const FARADAYS = [
     description: [
       <ul>
         <li>
-          ⚙️ Faraday bag intended for car key security and data protection of
-          tiny gadgets. It is also used to block radio frequency transmissions
-          for forensics, military, executive travel, personal security, and EMP
+          Faraday bag intended for car key security and data protection of tiny
+          gadgets. It is also used to block radio frequency transmissions for
+          forensics, military, executive travel, personal security, and EMP
           protection.
         </li>
         <li>
-          ⚙️ Two layers of high quality shielding Faraday fabric used to
+          Two layers of high quality shielding Faraday fabric used to
           manufacture a Faraday bags.
         </li>
-        <li>⚙️ Fabric used for Shieldster Faraday Bags.</li>
+        <li>Fabric used for Shieldster Faraday Bags.</li>
+        <br />
         <li>
           <b>Diamond Form Faraday Fabric:</b>
           <br />
@@ -40,26 +41,26 @@ export const FARADAYS = [
           for high tensile strength and tear resistance. <br />
           Coated with Polyurethane with water repellent properties.
           <br />
-          ⚙️ Ballistic nylon exterior fabrics that are water-resistant.
+          Ballistic nylon exterior fabrics that are water-resistant.
           <br />
-          ⚙️ Double roll security and Velcro fastening.
+          Double roll security and Velcro fastening.
         </li>
       </ul>,
     ],
     content: [
       <ul>
         <li>
-          ⚙️ Shildster Vertical Faraday bags blocks WiFi (2.4 & 5GHz),
-          Bluetooth, mobile signals (including 5G networks), GPS, RFID, NFC, and
-          radio frequencies from low MHz to 40GHz.
+          Shildster Vertical Faraday bags blocks WiFi (2.4 & 5GHz), Bluetooth,
+          mobile signals (including 5G networks), GPS, RFID, NFC, and radio
+          frequencies from low MHz to 40GHz.
         </li>
-        <li>⚙️ It also shields against EMI, EMR, and EMF radiation.</li>
+        <li>It also shields against EMI, EMR, and EMF radiation.</li>
         <br />
-        <li>
-          ⚙️ Size: <br />
-          External:19.5cm - length & 13.5cm - width <br />
-          Internal: 10.5cm -length & 10.5cm - width
-        </li>
+        <b>
+          Size: <br />
+        </b>
+        <li>External:19.5cm - length & 13.5cm - width </li>
+        <li>Internal: 10.5cm -length & 10.5cm - width</li>
         <br />
         <ul>
           <b>Suitable for storing: </b>
@@ -93,22 +94,19 @@ export const FARADAYS = [
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
         <br />
-        <li>
-          <b>Diamond Form Faraday Fabric:</b>
-          <br />
-          Durable, Conductive Fabric interwoven with copper and nickel fibers.
-          <br />
-          Long lasting fabric with signal blocking capabilities.
-        </li>
+        <b>Diamond Form Faraday Fabric:</b>
         <br />
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
+          Durable, Conductive Fabric interwoven with copper and nickel fibers.
+        </li>
+        <li>Long lasting fabric with signal blocking capabilities.</li>
+        <br />
+        <b>BALLISTIC NYLON:</b>
+        <li>
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li>Coated with Polyurethane with water repellent properties.</li>
         <li>Transparent pockets for holding little items like cards.</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
         <li>Double roll security and Velcro fastening.</li>
@@ -124,13 +122,9 @@ export const FARADAYS = [
         </li>
         <li>It also shields against EMI, EMR, and EMF radiation</li>
         <br />
-        <li>
-          <b>
-            Size: <br />
-          </b>
-          External: 29 cm - length & 15.5 cm - width <br /> Internal: 19cm
-          -length & 13cm - width
-        </li>
+        <b>Size:</b>
+        <li>External: 29 cm - length & 15.5 cm - width </li>{" "}
+        <li>Internal: 19cm -length & 13cm - width</li>
         <br />
         <ul>
           <b>Suitable for storing </b>
@@ -163,22 +157,18 @@ export const FARADAYS = [
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
         <br />
+        <b>Diamond Form Faraday Fabric:</b>
         <li>
-          <b>Diamond Form Faraday Fabric:</b>
-          <br />
           Durable, Conductive Fabric interwoven with copper and nickel fibers.
-          <br />
-          Long lasting fabric with signal blocking capabilities.
         </li>
+        <li> Long lasting fabric with signal blocking capabilities.</li>
         <br />
+        <b>BALLISTIC NYLON:</b>
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li> Coated with Polyurethane with water repellent properties.</li>
         <br />
         <li>Transparent pockets for holding little items like cards.</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
@@ -195,14 +185,9 @@ export const FARADAYS = [
         </li>
         <li>It also shields against EMI, EMR, and EMF radiation.</li>
         <br />
-        <li>
-          <b>
-            Size:
-            <br />
-          </b>
-          External: 24cm - length & 24cm - width Internal: 15.5cm -length & 22cm
-          - width
-        </li>
+        <b>Size:</b>
+        <li>External: 24cm - length & 24cm - width</li>
+        <li> Internal: 15.5cm -length & 22cm - width</li>
         <br />
         <ul>
           <li>
@@ -242,22 +227,18 @@ export const FARADAYS = [
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
         <br />
+        <b>Diamond Form Faraday Fabric:</b>
         <li>
-          <b>Diamond Form Faraday Fabric:</b>
-          <br />
           Durable, Conductive Fabric interwoven with copper and nickel fibers.{" "}
-          <br />
-          Long lasting fabric with signal blocking capabilities.
         </li>
+        <li> Long lasting fabric with signal blocking capabilities.</li>
         <br />
+        <b>BALLISTIC NYLON:</b>
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li> Coated with Polyurethane with water repellent properties.</li>
         <br />
         <li>Transparent pockets for holding little items like cards..</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
@@ -317,22 +298,18 @@ export const FARADAYS = [
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
         <br />
+        <b>Diamond Form Faraday Fabric:</b>
         <li>
-          <b>Diamond Form Faraday Fabric:</b>
-          <br />
           Durable, Conductive Fabric interwoven with copper and nickel fibers.
-          <br />
-          Long lasting fabric with signal blocking capabilities.
         </li>
+        <li>Long lasting fabric with signal blocking capabilities.</li>
         <br />
+        <b>BALLISTIC NYLON:</b>
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li> Coated with Polyurethane with water repellent properties.</li>
         <br />
         <li>Transparent pockets for holding little items like cards.</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
@@ -393,22 +370,18 @@ export const FARADAYS = [
         </li>
         <li>Fabric used for Shieldster Faraday Bags.</li>
         <br />
+        <b>Diamond Form Faraday Fabric:</b>
         <li>
-          <b>Diamond Form Faraday Fabric:</b>
-          <br />
           Durable, Conductive Fabric interwoven with copper and nickel fibers.
-          <br />
-          Long lasting fabric with signal blocking capabilities.
         </li>
+        <li> Long lasting fabric with signal blocking capabilities.</li>
         <br />
+        <b>BALLISTIC NYLON:</b>
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li> Coated with Polyurethane with water repellent properties.</li>
         <br />
         <li>Transparent pockets for holding little items like cards.</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
@@ -486,14 +459,12 @@ export const FARADAYS = [
           Long lasting fabric with signal blocking capabilities.
         </li>
         <br />
+        <b>BALLISTIC NYLON:</b>
         <li>
-          <b>BALLISTIC NYLON:</b>
-          <br />
           Durable, Rugged and Tough Nylon Fabric with a 2x2 basket weave design
           for high tensile strength and tear resistance.
-          <br />
-          Coated with Polyurethane with water repellent properties.
         </li>
+        <li> Coated with Polyurethane with water repellent properties.</li>
         <li>Transparent pockets for holding little items like cards.</li>
         <li>Ballistic nylon exterior fabrics that are water-resistant. </li>
       </ul>,
