@@ -1,10 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import itech_video from "../assets/videos/itech_main_video.mp4";
 import "../Css/ContentsNew.css";
-// import Carousel from "react-multi-carousel";
-// import Carousel from "./Carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import {
   asso,
@@ -15,22 +14,14 @@ import {
   Testimonials,
 } from "../data.config";
 const ContentsNew = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
+  const [originalSrcs, setOriginalSrcs] = useState(
+    data.map((item) => item.src)
+  );
+
+  const resetimg = (index) => {
+    const updatedData = [...data];
+    updatedData[index].src = originalSrcs[index];
+    setOriginalSrcs(updatedData.map((item) => item.src));
   };
   return (
     <div className="ContentsNew">
@@ -81,58 +72,77 @@ const ContentsNew = () => {
           </a>
         </div>
       </div>
-      {/* Carousel */};
-      {/* <div className="carousel-container">
-        <Carousel
-          swipeable={true}
-          draggable={false}
-          showDots={false}
-          responsive={responsive}
-          infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlay={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          //   deviceType={this.props.deviceType}
-          dotListClass="custom-dot-list-style"
-          // itemClass="carousel-item-padding-20-px"
-          arrows={true}
-        >
-          {data.map((item, itemIndex) => (
-            <div key={itemIndex} className="carousel-card">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src={item.src}
-                  className="carousel-image"
-                />
-                <Card.Body className="carousel-image-info">
-                  <Card.Title className="carousel-image-name">
-                    {item.name}
-                  </Card.Title>
-                  <Card.Text className="carousel-image-alt">
-                    {item.alt}
-                  </Card.Text>
-                  <Link to={`/products/${item.id}`}>
-                    <Button
-                      variant="primary"
-                      size="sm"
-                      className="read-more-button"
+      {/* Carousel */}
+      <section className="regular">
+        <div className="container mt-4 mb-4">
+          <Carousel
+            showThumbs={false}
+            infiniteLoop
+            useKeyboardArrows
+            autoPlay
+            centerMode
+            centerSlidePercentage={25}
+            showArrows={true}
+            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              hasPrev && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  title={label}
+                  className="control-arrow control-prev"
+                >
+                  &#10094;
+                </button>
+              )
+            }
+            renderArrowNext={(onClickHandler, hasNext, label) =>
+              hasNext && (
+                <button
+                  type="button"
+                  onClick={onClickHandler}
+                  title={label}
+                  className="control-arrow control-next"
+                >
+                  &#10095;
+                </button>
+              )
+            }
+          >
+            {data.map((item, index) => (
+              <div key={index} className="item">
+                <Card className="carousel-card">
+                  <Card.Img
+                    variant="top"
+                    src={item.src}
+                    className="carousel-image img-fluid card-img-top"
+                    alt={item.name}
+                  />
+                  <Card.Body className="carousel-image-info">
+                    <Card.Title className="carousel-image-name text-center">
+                      {item.name}
+                    </Card.Title>
+                    <Card.Text
+                      style={{ color: "black" }}
+                      className="carousel-image-alt text-justify"
                     >
-                      Read More
-                    </Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </Carousel>
-      </div> */}
-      {/* <Carousel /> */}
+                      {item.alt}
+                    </Card.Text>
+                    <Link to={`/products/${item.id}`}>
+                      <Button
+                        variant="outline-primary"
+                        size="sm"
+                        className="read-more-button"
+                      >
+                        Read More
+                      </Button>
+                    </Link>
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
       {/* highlights */}
       <div className="highlight-container">
         <div className="header">

@@ -12,7 +12,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c0026;
+  background: linear-gradient(to right, #2f121c, #010412);
   color: #acacac;
   padding: 8px 20px;
   font-size: 15px;
@@ -87,7 +87,7 @@ li {
 }
 
 a:hover {
-  color: #23527c;
+  color: red;
 }
 
 .site-navbar {
@@ -138,7 +138,7 @@ a:hover {
 
 .site-navbar .navMenu li a:hover {
   /* background-color: #f0f0f0; */
-  color: #23527c;
+  color: #f60505;
 }
 
 .site-navbar .navMenu li ul {
@@ -149,10 +149,11 @@ a:hover {
   list-style: none;
   margin: 2px;
   padding: 0;
-  background-color: #2c0026;
+  background: linear-gradient(to right, #2f121c, #010412);
   border: 1px solid #ddd;
   border-top: none;
   z-index: 1000;
+  border-radius: 5px;
 }
 
 .site-navbar .navMenu li:hover > ul {
@@ -170,7 +171,7 @@ a:hover {
 
 .site-navbar .navMenu li ul li a:hover {
   /* background-color: #2c0026; */
-  color: #23527c;
+  color: red;
 }
 
 .site-navbar .navMenu li ul li ul {
@@ -200,8 +201,8 @@ a:hover {
 }
 
 .site-navbar .navMenu li ul li ul li a:hover {
-  background-color: #a4a2a2;
-  color: #23527c;
+  background-color: #2c0026;
+  color: red;
 }
 .site-navbar .navMenu li.has-children > ul {
   display: none;

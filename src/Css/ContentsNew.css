@@ -51,6 +51,156 @@
   padding: 20px; /* Adjust padding around the container */
 }
 
+/* Carousel */
+/* Carousel */
+.regular {
+  background: #efefef;
+  position: sticky;
+  top: 3px;
+  z-index: 2;
+  padding-top: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: #efefef;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: auto;
+}
+
+.carousel-image {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-image-info {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.carousel-image-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.carousel-image-alt {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.read-more-button {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(to right, #2f121c, #010412);
+  transition: all 0.3s ease;
+  width: 150px;
+  padding: 5px 1rem;
+  border-radius: 5px;
+}
+
+.read-more-button:hover {
+  background: #ff0000;
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.carousel .control-arrow {
+  background: red;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 140px;
+  line-height: 140px;
+  /* position: absolute; */
+  top: 50%;
+  color: red;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .control-arrow:hover {
+  background: red;
+  /* color: #fff; */
+}
+
+.carousel .control-prev {
+  left: -115px;
+}
+
+.carousel .control-next {
+  right: -115px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .regular {
+    justify-content: flex-start;
+  }
+
+  .carousel-card {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .carousel-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 90%;
+  }
+
+  .carousel-image {
+    height: 120px;
+  }
+
+  .carousel-image-name {
+    font-size: 14px;
+  }
+
+  .carousel-image-alt {
+    font-size: 10px;
+  }
+
+  .read-more-button {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .carousel .control-arrow {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+/* ********************** */
+
 .feature b {
   display: block;
   margin-bottom: 5px;
@@ -179,77 +329,6 @@
     visibility: hidden;
   }
 }
-
-/* carousel */
-/* .carousel-container {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel-card {
-  width: auto;
-}
-.carousel-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel-chunk {
-  display: flex;
-}
-.carousel-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-.carousel-image-info {
-  padding: 20px;
-
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.carousel-image-alt {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #666;
-}
-.react-multi-carousel-item {
-  margin: 20px;
-}
-.read-more-button {
-  background: linear-gradient(to right, #2f121c, #010412);
-  border-color: #23527c;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  width: 235.93px;
-  height: 35px;
-  cursor: pointer;
-  text-align: center;
-  margin-top: auto;
-}
-.read-more-button:hover {
-  background: #94130f;
-  border-color: #23527c;
-}
-
-.carousel-card {
-  width: 260.93px;
-  height: 325px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 /* highlights */
 .high-container {
@@ -557,7 +636,7 @@ h2 {
 /* Adjust associated section for all screens */
 .associated {
   text-align: center;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 /* Adjust title according to screen size */
@@ -586,8 +665,8 @@ h2 {
 
 /* Adjust image size */
 .thumbnail img {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  height: 250px;
 }
 
 /* Adjust title text size */
