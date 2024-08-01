@@ -76,13 +76,18 @@ const ContentsNew = () => {
       <section className="regular">
         <div className="container mt-4 mb-4">
           <Carousel
-            showThumbs={false}
-            infiniteLoop
-            useKeyboardArrows
+            showThumbs={true}
+            infiniteLoop={true}
+            useKeyboardArrows={true}
+            showIndicators={true}
             autoPlay
             centerMode
-            centerSlidePercentage={25}
+            emulateTouch={true}
+            centerSlidePercentage={20}
             showArrows={true}
+            interval={2000}
+            swipeable={true}
+            stopOnHover={true}
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (
                 <button
@@ -91,7 +96,7 @@ const ContentsNew = () => {
                   title={label}
                   className="control-arrow control-prev"
                 >
-                  &#10094;
+                  {/* &#10094; */}
                 </button>
               )
             }
@@ -103,7 +108,7 @@ const ContentsNew = () => {
                   title={label}
                   className="control-arrow control-next"
                 >
-                  &#10095;
+                  {/* &#10095; */}
                 </button>
               )
             }

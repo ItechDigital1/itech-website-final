@@ -33,7 +33,7 @@ import DeskterProd from "./Components/Desterprod";
 import CubesterPage from "./Components/Cubester";
 import CubesterProd from "./Components/CubesterProd";
 import LabEquipments from "./LabEquipments/LabEquipments";
-
+import Police from "./Components/Police";
 function App() {
   return (
     <div className="App">
@@ -45,6 +45,7 @@ function App() {
           <Route path="/labEquipments/:labId" element={<LabEquipments />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/deskter" element={<DeskterPage />} />
+          <Route path="/Police" element={<Police />} />
           <Route path="/graphster" element={<GraphsterPage />} />
           <Route path="/graphster/:graphsterId" element={<GraphsterProd />} />
           <Route path="/roadster" element={<RoadsterPage />} />

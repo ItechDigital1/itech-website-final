@@ -128,24 +128,6 @@
   padding: 0 10px;
 }
 
-.carousel .control-arrow {
-  background: red;
-  /* border-radius: 50%; */
-  width: 40px;
-  height: 140px;
-  line-height: 140px;
-  /* position: absolute; */
-  top: 50%;
-  color: red;
-  transform: translateY(-50%);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.carousel .control-arrow:hover {
-  background: red;
-  /* color: #fff; */
-}
-
 .carousel .control-prev {
   left: -115px;
 }
@@ -222,9 +204,6 @@
   color: linear-gradient(to right, #2f121c, #23527c);
 }
 .features-container {
-  /* width: 100%;
-  padding: 40px 20px;
-  background-color: #f4f4f4; Light background for the entire section */
   text-align: center;
 }
 .video-section {
@@ -362,12 +341,7 @@ h2 {
   flex: 0 0 100%;
   max-width: 100%;
 }
-/* #highlightContain {
-  background-color: #efefef;
-  visibility: visible;
-  animation-delay: 0.2s;
-  animation-name: fadeInRight;
-} */
+
 @media (min-width: 768px) {
   .col-lg-2 {
     flex: 0 0 50%;
@@ -411,9 +385,9 @@ h2 {
 }
 
 #services .box .icon {
-  display: block;
+  display: flex;
   width: 100%;
-  text-align: center;
+  justify-content: center;
   padding: 15px;
 }
 
@@ -433,14 +407,13 @@ h2 {
 
 #services .box h4 {
   font-weight: 500;
-  margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
-  margin: 12px 0;
-  font-style: normal;
+  padding-right: 5px;
+  margin: 5px;
   text-shadow: 1px 1px #000000;
   font-family: "Montserrat", sans-serif;
-  text-wrap: wrap;
+  text-wrap: balance;
 }
 
 #services .box h4 a {
@@ -448,12 +421,12 @@ h2 {
 }
 
 #services .box p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 11px;
+  line-height: 20px;
   text-align: center;
   margin: 0;
   text-wrap: balance;
-  padding: 15px;
+  padding-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -603,6 +576,8 @@ h2 {
 .testimonial-text {
   font-style: italic;
   margin-top: 10px;
+  text-align: justify;
+  text-wrap: balance;
 }
 
 /* Responsive CSS */
@@ -719,7 +694,6 @@ body {
 }
 
 .contact-info h3 {
-  /* font-size: ; */
   margin-bottom: 5px;
 }
 
@@ -734,16 +708,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Styles for map container */
-/* .map-container {
-  flex: 1;
-  min-width: 300px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
 .map-container img {
   max-width: 100%;
   height: auto;
@@ -755,7 +719,7 @@ body {
 
 .invite-msg::before {
   content: " Dealers from all States in India. Contact with Company details on ";
-  animation: changeContent 5s infinite;
+  animation: changeContent 1s infinite;
   color: red;
   white-space: pre-line;
 }

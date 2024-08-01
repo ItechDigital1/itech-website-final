@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import itechLogo from "../assets/images/img/icon/itech_logo_header.png";
 import { PRODUCTS } from "../data/Products";
 import { LABEQUIPMENTS } from "../LabEquipments/LabEquipments.config";
-// import { GRAPHSTER, ROADSTER, RACKSTER, CUBESTER } from "../data/Products";
+
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -252,7 +252,7 @@ const Header = () => {
                           <Link to="/FireBrigade">Fire Brigade</Link>
                         </li>
                         <li>
-                          <Link to="#">Police</Link>
+                          <Link to="/Police">Police</Link>
                         </li>
                         <li>
                           <Link to="#">Railway</Link>
