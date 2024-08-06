@@ -14,10 +14,17 @@ body {
   margin: auto 259.771px;
   padding: auto 15px;
 }
-.row {
+.policerow {
   display: flex;
-  flex-wrap: wrap;
-  margin: auto -15px;
+  /* flex-wrap: wrap; */
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-lg-5 {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .proj-titles {
   margin-left: 17px;
@@ -54,6 +61,19 @@ body {
   margin-bottom: 30px;
   width: 33%;
   text-align: center;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  line-height: 1.5;
 }
 #project-btn:hover {
   font-size: 16px;
@@ -67,15 +87,29 @@ body {
 }
 #project1-img1 {
   height: 250px !important;
-  margin-top: 35px;
 }
 #project1-img2 {
-  height: 300px !important;
-  width: 73% !important;
+  height: 350px !important;
+  width: 100% !important;
 }
 .img-fluid {
-  max-width: 100%;
   margin-left: 0px;
+}
+.police-text {
+  text-align: justify;
+  line-height: 1.55;
+}
+.col-md-7 {
+  margin-left: 2rem;
+}
+.col-md-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.order-md-2 {
+  order: 2;
 }
 .butDemo {
   position: relative;
@@ -111,50 +145,169 @@ body {
   font-weight: bold;
 }
 #project2-img1 {
-  margin-top: 50px;
+  margin-bottom: auto;
+  margin-left: 2rem;
   height: 558px;
 }
 #project3-img1 {
-  margin-top: 53px;
+  /* margin-top: 53px; */
   height: 451px;
   width: 300px;
+  margin-right: 2rem;
+}
+.policeimages {
+  columns: 2;
+  display: flex;
 }
 #project4-img1 {
   height: 300px !important;
-  margin-top: 45px;
+  /* margin-top: 45px; */
 }
 #project4-img2 {
-  margin-top: 103px;
+  /* margin-top: 103px; */
   height: 360px !important;
 }
+
 #project5-img1 {
   height: 250px !important;
-  margin-top: 59px;
+  /* margin-top: 59px; */
 }
 #project5-img2 {
   height: 230px !important;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 #project5 {
   margin-top: 215px;
 }
 #project6-img1 {
-  height: 330px !important;
-  margin-top: 59px;
+  height: 300px !important;
+  width: 100%;
+  /* margin-top: 59px; */
+  margin-left: 1rem;
 }
 #project7-img1 {
   height: 255px !important;
-  margin-top: 59px;
+  /* margin-top: 59px; */
 }
 #project7-img2 {
   height: 255px !important;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 #project8-img1 {
   height: 190px !important;
-  margin-top: 59px;
+  /* margin-top: 59px; */
 }
 #project8-img2 {
   height: 190px !important;
   margin-top: 20px;
+}
+#project9-img1 {
+  height: 190px !important;
+  /* margin-top: 59px; */
+}
+#project9-img2 {
+  height: 190px !important;
+  margin-top: 20px;
+}
+#project11-img1 {
+  height: 290px !important;
+  /* margin-top: 59px; */
+}
+#project12-img1 {
+  height: 190px !important;
+  /* margin-top: 59px; */
+}
+#project12-img2 {
+  height: 190px !important;
+  margin-top: 20px;
+}
+#project13-img1 {
+  height: 190px !important;
+  /* margin-top: 59px; */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Police-container {
+    max-width: 750px;
+    margin: auto 100px;
+  }
+  .policerow {
+    flex-wrap: wrap;
+  }
+  .col-lg-5 {
+    width: 50%;
+  }
+  .proj-titles {
+    margin-left: 20px;
+  }
+  .card {
+    margin: 15px;
+  }
+  .proj-head {
+    font-size: 17px;
+  }
+  #project-btn {
+    width: 45%;
+  }
+  .police-text {
+    font-size: 15px;
+  }
+  .col-md-7 {
+    margin-left: 2rem;
+  }
+  .col-md-5 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .butDemo {
+    font-size: 14px;
+    padding: 14px 60px;
+  }
+  #heading {
+    font-size: 30px;
+  }
+  .policeimages {
+    columns: 2;
+  }
+  #project2-img1 {
+    height: 550px;
+  }
+  #project3-img1 {
+    height: 450px;
+    width: 300px;
+  }
+  #project4-img1 {
+    height: 300px;
+  }
+  #project4-img2 {
+    height: 350px;
+  }
+  #project5-img1 {
+    height: 250px;
+  }
+  #project5-img2 {
+    height: 230px;
+  }
+  #project6-img1 {
+    height: 300px;
+    width: 100%;
+  }
+  #project7-img1 {
+    height: 250px;
+  }
+  #project7-img2 {
+    height: 250px;
+  }
+  #project8-img1 {
+    height: 200px;
+  }
+  #project8-img2 {
+    height: 200px;
+  }
+  #project9-img1 {
+    height: 200px;
+  }
+  #project9-img2 {
+    height: 200px;
+  }
 }
