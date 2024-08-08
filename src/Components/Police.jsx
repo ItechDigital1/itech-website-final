@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import RequestDemoForm from "./RequestDemoForm";
+
 import "../Css/Police.css";
 import proj1img1 from "../assets/images/img/project1-image1.jpg";
 import proj1img2 from "../assets/images/img/project1-image2.jpg";
@@ -20,6 +22,7 @@ import proj11img1 from "../assets/images/img/project11-image1.jpg";
 import proj12img1 from "../assets/images/img/project12-image1.jpg";
 import proj12img2 from "../assets/images/img/project12-image2.jpg";
 import proj13img1 from "../assets/images/img/project13-image1.jpg";
+import { POLICEDATA } from "../data/PoilceData";
 
 const Police = () => {
   // const [formData, setFormData] = useState({
@@ -130,7 +133,197 @@ const Police = () => {
           </div>
           <br />
           <br />
-          <div className="policerow content" id="recruitment">
+
+          {/* Common Component */}
+          {/* {POLICEDATA.map((policedata) => (
+            <div
+              className="policerow content"
+              key={policedata.ids}
+              id={policedata.id}
+            >
+              <div
+                className="col-lg-5"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <div className="img">
+                  <img
+                    src={policedata.src1}
+                    alt={policedata.src1}
+                    className="img-fluid"
+                    id="project1-img1"
+                  />
+                  <br />
+                  {policedata.src2 ? (
+                    <img
+                      className="img-fluid"
+                      src={policedata.src2}
+                      id="project1-img2"
+                      alt={policedata.src2}
+                    />
+                  ) : null}
+                </div>
+                <div>
+                  <Link
+                    to="#"
+                    className="btn butDemo btn1 text-center"
+                    role="button"
+                  >
+                    <span style={{ fontWeight: "bold" }}>G</span>
+                    <span style={{ fontWeight: "bold" }}>e</span>
+                    <span style={{ fontWeight: "bold" }}>M Link</span>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="col-md-7 pt-4"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <header id="heading">{policedata.title}</header>
+                <h6 style={{ margin: "1rem" }}>Challenge - </h6>
+                <div className="police-text">
+                  <p className="font-italic">{policedata.description}</p>
+                </div>
+                <Link
+                  to="/request-demo"
+                  className="btn butDemo btn1 text-center"
+                  role="button"
+                >
+                  Request Demo
+                </Link>
+              </div>
+            </div>
+          ))} */}
+          {POLICEDATA.map((policedata, index) => (
+            <div
+              className={`policerow content ${
+                index % 2 === 0 ? "even" : "odd"
+              }`}
+              key={policedata.ids}
+              id={policedata.id}
+            >
+              <div className="row">
+                {index % 2 === 0 ? (
+                  // Even page: images on the right, text on the left
+                  <>
+                    <div className="col-md-6">
+                      <header id="heading">{policedata.title}</header>
+                      <h6 style={{ margin: "1rem" }}>Challenge - </h6>
+                      <div className="police-text">
+                        <p className="font-italic">{policedata.description}</p>
+                      </div>
+                      <Link
+                        to="/request-demo"
+                        className="btn butDemo btn1 text-center"
+                        role="button"
+                      >
+                        Request Demo
+                      </Link>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="img-container">
+                        {policedata.src2 ? (
+                          <div className="img-row">
+                            <img
+                              src={policedata.src1}
+                              alt={policedata.src1}
+                              className="img-fluid"
+                              id={policedata.cssid1}
+                            />
+                            <img
+                              className="img-fluid"
+                              src={policedata.src2}
+                              id={policedata.cssid2}
+                              alt={policedata.src2}
+                            />
+                          </div>
+                        ) : (
+                          <img
+                            src={policedata.src1}
+                            alt={policedata.src1}
+                            className="img-fluid"
+                            id={policedata.cssid1}
+                          />
+                        )}
+                      </div>
+                      <div>
+                        <Link
+                          to="#"
+                          className="btn butDemo btn1 text-center"
+                          role="button"
+                        >
+                          <span style={{ fontWeight: "bold" }}>G</span>
+                          <span style={{ fontWeight: "bold" }}>e</span>
+                          <span style={{ fontWeight: "bold" }}>M Link</span>
+                        </Link>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  // Odd page: images on the left, text on the right
+                  <>
+                    <div className="col-md-6 order-1 order-md-2">
+                      <div className="img-container">
+                        {policedata.src2 ? (
+                          <div className="img-row">
+                            <img
+                              src={policedata.src1}
+                              alt={policedata.src1}
+                              className="img-fluid"
+                              id={policedata.cssid1}
+                            />
+                            <img
+                              className="img-fluid"
+                              src={policedata.src2}
+                              id={policedata.cssid2}
+                              alt={policedata.src2}
+                            />
+                          </div>
+                        ) : (
+                          <img
+                            src={policedata.src1}
+                            alt={policedata.src1}
+                            className="img-fluid"
+                            id={policedata.cssid1}
+                          />
+                        )}
+                      </div>
+                      <div>
+                        <Link
+                          to="#"
+                          className="btn butDemo btn1 text-center"
+                          role="button"
+                        >
+                          <span style={{ fontWeight: "bold" }}>G</span>
+                          <span style={{ fontWeight: "bold" }}>e</span>
+                          <span style={{ fontWeight: "bold" }}>M Link</span>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <header id="heading">{policedata.title}</header>
+                      <h6 style={{ margin: "1rem" }}>Challenge - </h6>
+                      <div className="police-text">
+                        <p className="font-italic">{policedata.description}</p>
+                      </div>
+                      <Link
+                        to="/request-demo"
+                        className="btn butDemo btn1 text-center"
+                        role="button"
+                      >
+                        Request Demo
+                      </Link>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+
+          {/* ******** */}
+
+          {/* <div className="policerow content" id="recruitment">
             <div
               className="col-lg-5"
               data-aos="fade-right"
@@ -206,17 +399,18 @@ const Police = () => {
                   systematic recruitment without any issues.
                 </p>
               </div>
+
               <Link
-                to="#"
+                to={`/request-demo/${POLICEDATA.id}`}
                 className="btn butDemo btn1 text-center"
                 role="button"
               >
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          <div className="policerow content" id="mpls">
+          {/* <div className="policerow content" id="mpls">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <img
                 src={proj2img1}
@@ -283,9 +477,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          <div className="policerow content" id="abmis">
+          {/* <div className="policerow content" id="abmis">
             <div className="col-md-5" data-aos="fade-right">
               <img
                 src={proj3img1}
@@ -334,17 +528,16 @@ const Police = () => {
                 </p>
               </div>
               <Link
-                to="#"
+                to="#request-demo-form"
                 className="btn butDemo btn1 text-center"
                 role="button"
               >
                 Request Demo
               </Link>
             </div>
-          </div>
-          {/* 4th row */}
+          </div> */}
           <br />
-          <div className="policerow content" id="infoKiosk">
+          {/* <div className="policerow content" id="infoKiosk">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <div className="policeimages">
                 <img
@@ -413,10 +606,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
-          {/* 5th row */}
+          </div> */}
           <br />
-          <div className="policerow content" id="videoConf">
+          {/* <div className="policerow content" id="videoConf">
             <div className="col-md-5 " data-aos="fade-right">
               <img
                 src={proj5img1}
@@ -480,10 +672,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
-          {/* 6th row */}
+          </div> */}
           <br />
-          <div className="policerow content" id="policeCaps">
+          {/* <div className="policerow content" id="policeCaps">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <img
                 src={proj6img1}
@@ -529,10 +720,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
-          {/* 7th row */}
+          </div> */}
           <br />
-          <div className="policerow content" id="passportTabs">
+          {/* <div className="policerow content" id="passportTabs">
             <div className="col-md-5" data-aos="fade-right">
               <img
                 src={proj7img1}
@@ -597,10 +787,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          {/* 8th row */}
-          <div className="policerow content" id="rugMdt">
+          {/* <div className="policerow content" id="rugMdt">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <div className="policeimages">
                 <img
@@ -661,10 +850,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          {/* 9th row */}
-          <div className="policerow content" id="policeBikes">
+          {/* <div className="policerow content" id="policeBikes">
             <div className="col-md-5" data-aos="fade-right">
               <div className="policeimages">
                 <img
@@ -716,10 +904,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          {/* 10th row */}
-          <div className="policerow content" id="deskster">
+          {/* <div className="policerow content" id="deskster">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <img
                 src={proj11img1}
@@ -765,10 +952,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          {/* 11th row */}
-          <div className="policerow content" id="policeBarricades">
+          {/* <div className="policerow content" id="policeBarricades">
             <div className="col-md-5" data-aos="fade-right">
               <div className="policeimages">
                 <img
@@ -828,10 +1014,9 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
           <br />
-          {/* 12th row */}
-          <div className="policerow content" id="software">
+          {/* <div className="policerow content" id="software">
             <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
               <img
                 src={proj13img1}
@@ -885,7 +1070,7 @@ const Police = () => {
                 Request Demo
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

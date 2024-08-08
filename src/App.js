@@ -34,6 +34,7 @@ import CubesterPage from "./Components/Cubester";
 import CubesterProd from "./Components/CubesterProd";
 import LabEquipments from "./LabEquipments/LabEquipments";
 import Police from "./Components/Police";
+import RequestDemoForm from "./Components/RequestDemoForm";
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,7 @@ function App() {
         <Header />
         <Routes>
           {/* <Route path="/" element={<Content />} /> */}
+          <Route path="/request-demo" element={<RequestDemoForm />} />
           <Route path="/" element={<ContentsNew />} />
           <Route path="/labEquipments/:labId" element={<LabEquipments />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
