@@ -6,7 +6,7 @@
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Container for the product image */
@@ -17,11 +17,11 @@
   justify-content: center;
 }
 
-.product-image {
-  max-width: 300px;
-  max-height: 300px;
+.faraday-image {
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
 }
 /* Container for the product details */
 .details-container {

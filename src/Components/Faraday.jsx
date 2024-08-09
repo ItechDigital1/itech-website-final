@@ -42,7 +42,7 @@ const Faraday = () => {
   return (
     <div className="faraday-container">
       <div className="faradayimage-container">
-        <img src={faraday.image} alt={faraday.name} className="product-image" />
+        <img src={faraday.image} alt={faraday.name} className="faraday-image" />
       </div>
       <div className="details-container">
         <h3 className="product-title">{faraday.name}</h3>

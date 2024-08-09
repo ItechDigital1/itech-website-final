@@ -5,8 +5,8 @@ import ShieldsterFaradaybagsforTablets from "../assets/images/faradayBag/Shields
 import ShieldsterHorizontalWindowFaradaybags from "../assets/images/faradayBag/ShieldsterHorizontalWindowFaradaybags.png";
 import ShieldsterKeyFobFaradaybags from "../assets/images/faradayBag/ShieldsterKeyFobFaradaybags.jpg";
 import ShieldsterPowerBankFaradaybagsformobile from "../assets/images/faradayBag/ShieldsterPowerBankFaradaybagsformobile.jpg";
-import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterHorizontalnonwindowFaradaybag.jpg";
-
+// import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterHorizontalnonwindowFaradaybag.jpg";
+import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/FaradayNewBag.png";
 export const FARADAYS = [
   {
     id: 1,
