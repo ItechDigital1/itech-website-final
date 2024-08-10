@@ -36,10 +36,8 @@ const LabEquipments = () => {
     return <div>Loading...</div>;
   }
   return (
-    // <div>
-    //   <div>Lab Equipments</div>
-    // </div>
     <div className="main-container">
+      LabEquipmetnts
       <div className="prod-container">
         {showTwoImages ? (
           <div className="labprodimage-container">
