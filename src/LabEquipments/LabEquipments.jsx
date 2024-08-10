@@ -6,6 +6,13 @@ import { LABEQUIPMENTS } from "./LabEquipments.config";
 const LabEquipments = () => {
   const { labId } = useParams();
   const [labEquipments, setLabEquipments] = useState(null);
+  const [showTwoImages, setShowTwoImages] = useState(true);
+
+  const images = [
+    labEquipments?.image,
+    labEquipments?.image1,
+    labEquipments?.image2,
+  ];
 
   useEffect(() => {
     setLabEquipments(LABEQUIPMENTS.find(({ id }) => id === Number(labId)));
@@ -34,14 +41,20 @@ const LabEquipments = () => {
     // </div>
     <div className="main-container">
       <div className="prod-container">
-        <div className="prodimage-container">
-          <img
-            src=""
-            alt=""
-            className="prodimage"
-            style={{ height: "335.99px", width: "503.99px" }}
-          />
-        </div>
+        {showTwoImages ? (
+          <div className="labprodimage-container">
+            {images.filter(Boolean).map((img, index) => (
+              <img key={index} src={img} alt={`Image ${index + 1}`} />
+            ))}
+          </div>
+        ) : (
+          <div className="labprodimage-container">
+            {labEquipments?.image1 && (
+              <img src={labEquipments.image1} alt="" className="prodimage" />
+            )}
+          </div>
+        )}
+
         <div className="proddetails-container">
           <h3 className="prodproduct-title">{labEquipments.name}</h3>
           <nav>

@@ -3,15 +3,11 @@ import { useParams } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
 // import NodeOptions from "./ProductOptions";
+import ReactImageMagnify from "react-image-magnify";
 import "../Css/Deskterprod.css";
 const RacksterProd = () => {
   const { racksterId } = useParams();
   const [rackster, setRackster] = useState(null);
-
-  const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
-  const magnifierRef = useRef(null);
-  const mainImageRef = useRef(null);
-
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
   };
@@ -26,14 +22,6 @@ const RacksterProd = () => {
       RACKSTER.find((f) => getUrlFriendlyName(f.name) === racksterId)
     );
   }, [racksterId]);
-
-  useEffect(() => {
-    if (rackster) {
-      console.log("Setting background image:", rackster.image);
-      magnifierRef.current.style.backgroundImage = `url(${rackster.image})`;
-    }
-  }, [rackster]);
-
   useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
     const tabPanes = document.querySelectorAll(".tab-pane");
@@ -49,28 +37,6 @@ const RacksterProd = () => {
     });
   }, [rackster]);
 
-  const handleMouseMove = (e) => {
-    const rect = mainImageRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const magnifierWidth = magnifierRef.current.offsetWidth;
-    const magnifierHeight = magnifierRef.current.offsetHeight;
-
-    setMagnifierStyle({
-      display: "block",
-      left: `${x - magnifierWidth / 2}px`,
-      top: `${y - magnifierHeight / 2}px`,
-      backgroundPosition: `-${x * 2 - magnifierWidth / 2}px -${
-        y * 2 - magnifierHeight / 2
-      }px`,
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setMagnifierStyle({ display: "none" });
-  };
-
   if (!rackster) {
     return <h1>Loading...</h1>;
   }
@@ -79,22 +45,24 @@ const RacksterProd = () => {
     <div className="desktermain-container">
       <div className="deskterprod-container">
         <div className="deskterimage-container">
-          <img
-            src={rackster.image}
-            alt={rackster.name}
-            style={{ height: "335.99px", width: "503.99px" }}
-            className="deskterimage zoom-image"
-            id="main-zoom"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            ref={mainImageRef}
+          <ReactImageMagnify
+            {...{
+              smallImage: {
+                alt: rackster.name,
+                isFluidWidth: true,
+                src: rackster.image,
+              },
+              largeImage: {
+                src: rackster.image,
+                width: 1800,
+                height: 1200,
+              },
+              enlargedImageContainerDimensions: {
+                width: "200%",
+                height: "200%",
+              },
+            }}
           />
-          <div
-            className="magnifier"
-            id="magnifier"
-            ref={magnifierRef}
-            style={magnifierStyle}
-          ></div>
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{rackster.name}</h3>

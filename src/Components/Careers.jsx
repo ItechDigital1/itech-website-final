@@ -27,7 +27,8 @@ function ResumeUpload() {
       </form>
       OR mail to
       <Link to="mailto:itech.co.in" style={{ color: "red" }}>
-        career@itech.co.in
+        {" "}
+        support@itech.co.in
       </Link>
     </div>
   );

@@ -113,18 +113,18 @@ const Header = () => {
               >
                 <li className="nav__item" onClick={removeActive}>
                   <NavLink to="/" className="navs-link navLink">
-                    Home
+                    HOME
                   </NavLink>
                 </li>
                 <li className="has-children nav__item" onClick={removeActive}>
                   <NavLink to="#" className="navLink" id="sub-drop-down">
-                    Products
+                    PRODUCTS
                     <ul className="dropdown" id="drop-down">
                       <li className="has-children" id="sub-drop-down">
-                        <NavLink to="#">Hardware</NavLink>
+                        <NavLink to="#">HARDWARE</NavLink>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/deskter">Deskter</Link>
+                            <Link to="/deskter">DESKTER</Link>
                           </li>
                           {PRODUCTS.map((product) => (
                             <li key={product.id}>
@@ -134,21 +134,21 @@ const Header = () => {
                             </li>
                           ))}
                           <li>
-                            <Link to="/cubester">Cubester</Link>
+                            <Link to="/cubester">CUBESTER</Link>
                           </li>
                           <li>
                             <Link className="dropdown-item" to="/graphster">
-                              Graphster
+                              GRAPHSTER
                             </Link>
                           </li>
                           <li>
                             <Link className="dropdown-item" to="/roadster">
-                              Roadster
+                              ROADSTER
                             </Link>
                           </li>
                           <li>
                             <Link className="dropdown-item" to="rackster">
-                              Rackster
+                              RACKSTER
                             </Link>
                           </li>
                         </ul>
@@ -162,12 +162,12 @@ const Header = () => {
                           className="dropdown-item"
                           id="sub-drop-down"
                         >
-                          Lab Equipments
+                          LAB EQUIPMENTS
                         </NavLink>
                         <ul className="dropdown arrow-top">
                           <li className="nav__item" onClick={removeActive}>
                             <Link to="/faradayBag" className="dropdown-item">
-                              Faraday bags
+                              FARADAY BAGS
                             </Link>
                           </li>
                           {LABEQUIPMENTS.map((lab) => (
@@ -207,19 +207,19 @@ const Header = () => {
                         <ul className="dropdown arrow-top">
                           <li>
                             <Link className="dropdown-item" to="#">
-                              Cabinets
+                              CABINETS
                             </Link>
                           </li>
                           <li>
                             <Link className="dropdown-item" to="#">
-                              Tableau
+                              TABLEAU
                             </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="nav__item" onClick={removeActive}>
                         <Link to="/software" className="navs-link navLink">
-                          Software
+                          SOFTWARE
                         </Link>
                       </li>
                     </ul>
@@ -238,24 +238,24 @@ const Header = () => {
               </li> */}
                 <li className="has-children nav__item" onClick={removeActive}>
                   <Link className="navLink" to="/Projects" id="sub-drop-down">
-                    Projects
+                    PROJECTS
                   </Link>
                   <ul className="dropdown" id="drop-down">
                     <li className="has-children" id="sub-drop-down">
                       <Link to="#">
-                        Government
+                        GOVERNMENT
                         <br />
-                        CSR Projects
+                        CSR PROJECTS
                       </Link>
                       <ul className="dropdown">
                         <li>
-                          <Link to="/FireBrigade">Fire Brigade</Link>
+                          <Link to="/FireBrigade">FIRE BRIGADE</Link>
                         </li>
                         <li>
-                          <Link to="/Police">Police</Link>
+                          <Link to="/Police">POLICE</Link>
                         </li>
                         <li>
-                          <Link to="#">Railway</Link>
+                          <Link to="#">RAILWAY</Link>
                         </li>
                       </ul>
                     </li>
@@ -263,46 +263,46 @@ const Header = () => {
                 </li>
                 <li className="has-children nav__item" onClick={removeActive}>
                   <Link className="navLink" to="Company" id="sub-drop-down">
-                    Company
+                    COMPANY
                   </Link>
                   <ul className="dropdown">
                     <li>
-                      <Link to="/AboutUS">About Us</Link>
+                      <Link to="/AboutUS">ABOUT US</Link>
                     </li>
                     <li>
-                      <Link to="/History">History</Link>
+                      <Link to="/History">HISTORY</Link>
                     </li>
                     <li>
-                      <Link to="/Team">Team</Link>
+                      <Link to="/Team">TEAM</Link>
                     </li>
                     <li>
-                      <Link to="/News">News</Link>
+                      <Link to="/News">NEWS</Link>
                     </li>
                     <li>
-                      <Link to="/Careers">Careers</Link>
+                      <Link to="/Careers">CAREERS</Link>
                     </li>
                     <li>
-                      <Link to="/Contact">Contact</Link>
+                      <Link to="/Contact">CONTACT</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="has-children nav__item" onClick={removeActive}>
                   <Link className="navLink" to="#" id="sub-drop-down">
-                    Support
+                    SUPPORT
                   </Link>
                   <ul className="dropdown">
                     <li>
-                      <Link to="#">Products Brochure</Link>
+                      <Link to="#">PRODUCTS BROCHURE</Link>
                     </li>
                     <li>
-                      <Link to="/Gallery">Gallery</Link>
+                      <Link to="/Gallery">GALLERY</Link>
                     </li>
                     <li>
-                      <Link to="#">Sitemap</Link>
+                      <Link to="#">SITEMAP</Link>
                     </li>
                     <li>
                       <Link to="#" target="">
-                        Support
+                        SUPPORT
                       </Link>
                     </li>
                     <li>

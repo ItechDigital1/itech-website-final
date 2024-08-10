@@ -15,7 +15,7 @@ export const PRODUCTS = [
   {
     id: 1,
 
-    name: "Clonester",
+    name: "CLONESTER",
     image: Clonester,
     subname: "Hand Held Ruggedised Forensic Imaging Device",
     subdesc: "SKU: CL-1101",
@@ -109,7 +109,7 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: "Labster",
+    name: "LABSTER",
     image: Labster,
     subname: "High End Console based Audio/Video Forensic Workstation",
     subdesc: "SKU: LB-1101",
@@ -268,7 +268,7 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    name: "Lapster",
+    name: "LAPSTER",
     image: Lapster,
     subname: "High End Forensic Laptop",
     subdesc: "SKU: LP-1101",
@@ -430,7 +430,7 @@ export const PRODUCTS = [
   },
   {
     id: 4,
-    name: "Telster",
+    name: "TELSTER",
     image: Telster,
     subname: "High Performance Cluster",
     subdesc: "SKU: TL-1101",
@@ -459,7 +459,7 @@ export const PRODUCTS = [
   },
   {
     id: 5,
-    name: "Trackster",
+    name: "TRACKSTER",
     image: Trackster,
     subname: "OTG Field Investigation and Surveillance Vehicle",
     subdesc: "SKU: TA-1101",
@@ -530,7 +530,7 @@ export const PRODUCTS = [
   },
   {
     id: 6,
-    name: "Vaultster Tower RAID",
+    name: "VAULTSTER TOWER RAID",
     image: Vaultster,
     subname: "High Capacity Direct Attached Storage RAID",
     subdesc: "SKU: VS-1101",
@@ -652,7 +652,7 @@ export const PRODUCTS = [
 export const CUBESTER = [
   {
     id: 1,
-    name: "Cubester",
+    name: "CUBESTER",
     image: Cubester,
     subname: "Forensics Micro Workstation",
     subdesc: "SKU: CB-1101",
@@ -777,7 +777,7 @@ export const CUBESTER = [
   },
   {
     id: 2,
-    name: "Cubester-X",
+    name: "CUBESTER-X",
     image: CubesterX,
     subname: "Forensic Dual Micro Workstation",
     subdesc: "SKU: CB-2101",
@@ -891,7 +891,7 @@ export const CUBESTER = [
 export const RACKSTER = [
   {
     id: 1,
-    name: "Rackster-DC",
+    name: "RACKSTER-DC",
     image: RacksterDC,
     subname: "High Performance Data Center",
     subdesc: "SKU: RC-1101",
@@ -1065,7 +1065,7 @@ export const RACKSTER = [
   },
   {
     id: 2,
-    name: "Rackster-MC",
+    name: "RACKSTER-MC",
     image: RacksterMC,
     subname: "High Performance Mini Data Center",
     subdesc: "SKU: RC-2101",
@@ -1234,7 +1234,7 @@ export const RACKSTER = [
 export const ROADSTER = [
   {
     id: 1,
-    name: "Roadster",
+    name: "ROADSTER",
     image: Roadster,
     subname: "High End Mobile Forensics Workstation",
     subdesc: "SKU: RD-1101",
@@ -1376,7 +1376,7 @@ export const ROADSTER = [
   },
   {
     id: 2,
-    name: "Roadster-X",
+    name: "ROADSTER-X",
     image: RoadsterX,
     subname: "High End Cryptanalysis Workstation",
     subdesc: "SKU: CY-1101",
