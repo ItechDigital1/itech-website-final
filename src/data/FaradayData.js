@@ -11,7 +11,7 @@ export const FARADAYS = [
   {
     id: 1,
     image: ShieldsterKeyFobFaradaybags,
-    name: "Shieldster KeyFob Faraday bags",
+    name: "SHIELDSTER KEYFOB FARADAYBAGS",
     description: [
       <ul>
         <li>
@@ -80,7 +80,7 @@ export const FARADAYS = [
   {
     id: 2,
     image: ShieldsterVerticalnonwindowFaradaybag,
-    name: "Shieldster Vertical non window Faraday bag for mobile",
+    name: "SHIELDSTER VERTICAL NON-WINDOW FARADAY BAGS",
     description: [
       <ul>
         <li>
@@ -143,7 +143,7 @@ export const FARADAYS = [
   {
     id: 3,
     image: ShieldsterHorizontalnonwindowFaradaybag,
-    name: "Shieldster Horizontal non window Faradaybag",
+    name: "SHIELDSTER HORIZONTAL NON-WINDOW FARADAY BAGS",
     description: [
       <ul>
         <li>
@@ -208,7 +208,7 @@ export const FARADAYS = [
   {
     id: 4,
     image: ShieldsterHorizontalWindowFaradaybags,
-    name: "Shieldster Horizontal Window Faraday bags",
+    name: "SHIELDSTER HORIZONTAL WINDOW FARADAY BAGS",
     description: [
       <ul>
         <li>
@@ -279,7 +279,7 @@ export const FARADAYS = [
   {
     id: 5,
     image: ShieldsterFaradaybagsforTablets,
-    name: "Shieldster Faraday bags for Tablets",
+    name: "SHIELDSTER FARADAY BAGS FOR TABLETS",
     description: [
       <ul>
         <li>
@@ -356,7 +356,7 @@ export const FARADAYS = [
   {
     id: 6,
     image: ShildsterFaradaybagforlaptops,
-    name: "Shildster Non window Vertical Faraday bag for laptops",
+    name: "SHIELDSTER FARADAY BAG FOR LAPTOPS",
     description: [
       <ul>
         <li>
@@ -430,7 +430,7 @@ export const FARADAYS = [
   {
     id: 7,
     image: ShieldsterPowerBankFaradaybagsformobile,
-    name: "Shieldster Power Bank Faraday bags for mobile",
+    name: "SHIELIDSTER POWER BANK FARADAY BAGS FOR MOBILE",
     description: [
       <ul>
         <li>
