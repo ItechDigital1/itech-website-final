@@ -3,6 +3,8 @@ import Chargster1 from "../assets/images/LabEquipments/Chargester1.png";
 import Lockster from "../assets/images/LabEquipments/Lockster.png";
 import Lockster1 from "../assets/images/LabEquipments/Lockster1.png";
 import Lockster2 from "../assets/images/LabEquipments/Lockster2.png";
+import Blockster from "../assets/images/LabEquipments/blackbox.png";
+import Blockster1 from "../assets/images/LabEquipments/imageBox1.png";
 export const LABEQUIPMENTS = [
   {
     id: 1,
@@ -176,72 +178,8 @@ export const LABEQUIPMENTS = [
   {
     id: 3,
     name: "BLOCKSTER",
-    // image:,
-    description: [
-      <ul>
-        <li>
-          ITech Digital Forensics provides the best radio frequency (RF)
-          shielding and practical accessibility.
-        </li>
-        <li>
-          With its robust construction and RF signal shielding, the forensic
-          analysis enclosure is ideal for examining gadgets like laptops,
-          tablets, cell phones, and other like sized electronics.
-        </li>
-        <li>
-          The extra-large interior dimensions facilitate comfortable device
-          analysis and easy device movement in and out of the protected
-          chamber's faraday bags for operators.
-        </li>
-        <br />
-        <b>FEATURES</b>
-        <li>
-          Blockster is made of a sturdy aluminium frame with RF-absorbing foam
-          covering the inside walls and conductive gloves that allow both hands
-          to operate and probe internal gadgets.
-        </li>
-        <li>
-          Accommodates numerous smartphones, iPads, laptops, and other devices
-          of a comparable size.
-        </li>
-        <li>
-          Furnished with an RJ45 Ethernet port, an AC port, and two USB
-          connections.
-        </li>
-        <li>
-          Supports fast data transfer and connectivity for efficient analysis.
-          Facilitates quick data transmission and communication for effective
-          analysis.
-        </li>
-        <li>
-          Utilizing technologies such as GrayKey, Cellebrite, XRY, BlackBag,
-          Oxygen, etc., maximizes data extraction by preventing lockout mode and
-          cutting down on password cracking time.
-        </li>
-        <li>
-          Blocks radio signals, GPS, RFID, NFC, mobile signals (including 5G
-          networks), WiFi (2.4 & 5GHz), Bluetooth, and cell signals.{" "}
-        </li>
-        <li>
-          Blockster comes with a pair of replacement gloves in addition to
-          gloves for both left and right hands-on touch.{" "}
-        </li>
-      </ul>,
-    ],
-    content: [
-      <ul>
-        <b>DIMENSIONS</b>
-        <li>
-          <b>External dimensions (LxWxH): </b>Size (HxLxD): (55.86 x 46.3 x
-          31.46cm){" "}
-        </li>
-      </ul>,
-    ],
-  },
-  {
-    id: 4,
-    name: "CRACKSTER",
-    // image:,
+    image: Blockster,
+    image1: Blockster1,
     description: [
       <ul>
         <li>

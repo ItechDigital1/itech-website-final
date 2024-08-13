@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { FARADAYS } from "../data/FaradayData";
 import "../Css/Faraday.css";
 // Product Page
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const Faraday = () => {
   const { faradayId } = useParams();
   const [faraday, setFaraday] = useState(null);
@@ -44,7 +46,7 @@ const Faraday = () => {
     <div className="faraday-container">
       <div className="faradayimage-container">
         {/* <img src={faraday.image} alt={faraday.name} className="faraday-image" /> */}
-        <ReactImageMagnify
+        {/* <ReactImageMagnify
           {...{
             smallImage: {
               alt: faraday.name,
@@ -61,7 +63,8 @@ const Faraday = () => {
               height: "100%",
             },
           }}
-        />
+        /> */}
+        <ImageMagnifier imageSrc={faraday.image} alt={faraday.name} />
       </div>
       <div className="details-container">
         <h3 className="product-title">{faraday.name}</h3>

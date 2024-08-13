@@ -3,13 +3,11 @@ import { useParams } from "react-router-dom";
 import { Deskter } from "../data/Deskter";
 import "../Css/Deskterprod.css";
 import ProductOptions from "./ProductOptions";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const DeskterProd = () => {
   const { deskterId } = useParams();
   const [deskter, setDeskter] = useState(null);
-
-  const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
-  const magnifierRef = useRef(null);
-  const mainImageRef = useRef(null);
 
   const getUrlFriendlyName = (name) => {
     return name.toLowerCase().replace(/\s+/g, "-");
@@ -25,13 +23,6 @@ const DeskterProd = () => {
   }, [deskterId]);
 
   useEffect(() => {
-    if (deskter) {
-      console.log("Setting background image:", deskter.image);
-      magnifierRef.current.style.backgroundImage = `url(${deskter.image})`;
-    }
-  }, [deskter]);
-
-  useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
     const tabPanes = document.querySelectorAll(".tab-pane");
 
@@ -45,28 +36,6 @@ const DeskterProd = () => {
       });
     });
   }, [deskter]);
-
-  const handleMouseMove = (e) => {
-    const rect = mainImageRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const magnifierWidth = magnifierRef.current.offsetWidth;
-    const magnifierHeight = magnifierRef.current.offsetHeight;
-
-    setMagnifierStyle({
-      display: "block",
-      left: `${x - magnifierWidth / 2}px`,
-      top: `${y - magnifierHeight / 2}px`,
-      backgroundPosition: `-${x * 2 - magnifierWidth / 2}px -${
-        y * 2 - magnifierHeight / 2
-      }px`,
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setMagnifierStyle({ display: "none" });
-  };
 
   if (!deskter) {
     return <h1>Loading...</h1>;
@@ -146,22 +115,19 @@ const DeskterProd = () => {
     <div className="desktermain-container">
       <div className="deskterprod-container">
         <div className="deskterimage-container">
-          <img
+          {/* <img
             src={deskter.image}
             alt={deskter.name}
             className="deskterimage zoom-image"
             id="main-zoom"
-            style={{ height: "335.99px", width: "503.99px" }}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            ref={mainImageRef}
+            style={{ height: "335.99px", width: "373.99px" }}
+          /> */}
+
+          <ImageMagnifier
+            style={{ height: "335.99px", width: "373.99px" }}
+            imageSrc={deskter.image}
+            alt={deskter.name}
           />
-          <div
-            className="magnifier"
-            id="magnifier"
-            ref={magnifierRef}
-            style={magnifierStyle}
-          ></div>
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{deskter.name}</h3>

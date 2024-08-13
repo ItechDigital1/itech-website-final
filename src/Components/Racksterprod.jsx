@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { RACKSTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
 // import NodeOptions from "./ProductOptions";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 import "../Css/Deskterprod.css";
 const RacksterProd = () => {
   const { racksterId } = useParams();
@@ -45,7 +47,7 @@ const RacksterProd = () => {
     <div className="desktermain-container">
       <div className="deskterprod-container">
         <div className="deskterimage-container">
-          <ReactImageMagnify
+          {/* <ReactImageMagnify
             {...{
               smallImage: {
                 alt: rackster.name,
@@ -62,7 +64,8 @@ const RacksterProd = () => {
                 height: "200%",
               },
             }}
-          />
+          /> */}
+          <ImageMagnifier imageSrc={rackster.image} alt={rackster.name} />
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{rackster.name}</h3>

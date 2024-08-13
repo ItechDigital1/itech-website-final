@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { LABEQUIPMENTS } from "./LabEquipments.config";
-
+import ImageMagnifier from "../Components/ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const LabEquipments = () => {
   const { labId } = useParams();
   const [labEquipments, setLabEquipments] = useState(null);
@@ -44,12 +45,27 @@ const LabEquipments = () => {
             {images.filter(Boolean).map((img, index) => (
               <img key={index} src={img} alt={`Image ${index + 1}`} />
             ))}
+            {/* {images.filter(Boolean).map((img, index) => (
+              <ImageMagnifier
+                key={index}
+                imageSrc={img}
+                alt={`Image ${index + 1}`}
+              />
+            ))} */}
           </div>
         ) : (
           <div className="labprodimage-container">
             {labEquipments?.image1 && (
               <img src={labEquipments.image1} alt="" className="prodimage" />
             )}
+            {/* {labEquipments?.image1 && (
+              // <img src={labEquipments.image1} alt="" className="prodimage" />
+              <ImageMagnifier
+                imageSrc={labEquipments.image1}
+                className="prodimage"
+                alt={labEquipments.image1}
+              />
+            )} */}
           </div>
         )}
 

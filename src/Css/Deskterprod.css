@@ -24,8 +24,8 @@ body {
 /* Image zooming */
 .deskterimage-container {
   position: relative;
-  width: 540px; /* Adjust the width as needed */
-  height: 336px; /* Adjust the height as needed */
+  width: 400px;
+  height: 336px;
 }
 
 .zoom-image {
@@ -50,12 +50,12 @@ body {
   text-align: center;
 }
 .deskterimage {
-  max-width: 100%;
-  height: auto;
+  width: 503.99px;
+  height: 335.99px;
 }
 .deskterdetails-container {
   flex: 2;
-  padding: 20px;
+  padding: 3rem;
 }
 
 .deskterproduct-title {

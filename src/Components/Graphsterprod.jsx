@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 import { GRAPHSTER } from "../data/Graphster";
 import ProductOptions from "./ProductOptions";
 import "../Css/Deskterprod.css";
-import ReactImageMagnify from "react-image-magnify";
-
+// import ReactImageMagnify from "react-image-magnify";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const GraphsterProd = () => {
   const { graphsterId } = useParams();
   const [graphster, setGraphster] = useState(null);
@@ -60,7 +61,7 @@ const GraphsterProd = () => {
             display: "inline-block",
           }}
         >
-          <ReactImageMagnify
+          {/* <ReactImageMagnify
             {...{
               smallImage: {
                 alt: graphster.name,
@@ -77,7 +78,8 @@ const GraphsterProd = () => {
                 height: "200%",
               },
             }}
-          />
+          /> */}
+          <ImageMagnifier imageSrc={graphster.image} alt={graphster.name} />
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{graphster.name}</h3>

@@ -35,6 +35,7 @@ import CubesterProd from "./Components/CubesterProd";
 import LabEquipments from "./LabEquipments/LabEquipments";
 import Police from "./Components/Police";
 import RequestDemoForm from "./Components/RequestDemoForm";
+import Railway from "./Components/Railway";
 function App() {
   return (
     <div className="App">
@@ -48,6 +49,7 @@ function App() {
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/deskter" element={<DeskterPage />} />
           <Route path="/Police" element={<Police />} />
+          <Route path="/Railway" element={<Railway />} />
           <Route path="/graphster" element={<GraphsterPage />} />
           <Route path="/graphster/:graphsterId" element={<GraphsterProd />} />
           <Route path="/roadster" element={<RoadsterPage />} />

@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { ROADSTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
 import "../Css/Deskterprod.css";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const RoadsterProd = () => {
   const { roadsterId } = useParams(null);
   const [roadster, setRoadster] = useState(null);
@@ -44,7 +46,7 @@ const RoadsterProd = () => {
     <div className="desktermain-container">
       <div className="deskterprod-container">
         <div className="deskterimage-container">
-          <ReactImageMagnify
+          {/* <ReactImageMagnify
             {...{
               smallImage: {
                 alt: roadster.name,
@@ -61,7 +63,8 @@ const RoadsterProd = () => {
                 height: "200%",
               },
             }}
-          />
+          /> */}
+          <ImageMagnifier imageSrc={roadster.image} alt={roadster.name} />
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{roadster.name}</h3>

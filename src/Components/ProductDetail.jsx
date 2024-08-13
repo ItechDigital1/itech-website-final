@@ -3,29 +3,18 @@ import { useParams } from "react-router-dom";
 import { PRODUCTS } from "../data/Products";
 import "../Css/Hardware.css";
 import ProductOptions from "./ProductOptions";
-import ReactImageMagnify from "react-image-magnify";
-
+// import ReactImageMagnify from "react-image-magnify";
+//"react-image-zoom": "^1.3.1",
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
-
-  // const [magnifierStyle, setMagnifierStyle] = useState({ display: "none" });
-  // const magnifierRef = useRef(null);
-  // const mainImageRef = useRef(null);
-  // const preloadedImage = new Image();
 
   useEffect(() => {
     const foundProduct = PRODUCTS.find(({ id }) => id === Number(productId));
     setProduct(foundProduct);
   }, [productId]);
-
-  // useEffect(() => {
-  //   if (product) {
-  //     console.log("Setting background image:", product.image);
-  //     preloadedImage.src = product.image;
-  //     magnifierRef.current.style.backgroundImage = `url(${preloadedImage.src})`;
-  //   }
-  // }, [product]);
 
   useEffect(() => {
     const navTabs = document.querySelectorAll("#nav-tab .nav-link");
@@ -42,27 +31,6 @@ const ProductDetail = () => {
     });
   }, [product]);
 
-  // const handleMouseMove = (e) => {
-  //   const rect = mainImageRef.current.getBoundingClientRect();
-  //   const x = e.clientX - rect.left;
-  //   const y = e.clientY - rect.top;
-
-  //   const magnifierWidth = magnifierRef.current.offsetWidth;
-  //   const magnifierHeight = magnifierRef.current.offsetHeight;
-
-  //   setMagnifierStyle({
-  //     display: "block",
-  //     left: `${x - magnifierWidth / 2}px`,
-  //     top: `${y - magnifierHeight / 2}px`,
-  //     backgroundPosition: `calc(-${x * 2}px + ${magnifierWidth / 2}px),
-  //                           calc(-${y * 2}px + ${magnifierHeight / 2}px)`,
-  //   });
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setMagnifierStyle({ display: "none" });
-  // };
-
   if (!product) {
     return <div>Loading...</div>;
   }
@@ -78,7 +46,8 @@ const ProductDetail = () => {
             id="main-zoom"
           />
         </div> */}
-        <div
+        <ImageMagnifier imageSrc={product.image} alt={product.name} />
+        {/* <div
           className="prodimage-container"
           style={{ display: "inline-block" }}
         >
@@ -91,25 +60,16 @@ const ProductDetail = () => {
               },
               largeImage: {
                 src: product.image,
-                width: 1200,
-                height: 1800,
+                width: 650,
+                height: 650,
               },
               enlargedImageContainerDimensions: {
-                width: "200%",
-                height: "200%",
+                width: "100%",
+                height: "100%",
               },
             }}
           />
-        </div>
-        {/* <div
-            className="magnifier"
-            id="magnifier"
-            ref={magnifierRef}
-            style={magnifierStyle}
-          ></div> // style={{ height: "336px", width: "440px" }}
-            // onMouseMove={handleMouseMove}
-            // onMouseLeave={handleMouseLeave}
-            // ref={mainImageRef} */}
+        </div> */}
         <div className="proddetails-container">
           <h3 className="prodproduct-title">{product.name}</h3>
           <h6 className="prodproduct-subtitle">{product.subname}</h6>

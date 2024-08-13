@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { CUBESTER } from "../data/Products";
 import ProductOptions from "./ProductOptions";
 import "../Css/Deskterprod.css";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
+import ImageMagnifier from "./ImageMagnifier";
+import "../Css/ImageMagnifier.css";
 
 const CubesterProd = () => {
   const { cubesterId } = useParams();
@@ -47,7 +49,8 @@ const CubesterProd = () => {
     <div className="desktermain-container">
       <div className="deskterprod-container">
         <div className="deskterimage-container">
-          <ReactImageMagnify
+          <ImageMagnifier imageSrc={cubester.image} alt={cubester.name} />
+          {/* <ReactImageMagnify
             {...{
               smallImage: {
                 alt: cubester.name,
@@ -64,7 +67,7 @@ const CubesterProd = () => {
                 height: "200%",
               },
             }}
-          />
+          /> */}
         </div>
         <div className="deskterdetails-container">
           <h3 className="deskterproduct-title">{cubester.name}</h3>
