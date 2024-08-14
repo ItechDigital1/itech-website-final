@@ -311,11 +311,11 @@
 
 /* highlights */
 .high-container {
-  margin: 2rem auto;
+  margin: 2rem;
   display: flex;
   /* align-items: center; */
   flex-wrap: wrap;
-  justify-content: center; /* Center content horizontally */
+  /* justify-content: center; Center content horizontally */
 }
 .header h3,
 h2 {
