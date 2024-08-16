@@ -5,6 +5,8 @@ import Lockster1 from "../assets/images/LabEquipments/Lockster1.png";
 import Lockster2 from "../assets/images/LabEquipments/Lockster2.png";
 import Blockster from "../assets/images/LabEquipments/blackbox.png";
 import Blockster1 from "../assets/images/LabEquipments/imageBox1.png";
+import RFSHIELDEDLOCKER from "../assets/images/LabEquipments/RFSHIELDEDLOCKER.png";
+import RFSHIELDEDLOCKER1 from "../assets/images/LabEquipments/RFSHIELDEDLOCKER2.png";
 export const LABEQUIPMENTS = [
   {
     id: 1,
@@ -238,6 +240,113 @@ export const LABEQUIPMENTS = [
           <b>External dimensions (LxWxH): </b>Size (HxLxD): (55.86 x 46.3 x
           31.46cm){" "}
         </li>
+      </ul>,
+    ],
+  },
+  {
+    id: 4,
+    name: "RF SHIELDED PHONE & TABLET LOCKERS",
+    image: RFSHIELDEDLOCKER,
+    image1: RFSHIELDEDLOCKER1,
+    description: [
+      <ul>
+        <b>FEATURES</b>
+        <li>
+          Military-grade metal locker system with 24 faraday chamber
+          compartments specifically designed for shielding cell phones and
+          tablets from RF signals
+        </li>
+        <li>
+          Blocks Wi-Fi (2.4 & 5GHz), Bluetooth, cell signals (including 5G),
+          GPS, RFID, and radio signals from low MHz to 40GHz
+        </li>
+        <li>Heavy-duty metal frame with individually shielded compartments</li>
+        <li>20 cell phone compartments and 4 tablet compartments</li>
+        <li>
+          Compartments are numbered sequentially [1-24]; alternative numbering
+          available upon request
+        </li>
+        <li>
+          Surface-mounted reprogrammable 4-digit combination lock as well as a
+          master key lock on each compartment door (2 master keys included)
+        </li>
+        <li>Felt lining the bottom and door of compartments</li>
+        <li>
+          Double gasket compartment shielding system for shielding redundancy
+        </li>
+        <li>
+          {" "}
+          Mountable system with trim (simple instructions and hardware included)
+        </li>
+        <li>
+          Available in desert tan or black exterior color:<br></br> A. Black
+          variation <br></br>B. Desert tan variation
+        </li>
+        <br />
+        <b>APPLICATIONS</b>
+        <li>
+          Device isolation, organization, and security for classified area or
+          secure facility lobby.
+        </li>
+        <li>
+          SCIF, military base, government building, and intelligence facility
+          cell phone storage/mobile device management.
+        </li>
+        <li>Corporate meeting security and digital privacy .</li>
+        <li>
+          State, local, federal, and military digital forensics evidence
+          preservation .
+        </li>
+        <li>Anti-hacking, anti-tracking, and anti-spying assurance .</li>
+        <br />
+        <b>DIMENSIONS & WEIGHT</b>
+        <li>
+          Locker external dimensions (with frame installed): <br></br>29.75" L x
+          8.88" W x 41.25" H (75.57cm x 22.56cm x 104.78cm)
+        </li>
+        <li>
+          Cell phone compartment internal dimensions:<br></br> 6.125" L x 7.25"
+          W x 4.75" H (15.56cm x 18.42cm x 12.07cm)
+        </li>
+        <li>
+          Tablet compartment internal dimensions:<br></br> 12.5" L x 7.25" W x
+          4.75" H (31.75cm x 18.42cm x 12.07cm)
+        </li>
+        <li>Locker weight: 120lbs (54.43kg); ships via pallet.</li>
+        <br />
+        <b>INSTALLATION</b>
+        <li>
+          The locker is designed to rest on a flat, sturdy surface made of wood
+          or other strong structural material that can support its weight. It is
+          not designed to be wall mounted. The locker includes four trim pieces
+          that get installed prior to securing the locker in place. Once
+          situated in framing, structural screws plus locker install port covers
+          and gaskets get installed.
+        </li>
+      </ul>,
+    ],
+    content: [
+      <ul>
+        <b>INCLUDED COMPONENTS</b>
+        <h4>ITECH RF Shielded Locker with 24 compartments</h4>
+        <br />
+        <li>
+          {" "}
+          20 additional replacement gaskets for phone compartment gutters.{" "}
+        </li>
+        <li>20 additional replacement gaskets for phone door gutters</li>
+        <li>4 additional replacement gaskets for tablet compartment gutters</li>
+        <li>4 additional replacement gaskets for tablet door gutters</li>
+        <li>4 locker install port covers</li>
+        <li>
+          18 locker install port cover screws 4-40 x 3/8" (16 required, 2 spare)
+        </li>
+        <li>8 locker install port cover gaskets (4 required, 4 spare)</li>
+        <li>2 left and right trim pieces</li>
+        <li>2 top and bottom trim pieces</li>
+        <li>26 trim install screws 6-18 x 3/8" (24 required, 2 spare)</li>
+        <li>2 master keys</li>
+        <li>Installation and lock operation instructions</li>
       </ul>,
     ],
   },

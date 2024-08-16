@@ -1,16 +1,18 @@
-import ShieldsterVerticalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterVerticalnonwindowFaradaybag.jpg";
+// import ShieldsterVerticalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterVerticalnonwindowFaradaybag.jpg";
+
 import ShildsterFaradaybagforlaptops from "../assets/images/faradayBag/ShildsterFaradaybagforlaptops.jpg";
 import Pic5 from "../assets/images/faradayBag/Pic5.jpg";
 import ShieldsterFaradaybagsforTablets from "../assets/images/faradayBag/ShieldsterFaradaybagsforTablets.jpg";
 import ShieldsterHorizontalWindowFaradaybags from "../assets/images/faradayBag/ShieldsterHorizontalWindowFaradaybags.png";
-import ShieldsterKeyFobFaradaybags from "../assets/images/faradayBag/ShieldsterKeyFobFaradaybags.jpg";
+// import ShieldsterKeyFobFaradaybags from "../assets/images/faradayBag/ShieldsterKeyFobFaradaybags.jpg";
+import KEYFOB1 from "../assets/images/faradayBag/KEY-FOB1.png";
 import ShieldsterPowerBankFaradaybagsformobile from "../assets/images/faradayBag/ShieldsterPowerBankFaradaybagsformobile.jpg";
 // import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterHorizontalnonwindowFaradaybag.jpg";
 import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/FaradayNewBag.png";
 export const FARADAYS = [
   {
     id: 1,
-    image: ShieldsterKeyFobFaradaybags,
+    image: KEYFOB1,
     name: "SHIELDSTER KEYFOB FARADAYBAGS",
     description: [
       <ul>
