@@ -9,6 +9,9 @@ import "../Css/ImageMagnifier.css";
 const Faraday = () => {
   const { faradayId } = useParams();
   const [faraday, setFaraday] = useState(null);
+  const [showTwoImages, setShowTwoImages] = useState(true);
+
+  const images = [faraday?.image, faraday?.image1];
 
   useEffect(() => {
     const urlFriendlyToName = (urlName) => {
@@ -64,7 +67,20 @@ const Faraday = () => {
             },
           }}
         /> */}
-        <ImageMagnifier imageSrc={faraday.image} alt={faraday.name} />
+        {/* <ImageMagnifier imageSrc={faraday.image} alt={faraday.name} /> */}
+        {showTwoImages ? (
+          <div className="faradayimage-container">
+            {images.filter(Boolean).map((img, index) => (
+              <img key={index} src={img} alt={`Image ${index + 1}`} />
+            ))}
+          </div>
+        ) : (
+          <div className="faradayimage-container">
+            {faraday?.image && (
+              <img src={faraday.image} alt="" className="prodimage" />
+            )}
+          </div>
+        )}
       </div>
       <div className="details-container">
         <h3 className="product-title">{faraday.name}</h3>

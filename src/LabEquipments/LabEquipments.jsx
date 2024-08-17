@@ -45,20 +45,15 @@ const LabEquipments = () => {
             {images.filter(Boolean).map((img, index) => (
               <img key={index} src={img} alt={`Image ${index + 1}`} />
             ))}
-            {/* {images.filter(Boolean).map((img, index) => (
-              <ImageMagnifier
-                key={index}
-                imageSrc={img}
-                alt={`Image ${index + 1}`}
-              />
-            ))} */}
           </div>
         ) : (
           <div className="labprodimage-container">
             {labEquipments?.image1 && (
               <img src={labEquipments.image1} alt="" className="prodimage" />
             )}
-            {/* {labEquipments?.image1 && (
+          </div>
+        )}
+        {/* {labEquipments?.image1 && (
               // <img src={labEquipments.image1} alt="" className="prodimage" />
               <ImageMagnifier
                 imageSrc={labEquipments.image1}
@@ -66,8 +61,13 @@ const LabEquipments = () => {
                 alt={labEquipments.image1}
               />
             )} */}
-          </div>
-        )}
+        {/* {images.filter(Boolean).map((img, index) => (
+              <ImageMagnifier
+                key={index}
+                imageSrc={img}
+                alt={`Image ${index + 1}`}
+              />
+            ))} */}
 
         <div className="proddetails-container">
           <h3 className="prodproduct-title">{labEquipments.name}</h3>

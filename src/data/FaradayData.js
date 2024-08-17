@@ -1,14 +1,15 @@
-// import ShieldsterVerticalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterVerticalnonwindowFaradaybag.jpg";
-
 import ShildsterFaradaybagforlaptops from "../assets/images/faradayBag/ShildsterFaradaybagforlaptops.jpg";
-import Pic5 from "../assets/images/faradayBag/Pic5.jpg";
 import ShieldsterFaradaybagsforTablets from "../assets/images/faradayBag/ShieldsterFaradaybagsforTablets.jpg";
 import ShieldsterHorizontalWindowFaradaybags from "../assets/images/faradayBag/ShieldsterHorizontalWindowFaradaybags.png";
-// import ShieldsterKeyFobFaradaybags from "../assets/images/faradayBag/ShieldsterKeyFobFaradaybags.jpg";
 import KEYFOB1 from "../assets/images/faradayBag/KEY-FOB1.png";
 import ShieldsterPowerBankFaradaybagsformobile from "../assets/images/faradayBag/ShieldsterPowerBankFaradaybagsformobile.jpg";
-// import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/ShieldsterHorizontalnonwindowFaradaybag.jpg";
 import ShieldsterHorizontalnonwindowFaradaybag from "../assets/images/faradayBag/FaradayNewBag.png";
+import MobileHorizontalNonWindowFaradayBag from "../assets/images/faradayBag/MOBILEHORIZONTALNONWINDOWFARADAYBAG.png";
+import Tablet1 from "../assets/images/faradayBag/TABLET-1.png";
+import Tablet2 from "../assets/images/faradayBag/TABLET-2.png";
+import Laptop1 from "../assets/images/faradayBag/LAPTOP-1.png";
+import Laptop2 from "../assets/images/faradayBag/LAPTOP-2.png";
+import ChargingKit from "../assets/images/faradayBag/CHARGING KIT.png";
 export const FARADAYS = [
   {
     id: 1,
@@ -81,7 +82,7 @@ export const FARADAYS = [
   },
   {
     id: 2,
-    image: ShieldsterVerticalnonwindowFaradaybag,
+    image: MobileHorizontalNonWindowFaradayBag,
     name: "SHIELDSTER VERTICAL NON-WINDOW FARADAY BAGS",
     description: [
       <ul>
@@ -280,7 +281,8 @@ export const FARADAYS = [
   },
   {
     id: 5,
-    image: ShieldsterFaradaybagsforTablets,
+    image: Tablet1,
+    image1: Tablet2,
     name: "SHIELDSTER FARADAY BAGS FOR TABLETS",
     description: [
       <ul>
@@ -357,7 +359,8 @@ export const FARADAYS = [
   },
   {
     id: 6,
-    image: ShildsterFaradaybagforlaptops,
+    image: Laptop1,
+    image1: Laptop2,
     name: "SHIELDSTER FARADAY BAG FOR LAPTOPS",
     description: [
       <ul>
@@ -431,7 +434,7 @@ export const FARADAYS = [
   },
   {
     id: 7,
-    image: ShieldsterPowerBankFaradaybagsformobile,
+    image: ChargingKit,
     name: "SHIELIDSTER POWER BANK FARADAY BAGS FOR MOBILE",
     description: [
       <ul>

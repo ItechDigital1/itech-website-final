@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div className="col-md-8">
           <div className="add-text">
-            <address>
+            <address style={{ paddingLeft: "5rem" }}>
               <strong>
                 I.TECH Digital Forensics Pvt. Ltd.
                 <br />
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
       </div>
       <h3 className="text-center dist-title">Our Distributors</h3>
-      <div className="row align-items-center">
+      {/* <div className="row align-items-center">
         <div className="col-md-4 text-center">
           <img
             className="img-fluid contact-logo"
@@ -48,7 +48,7 @@ const Contact = () => {
             alt="Lab Systems Logo"
           />
         </div>
-        <div className="col-md-8">
+         <div className="col-md-8">
           <div className="add-text">
             <address>
               <strong>
@@ -68,8 +68,8 @@ const Contact = () => {
               Email: contact@labsystems.co.in
             </address>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div> */}
       <div className="col-container reseller-form">
         <div className="alert alert-dark text-center" role="alert">
           Inviting INDIA `Resellers` and International `Country Distributors`
