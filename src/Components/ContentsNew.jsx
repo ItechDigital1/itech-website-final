@@ -294,18 +294,19 @@ const ContentsNew = () => {
                       <div className="col-lg-3 col-sm-4 col-xs-6">
                         <div className="thumbnail">
                           <br />
-                          <Card>
+                          <div className="contentcard">
                             <img
                               className="img-fluid rounded"
                               id="img-logo"
                               variant="top"
                               src={partners.image}
                               alt={partners.title}
+                              style={{ height: "300px" }}
                             />
-                            <Card.Body style={{ color: "white" }}>
+                            <Card.Body>
                               <p>{partners.title}</p>
                             </Card.Body>
-                          </Card>
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -313,7 +313,7 @@ const Content = () => {
       {/* Associated With */}
       <div className="associated-container">
         <div className="associated">
-          <h3>ASSOCIATED WITH</h3>
+          <h3>ASSOCIATED ME WITH</h3>
           <h2>-----</h2>
           <div className="asso-images">
             {asso.map((partners, id) => {
