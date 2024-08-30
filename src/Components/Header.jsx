@@ -30,58 +30,41 @@ const Header = () => {
 
   return (
     <div className="header-navbar">
-      <div className="header-topbar">
-        <div className="header-contact-info">
-          <FaEnvelope className="email" color="red" /> support@itech.co.in
-          <FaPhoneAlt className="phone" /> +91-70217 48803 \ 09
+      <header className="bg-[#1a1a1a] text-white text-sm py-2 px-4 flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
+            <MailIcon className="text-red-500" />
+            <span>helpdesk@itech.co.in</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <PhoneIcon className="text-red-500" />
+            <span>+91-70217 48803</span>
+          </div>
         </div>
-        <div className="header-iso-certification">
-          An ISO 9001:2015 Certified Company
-        </div>
-        <div className="header-social-icons">
-          <Link to="/login" className="login">
-            <i className="fa fa-sign-in" aria-hidden="true">
-              &nbsp;
-            </i>
-            Login
+        <div>An ISO 9001:2015 Certified Company</div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
+            <LogInIcon className="text-red-500" />
+            <span>Login</span>
+          </div>
+
+          <Link to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/">
+            <FacebookIcon className="text-red-500" />
           </Link>
-          <Link
-            to="https://www.facebook.com/ITECHDIGITALFORENSICSINDIA/"
-            target="_blank"
-            className="facebook"
-          >
-            <FaFacebookF className="icon" />
+          <Link to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true">
+            <LinkedinIcon className="text-red-500" />
           </Link>
-          <Link
-            to="https://twitter.com/ItechForensics"
-            target="_blank"
-            className="twitter"
-          >
-            <FaTwitter className="icon" />
+          <Link to="https://www.instagram.com/itechforensics/">
+            <InstagramIcon className="text-red-500" />
           </Link>
-          <Link
-            to="https://www.linkedin.com/company/itech-digital-forensics-pvt-ltd/?viewAsMember=true"
-            target="_blank"
-            className="linkedin"
-          >
-            <FaLinkedinIn className="icon" />
+          <Link to="https://twitter.com/ItechForensics">
+            <TwitterIcon className="text-red-500" />
           </Link>
-          <Link
-            to="https://www.instagram.com/itechforensics/"
-            target="_blank"
-            className="instagram"
-          >
-            <FaInstagram className="icon" />
-          </Link>
-          <Link
-            to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber"
-            target="_blank"
-            className="youtube"
-          >
-            <FaYoutube className="icon" />
+          <Link to="https://www.youtube.com/channel/UCj5-XB9Q3J6qcMp4nx-7_1w?view_as=subscriber">
+            <YoutubeIcon className="text-red-500" />
           </Link>
         </div>
-      </div>
+      </header>
 
       {/* Main Navbar */}
       <center>
@@ -298,7 +281,7 @@ const Header = () => {
                       <Link to="/Gallery">GALLERY</Link>
                     </li>
                     <li>
-                      <Link to="#">SITEMAP</Link>
+                      <Link to="/Sitemap">SITEMAP</Link>
                     </li>
                     <li>
                       <Link to="#" target="">
@@ -320,3 +303,163 @@ const Header = () => {
 };
 
 export default Header;
+
+function FacebookIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
+function InstagramIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
+function LinkedinIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
+function LogInIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+      <polyline points="10 17 15 12 10 7" />
+      <line x1="15" x2="3" y1="12" y2="12" />
+    </svg>
+  );
+}
+
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  );
+}
+
+function PhoneIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  );
+}
+
+function TwitterIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
+  );
+}
+
+function YoutubeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+      <path d="m10 15 5-3-5-3z" />
+    </svg>
+  );
+}

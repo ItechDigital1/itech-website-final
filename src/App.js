@@ -36,6 +36,7 @@ import LabEquipments from "./LabEquipments/LabEquipments";
 import Police from "./Components/Police";
 import RequestDemoForm from "./Components/RequestDemoForm";
 import Railway from "./Components/Railway";
+import Sitemap from "./Components/Sitemap";
 function App() {
   return (
     <div className="App">
@@ -73,6 +74,7 @@ function App() {
           <Route path="/FireBrigade" element={<FireBrigade />} />
           <Route path="/History" element={<History />} />
           <Route path="/Team" element={<Team />} />
+          <Route path="/Sitemap" element={<Sitemap />} />
         </Routes>
         <Footer />
       </Router>
