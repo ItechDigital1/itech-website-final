@@ -38,7 +38,6 @@ const LabEquipments = () => {
   }
   return (
     <div className="main-container">
-      LabEquipmetnts
       <div className="prod-container">
         {showTwoImages ? (
           <div className="labprodimage-container">
@@ -53,22 +52,6 @@ const LabEquipments = () => {
             )}
           </div>
         )}
-        {/* {labEquipments?.image1 && (
-              // <img src={labEquipments.image1} alt="" className="prodimage" />
-              <ImageMagnifier
-                imageSrc={labEquipments.image1}
-                className="prodimage"
-                alt={labEquipments.image1}
-              />
-            )} */}
-        {/* {images.filter(Boolean).map((img, index) => (
-              <ImageMagnifier
-                key={index}
-                imageSrc={img}
-                alt={`Image ${index + 1}`}
-              />
-            ))} */}
-
         <div className="proddetails-container">
           <h3 className="prodproduct-title">{labEquipments.name}</h3>
           <nav>
